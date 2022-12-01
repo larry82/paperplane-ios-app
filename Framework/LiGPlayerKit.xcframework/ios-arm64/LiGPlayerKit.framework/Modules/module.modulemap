@@ -1,0 +1,4 @@
+framework module LiGPlayerKit {
+  header "LiGPlayerKit-Swift.h"
+  requires objc
+}

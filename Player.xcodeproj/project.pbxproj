@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		169AEB9229373DEF00CE0699 /* LiGPlayerKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169AEB9129373DEE00CE0699 /* LiGPlayerKit.xcframework */; };
+		169AEB9329373DEF00CE0699 /* LiGPlayerKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 169AEB9129373DEE00CE0699 /* LiGPlayerKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		169AEB9A29373FC000CE0699 /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 169AEB9929373FC000CE0699 /* GLTFSceneKit */; };
+		169AEB9D29373FED00CE0699 /* LiGScannerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 169AEB9C29373FED00CE0699 /* LiGScannerKit */; };
+		B06CD390292C732100FBD7E5 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06CD38F292C732100FBD7E5 /* RecordButton.swift */; };
+		B06CD393292CD63600FBD7E5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06CD392292CD63600FBD7E5 /* Extension.swift */; };
+		B090B2BF292E0A9B00AC7931 /* StopRecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B090B2BD292E0A9B00AC7931 /* StopRecordingView.swift */; };
+		B090B2C0292E0A9B00AC7931 /* VideoRecorderButtonWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B090B2BE292E0A9B00AC7931 /* VideoRecorderButtonWindow.swift */; };
+		B0B4254F292234D000BDFB26 /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4254E292234D000BDFB26 /* TargetView.swift */; };
+		B0B42551292380E100BDFB26 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B42550292380E100BDFB26 /* ARViewController.swift */; };
+		B0B60B9C291E319F005928CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B60B9B291E319F005928CA /* AppDelegate.swift */; };
+		B0B60B9E291E319F005928CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B60B9D291E319F005928CA /* SceneDelegate.swift */; };
+		B0B60BA0291E319F005928CA /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B60B9F291E319F005928CA /* ScanViewController.swift */; };
+		B0B60BA3291E319F005928CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B60BA1291E319F005928CA /* Main.storyboard */; };
+		B0B60BA5291E31A0005928CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B60BA4291E31A0005928CA /* Assets.xcassets */; };
+		B0B60BA8291E31A0005928CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B60BA6291E31A0005928CA /* LaunchScreen.storyboard */; };
+		B0B60BB72921F02B005928CA /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B60BB62921F02B005928CA /* ScannerView.swift */; };
+		B0ECCBF2292B7EAF00CD03F2 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECCBF1292B7EAF00CD03F2 /* RecordView.swift */; };
+		B0F4DE4E292F472C00208DE7 /* ARViewController+Replay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4DE4D292F472C00208DE7 /* ARViewController+Replay.swift */; };
+		B0F4DE50292F4CC800208DE7 /* ARViewController+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4DE4F292F4CC800208DE7 /* ARViewController+Snapshot.swift */; };
+		B0F4DE53292F4D4C00208DE7 /* PhotoAlbumManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4DE52292F4D4C00208DE7 /* PhotoAlbumManageable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		169AEB9429373DEF00CE0699 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				169AEB9329373DEF00CE0699 /* LiGPlayerKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		169AEB9129373DEE00CE0699 /* LiGPlayerKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LiGPlayerKit.xcframework; path = Framework/LiGPlayerKit.xcframework; sourceTree = "<group>"; };
+		B06CD38F292C732100FBD7E5 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		B06CD392292CD63600FBD7E5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		B090B2BD292E0A9B00AC7931 /* StopRecordingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopRecordingView.swift; sourceTree = "<group>"; };
+		B090B2BE292E0A9B00AC7931 /* VideoRecorderButtonWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoRecorderButtonWindow.swift; sourceTree = "<group>"; };
+		B0B4254E292234D000BDFB26 /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
+		B0B42550292380E100BDFB26 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		B0B60B98291E319F005928CA /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B60B9B291E319F005928CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0B60B9D291E319F005928CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B0B60B9F291E319F005928CA /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		B0B60BA2291E319F005928CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0B60BA4291E31A0005928CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0B60BA7291E31A0005928CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0B60BA9291E31A0005928CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0B60BB62921F02B005928CA /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		B0ECCBF1292B7EAF00CD03F2 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		B0F4DE4D292F472C00208DE7 /* ARViewController+Replay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARViewController+Replay.swift"; sourceTree = "<group>"; };
+		B0F4DE4F292F4CC800208DE7 /* ARViewController+Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARViewController+Snapshot.swift"; sourceTree = "<group>"; };
+		B0F4DE52292F4D4C00208DE7 /* PhotoAlbumManageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumManageable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0B60B95291E319F005928CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169AEB9229373DEF00CE0699 /* LiGPlayerKit.xcframework in Frameworks */,
+				169AEB9D29373FED00CE0699 /* LiGScannerKit in Frameworks */,
+				169AEB9A29373FC000CE0699 /* GLTFSceneKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B06CD391292C789900FBD7E5 /* RecordButton */ = {
+			isa = PBXGroup;
+			children = (
+				B0ECCBF1292B7EAF00CD03F2 /* RecordView.swift */,
+				B06CD38F292C732100FBD7E5 /* RecordButton.swift */,
+			);
+			path = RecordButton;
+			sourceTree = "<group>";
+		};
+		B090B2B1292DBC2100AC7931 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				B090B2BD292E0A9B00AC7931 /* StopRecordingView.swift */,
+				B090B2BE292E0A9B00AC7931 /* VideoRecorderButtonWindow.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		B090B2B4292DC75F00AC7931 /* RecordPanelView */ = {
+			isa = PBXGroup;
+			children = (
+				B06CD391292C789900FBD7E5 /* RecordButton */,
+			);
+			path = RecordPanelView;
+			sourceTree = "<group>";
+		};
+		B0B425522924C0BD00BDFB26 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B0B60B9F291E319F005928CA /* ScanViewController.swift */,
+				B0B42550292380E100BDFB26 /* ARViewController.swift */,
+				B0F4DE4D292F472C00208DE7 /* ARViewController+Replay.swift */,
+				B0F4DE4F292F4CC800208DE7 /* ARViewController+Snapshot.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B0B427D8292628DD00BDFB26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				169AEB9129373DEE00CE0699 /* LiGPlayerKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0B60B8F291E319F005928CA = {
+			isa = PBXGroup;
+			children = (
+				B0B60B9A291E319F005928CA /* Sample */,
+				B0B60B99291E319F005928CA /* Products */,
+				B0B427D8292628DD00BDFB26 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B0B60B99291E319F005928CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0B60B98291E319F005928CA /* Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0B60B9A291E319F005928CA /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				B0B60B9B291E319F005928CA /* AppDelegate.swift */,
+				B0B60B9D291E319F005928CA /* SceneDelegate.swift */,
+				B0F4DE51292F4D3500208DE7 /* Model */,
+				B0B425522924C0BD00BDFB26 /* ViewController */,
+				B0B60BB52921F01F005928CA /* View */,
+				B0B60BA1291E319F005928CA /* Main.storyboard */,
+				B0B60BA4291E31A0005928CA /* Assets.xcassets */,
+				B0B60BA6291E31A0005928CA /* LaunchScreen.storyboard */,
+				B0B60BA9291E31A0005928CA /* Info.plist */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		B0B60BB52921F01F005928CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B090B2B4292DC75F00AC7931 /* RecordPanelView */,
+				B090B2B1292DBC2100AC7931 /* Window */,
+				B0B60BB62921F02B005928CA /* ScannerView.swift */,
+				B0B4254E292234D000BDFB26 /* TargetView.swift */,
+				B06CD392292CD63600FBD7E5 /* Extension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0F4DE51292F4D3500208DE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4DE52292F4D4C00208DE7 /* PhotoAlbumManageable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0B60B97291E319F005928CA /* Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0B60BAC291E31A0005928CA /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildPhases = (
+				B0B60B94291E319F005928CA /* Sources */,
+				B0B60B95291E319F005928CA /* Frameworks */,
+				B0B60B96291E319F005928CA /* Resources */,
+				169AEB9429373DEF00CE0699 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sample;
+			packageProductDependencies = (
+				169AEB9929373FC000CE0699 /* GLTFSceneKit */,
+				169AEB9C29373FED00CE0699 /* LiGScannerKit */,
+			);
+			productName = LiGPlayerKitSample;
+			productReference = B0B60B98291E319F005928CA /* Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0B60B90291E319F005928CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					B0B60B97291E319F005928CA = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = B0B60B93291E319F005928CA /* Build configuration list for PBXProject "Player" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0B60B8F291E319F005928CA;
+			packageReferences = (
+				169AEB9829373F7100CE0699 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */,
+				169AEB9B29373FED00CE0699 /* XCRemoteSwiftPackageReference "ios-scanner-sdk" */,
+			);
+			productRefGroup = B0B60B99291E319F005928CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0B60B97291E319F005928CA /* Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0B60B96291E319F005928CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B60BA8291E31A0005928CA /* LaunchScreen.storyboard in Resources */,
+				B0B60BA5291E31A0005928CA /* Assets.xcassets in Resources */,
+				B0B60BA3291E319F005928CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0B60B94291E319F005928CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06CD390292C732100FBD7E5 /* RecordButton.swift in Sources */,
+				B0B60BA0291E319F005928CA /* ScanViewController.swift in Sources */,
+				B090B2C0292E0A9B00AC7931 /* VideoRecorderButtonWindow.swift in Sources */,
+				B0F4DE53292F4D4C00208DE7 /* PhotoAlbumManageable.swift in Sources */,
+				B0F4DE50292F4CC800208DE7 /* ARViewController+Snapshot.swift in Sources */,
+				B0B60B9C291E319F005928CA /* AppDelegate.swift in Sources */,
+				B06CD393292CD63600FBD7E5 /* Extension.swift in Sources */,
+				B0B60B9E291E319F005928CA /* SceneDelegate.swift in Sources */,
+				B0ECCBF2292B7EAF00CD03F2 /* RecordView.swift in Sources */,
+				B0B42551292380E100BDFB26 /* ARViewController.swift in Sources */,
+				B0B4254F292234D000BDFB26 /* TargetView.swift in Sources */,
+				B090B2BF292E0A9B00AC7931 /* StopRecordingView.swift in Sources */,
+				B0F4DE4E292F472C00208DE7 /* ARViewController+Replay.swift in Sources */,
+				B0B60BB72921F02B005928CA /* ScannerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B0B60BA1291E319F005928CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0B60BA2291E319F005928CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0B60BA6291E31A0005928CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0B60BA7291E31A0005928CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0B60BAA291E31A0005928CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0B60BAB291E31A0005928CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0B60BAD291E31A0005928CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5P63A36D7H;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiGPlayerSample;
+				INFOPLIST_KEY_NSCameraUsageDescription = "For Scan and AR experience";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.lig.sdk.player.LiGPlayerSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0B60BAE291E31A0005928CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5P63A36D7H;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiGPlayerSample;
+				INFOPLIST_KEY_NSCameraUsageDescription = "For Scan and AR experience";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.lig.sdk.player.LiGPlayerSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0B60B93291E319F005928CA /* Build configuration list for PBXProject "Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0B60BAA291E31A0005928CA /* Debug */,
+				B0B60BAB291E31A0005928CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0B60BAC291E31A0005928CA /* Build configuration list for PBXNativeTarget "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0B60BAD291E31A0005928CA /* Debug */,
+				B0B60BAE291E31A0005928CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		169AEB9829373F7100CE0699 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/magicien/GLTFSceneKit";
+			requirement = {
+				kind = exactVersion;
+				version = 0.4.1;
+			};
+		};
+		169AEB9B29373FED00CE0699 /* XCRemoteSwiftPackageReference "ios-scanner-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/ligrd/ios-scanner-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 3.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		169AEB9929373FC000CE0699 /* GLTFSceneKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 169AEB9829373F7100CE0699 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */;
+			productName = GLTFSceneKit;
+		};
+		169AEB9C29373FED00CE0699 /* LiGScannerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 169AEB9B29373FED00CE0699 /* XCRemoteSwiftPackageReference "ios-scanner-sdk" */;
+			productName = LiGScannerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B0B60B90291E319F005928CA /* Project object */;
+}
