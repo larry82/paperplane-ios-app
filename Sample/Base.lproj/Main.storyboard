@@ -13,12 +13,12 @@
         <!--Scan View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ScanViewController" customModule="LiGPlayerKitSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ScanViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqh-Qq-Mk5" customClass="ScannerView" customModule="LiGPlayerKitSample" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqh-Qq-Mk5" customClass="ScannerView" customModule="Sample" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
@@ -81,7 +81,7 @@
         <!--View Controller-->
         <scene sceneID="6k3-U9-KiS">
             <objects>
-                <viewController storyboardIdentifier="ARViewController" id="iOV-r1-dwh" customClass="ARViewController" customModule="LiGPlayerKitSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ARViewController" id="iOV-r1-dwh" customClass="ARViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mTc-4v-H38">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,7 +133,7 @@
                                     <constraint firstAttribute="height" constant="20" id="9Yj-Cf-8kJ"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9S-B0-wMx" customClass="RecordButton" customModule="LiGPlayerKitSample" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9S-B0-wMx" customClass="RecordButton" customModule="Sample" customModuleProvider="target">
                                 <rect key="frame" x="147.5" y="496" width="80" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -174,49 +174,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEn-Oz-yII" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="821.60000000000002" y="-27.436281859070466"/>
-        </scene>
-        <!--Test View Controller-->
-        <scene sceneID="HvQ-3G-iI3">
-            <objects>
-                <viewController storyboardIdentifier="TestViewController" id="dcy-zH-S9E" customClass="TestViewController" customModule="LiGPlayerKitSample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bKc-w5-yEB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZ4-Nj-1Sj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyL-XJ-cy2">
-                                <rect key="frame" x="0.0" y="0.0" width="75" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="IuR-kT-4hv"/>
-                                    <constraint firstAttribute="height" constant="35" id="J5W-Q9-1bw"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="back:" destination="dcy-zH-S9E" eventType="touchUpInside" id="mze-bo-wbh"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="M7E-hX-oyE"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="M7E-hX-oyE" firstAttribute="trailing" secondItem="UZ4-Nj-1Sj" secondAttribute="trailing" id="LOm-zC-fea"/>
-                            <constraint firstItem="M7E-hX-oyE" firstAttribute="bottom" secondItem="UZ4-Nj-1Sj" secondAttribute="bottom" id="LQI-az-Orn"/>
-                            <constraint firstItem="HyL-XJ-cy2" firstAttribute="top" secondItem="M7E-hX-oyE" secondAttribute="top" id="LZx-dT-wpk"/>
-                            <constraint firstItem="HyL-XJ-cy2" firstAttribute="leading" secondItem="M7E-hX-oyE" secondAttribute="leading" id="b9F-Ew-GXE"/>
-                            <constraint firstItem="UZ4-Nj-1Sj" firstAttribute="leading" secondItem="M7E-hX-oyE" secondAttribute="leading" id="pax-8X-CCJ"/>
-                            <constraint firstItem="UZ4-Nj-1Sj" firstAttribute="top" secondItem="M7E-hX-oyE" secondAttribute="top" id="wdN-9v-Vai"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="sceneView" destination="UZ4-Nj-1Sj" id="nEM-8D-SJg"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jrx-Rv-T6b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="825" y="739"/>
         </scene>
     </scenes>
     <resources>

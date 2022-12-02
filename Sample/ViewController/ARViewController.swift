@@ -188,8 +188,6 @@ class ARViewController: UIViewController {
 //    MARK: - AR related
     private func initSceneView(){
         sceneView.delegate = self
-        sceneView.debugOptions = [.showWorldOrigin]
-        sceneView.showsStatistics = true
         sceneView.scene.rootNode.light = getDefaultLight()
         
         func getDefaultLight() -> SCNLight{
