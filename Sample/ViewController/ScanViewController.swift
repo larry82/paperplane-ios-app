@@ -1,6 +1,5 @@
 import UIKit
 import LiGScannerKit
-import LiGPlayerKit
 
 class ScanViewController: UIViewController {
     
