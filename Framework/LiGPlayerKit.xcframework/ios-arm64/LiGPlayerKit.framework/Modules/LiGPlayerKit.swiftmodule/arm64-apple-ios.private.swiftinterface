@@ -7,7 +7,7 @@ import AVFoundation
 import AudioToolbox
 import CoreGraphics
 import Foundation
-import GLTFSceneKit
+//import GLTFSceneKit
 import ImageIO
 import SceneKit
 import SpriteKit

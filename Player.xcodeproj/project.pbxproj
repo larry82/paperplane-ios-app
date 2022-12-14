@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		169AEB9229373DEF00CE0699 /* LiGPlayerKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169AEB9129373DEE00CE0699 /* LiGPlayerKit.xcframework */; };
 		169AEB9329373DEF00CE0699 /* LiGPlayerKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 169AEB9129373DEE00CE0699 /* LiGPlayerKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		169AEB9A29373FC000CE0699 /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 169AEB9929373FC000CE0699 /* GLTFSceneKit */; };
 		169AEB9D29373FED00CE0699 /* LiGScannerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 169AEB9C29373FED00CE0699 /* LiGScannerKit */; };
 		B06CD390292C732100FBD7E5 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06CD38F292C732100FBD7E5 /* RecordButton.swift */; };
 		B06CD393292CD63600FBD7E5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06CD392292CD63600FBD7E5 /* Extension.swift */; };
@@ -74,7 +73,6 @@
 			files = (
 				169AEB9229373DEF00CE0699 /* LiGPlayerKit.xcframework in Frameworks */,
 				169AEB9D29373FED00CE0699 /* LiGScannerKit in Frameworks */,
-				169AEB9A29373FC000CE0699 /* GLTFSceneKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +195,6 @@
 			);
 			name = Sample;
 			packageProductDependencies = (
-				169AEB9929373FC000CE0699 /* GLTFSceneKit */,
 				169AEB9C29373FED00CE0699 /* LiGScannerKit */,
 			);
 			productName = LiGPlayerKitSample;
@@ -229,7 +226,6 @@
 			);
 			mainGroup = B0B60B8F291E319F005928CA;
 			packageReferences = (
-				169AEB9829373F7100CE0699 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */,
 				169AEB9B29373FED00CE0699 /* XCRemoteSwiftPackageReference "ios-scanner-sdk" */,
 			);
 			productRefGroup = B0B60B99291E319F005928CA /* Products */;
@@ -514,14 +510,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		169AEB9829373F7100CE0699 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/magicien/GLTFSceneKit";
-			requirement = {
-				kind = exactVersion;
-				version = 0.4.1;
-			};
-		};
 		169AEB9B29373FED00CE0699 /* XCRemoteSwiftPackageReference "ios-scanner-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://gitlab.com/ligrd/ios-scanner-sdk";
@@ -533,11 +521,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		169AEB9929373FC000CE0699 /* GLTFSceneKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 169AEB9829373F7100CE0699 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */;
-			productName = GLTFSceneKit;
-		};
 		169AEB9C29373FED00CE0699 /* LiGScannerKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 169AEB9B29373FED00CE0699 /* XCRemoteSwiftPackageReference "ios-scanner-sdk" */;
