@@ -146,6 +146,17 @@
                                     <action selector="recordClicked:" destination="iOV-r1-dwh" eventType="touchUpInside" id="Xhr-zM-NGz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHR-Rt-wGM">
+                                <rect key="frame" x="286" y="612" width="73" height="35"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Action">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="action1DidClick:" destination="iOV-r1-dwh" eventType="touchUpInside" id="xPN-Ax-eOI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bnv-CV-uGM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -158,8 +169,10 @@
                             <constraint firstItem="KaE-fR-11C" firstAttribute="top" secondItem="bnv-CV-uGM" secondAttribute="top" id="VkP-Mg-wWr"/>
                             <constraint firstItem="gkh-HV-Mrf" firstAttribute="leading" secondItem="bnv-CV-uGM" secondAttribute="leading" constant="15" id="cDc-rU-DOz"/>
                             <constraint firstItem="bnv-CV-uGM" firstAttribute="bottom" secondItem="KaE-fR-11C" secondAttribute="bottom" id="jNf-rl-OYn"/>
+                            <constraint firstItem="bnv-CV-uGM" firstAttribute="trailing" secondItem="nHR-Rt-wGM" secondAttribute="trailing" constant="16" id="ogN-QP-iTz"/>
                             <constraint firstItem="9qL-OU-8jQ" firstAttribute="centerX" secondItem="mTc-4v-H38" secondAttribute="centerX" id="uYI-Ww-vf0"/>
                             <constraint firstItem="KaE-fR-11C" firstAttribute="leading" secondItem="bnv-CV-uGM" secondAttribute="leading" id="ux2-zd-cLM"/>
+                            <constraint firstItem="bnv-CV-uGM" firstAttribute="bottom" secondItem="nHR-Rt-wGM" secondAttribute="bottom" constant="20" id="yUL-sv-DxL"/>
                             <constraint firstItem="Q9S-B0-wMx" firstAttribute="centerX" secondItem="9qL-OU-8jQ" secondAttribute="centerX" id="z0X-yM-L2S"/>
                         </constraints>
                     </view>
@@ -178,6 +191,9 @@
     </scenes>
     <resources>
         <image name="LeaveAr_Btn" width="45" height="45"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

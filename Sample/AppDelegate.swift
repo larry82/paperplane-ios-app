@@ -7,7 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let productkey = "9D8FB-6F088-B064A-46C48-D9937"
+        let productkey = "1E0B0-C932E-E5DC8-45C09-67CA8"
         LiGScanner.sharedInstance().initialize(productkey)
         return true
     }

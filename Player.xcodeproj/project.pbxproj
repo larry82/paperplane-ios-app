@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		169AEB9229373DEF00CE0699 /* LiGPlayerKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169AEB9129373DEE00CE0699 /* LiGPlayerKit.xcframework */; };
-		169AEB9329373DEF00CE0699 /* LiGPlayerKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 169AEB9129373DEE00CE0699 /* LiGPlayerKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		169AEB9D29373FED00CE0699 /* LiGScannerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 169AEB9C29373FED00CE0699 /* LiGScannerKit */; };
+		93B2FC4629E157D8007C9792 /* LiGScannerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93B2FC4529E157D8007C9792 /* LiGScannerKit */; };
+		93B2FC9429E2CB6F007C9792 /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93B2FC9329E2CB6F007C9792 /* GLTFSceneKit */; };
+		93B2FC9F29E2D232007C9792 /* LiGPlayerKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B2FC9D29E2D229007C9792 /* LiGPlayerKit.xcframework */; };
+		93B2FCA029E2D232007C9792 /* LiGPlayerKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93B2FC9D29E2D229007C9792 /* LiGPlayerKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B06CD390292C732100FBD7E5 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06CD38F292C732100FBD7E5 /* RecordButton.swift */; };
 		B06CD393292CD63600FBD7E5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06CD392292CD63600FBD7E5 /* Extension.swift */; };
 		B090B2BF292E0A9B00AC7931 /* StopRecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B090B2BD292E0A9B00AC7931 /* StopRecordingView.swift */; };
@@ -30,13 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		169AEB9429373DEF00CE0699 /* Embed Frameworks */ = {
+		93B2FC5C29E159CF007C9792 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				169AEB9329373DEF00CE0699 /* LiGPlayerKit.xcframework in Embed Frameworks */,
+				93B2FCA029E2D232007C9792 /* LiGPlayerKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,7 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		169AEB9129373DEE00CE0699 /* LiGPlayerKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LiGPlayerKit.xcframework; path = Framework/LiGPlayerKit.xcframework; sourceTree = "<group>"; };
+		93B2FC9D29E2D229007C9792 /* LiGPlayerKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LiGPlayerKit.xcframework; path = Framework/LiGPlayerKit.xcframework; sourceTree = "<group>"; };
 		B06CD38F292C732100FBD7E5 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		B06CD392292CD63600FBD7E5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		B090B2BD292E0A9B00AC7931 /* StopRecordingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopRecordingView.swift; sourceTree = "<group>"; };
@@ -71,8 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				169AEB9229373DEF00CE0699 /* LiGPlayerKit.xcframework in Frameworks */,
-				169AEB9D29373FED00CE0699 /* LiGScannerKit in Frameworks */,
+				93B2FC9429E2CB6F007C9792 /* GLTFSceneKit in Frameworks */,
+				93B2FC9F29E2D232007C9792 /* LiGPlayerKit.xcframework in Frameworks */,
+				93B2FC4629E157D8007C9792 /* LiGScannerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +121,7 @@
 		B0B427D8292628DD00BDFB26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				169AEB9129373DEE00CE0699 /* LiGPlayerKit.xcframework */,
+				93B2FC9D29E2D229007C9792 /* LiGPlayerKit.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,7 +189,7 @@
 				B0B60B94291E319F005928CA /* Sources */,
 				B0B60B95291E319F005928CA /* Frameworks */,
 				B0B60B96291E319F005928CA /* Resources */,
-				169AEB9429373DEF00CE0699 /* Embed Frameworks */,
+				93B2FC5C29E159CF007C9792 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,7 +197,8 @@
 			);
 			name = Sample;
 			packageProductDependencies = (
-				169AEB9C29373FED00CE0699 /* LiGScannerKit */,
+				93B2FC4529E157D8007C9792 /* LiGScannerKit */,
+				93B2FC9329E2CB6F007C9792 /* GLTFSceneKit */,
 			);
 			productName = LiGPlayerKitSample;
 			productReference = B0B60B98291E319F005928CA /* Sample.app */;
@@ -226,7 +229,8 @@
 			);
 			mainGroup = B0B60B8F291E319F005928CA;
 			packageReferences = (
-				169AEB9B29373FED00CE0699 /* XCRemoteSwiftPackageReference "ios-scanner-sdk" */,
+				93B2FC4429E157D8007C9792 /* XCRemoteSwiftPackageReference "ios-scanner-sdk-sample" */,
+				93B2FC9229E2CB6F007C9792 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */,
 			);
 			productRefGroup = B0B60B99291E319F005928CA /* Products */;
 			projectDirPath = "";
@@ -424,7 +428,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sample/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LiGPlayerSample;
-				INFOPLIST_KEY_NSCameraUsageDescription = "For Scan and AR experience";
+				INFOPLIST_KEY_NSCameraUsageDescription = "for light tag scan and AR presentation";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "save photo to your device";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -463,7 +468,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sample/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LiGPlayerSample;
-				INFOPLIST_KEY_NSCameraUsageDescription = "For Scan and AR experience";
+				INFOPLIST_KEY_NSCameraUsageDescription = "for light tag scan and AR presentation";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "save photo to your device";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -510,21 +516,34 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		169AEB9B29373FED00CE0699 /* XCRemoteSwiftPackageReference "ios-scanner-sdk" */ = {
+		93B2FC4429E157D8007C9792 /* XCRemoteSwiftPackageReference "ios-scanner-sdk-sample" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://gitlab.com/ligrd/ios-scanner-sdk";
+			repositoryURL = "https://gitlab.com/lig-corp/ios-scanner-sdk-sample";
 			requirement = {
 				kind = exactVersion;
-				version = 3.1.0;
+				version = 3.2.0;
+			};
+		};
+		93B2FC9229E2CB6F007C9792 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/magicien/GLTFSceneKit";
+			requirement = {
+				kind = exactVersion;
+				version = 0.4.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		169AEB9C29373FED00CE0699 /* LiGScannerKit */ = {
+		93B2FC4529E157D8007C9792 /* LiGScannerKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 169AEB9B29373FED00CE0699 /* XCRemoteSwiftPackageReference "ios-scanner-sdk" */;
+			package = 93B2FC4429E157D8007C9792 /* XCRemoteSwiftPackageReference "ios-scanner-sdk-sample" */;
 			productName = LiGScannerKit;
+		};
+		93B2FC9329E2CB6F007C9792 /* GLTFSceneKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93B2FC9229E2CB6F007C9792 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */;
+			productName = GLTFSceneKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,12 +1,21 @@
 {
   "pins" : [
     {
-      "identity" : "ios-scanner-sdk",
+      "identity" : "gltfscenekit",
       "kind" : "remoteSourceControl",
-      "location" : "https://gitlab.com/ligrd/ios-scanner-sdk",
+      "location" : "https://github.com/magicien/GLTFSceneKit",
       "state" : {
-        "revision" : "94e6f0d96b5677b5676cc75381c36ea8978f78c1",
-        "version" : "3.1.0"
+        "revision" : "a9587ec5c6515ee7d036533fdd909815a9a718ef",
+        "version" : "0.4.1"
+      }
+    },
+    {
+      "identity" : "ios-scanner-sdk-sample",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/lig-corp/ios-scanner-sdk-sample",
+      "state" : {
+        "revision" : "bd94c797277e6864e07c65e5ad8e46f5e9a7097e",
+        "version" : "3.2.0"
       }
     }
   ],

@@ -15,6 +15,29 @@ class ARViewController: UIViewController {
     @IBOutlet weak var toCameraButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
     
+    @IBAction func action1DidClick(_ sender: Any) {
+        if let context = arContext {
+            Task.detached {
+                do {
+                    let user = try await context.userProfile()
+                    if let coins = user.coins {
+                        print(coins)
+                    } else {
+                        print("NO COINS")
+                    }
+                    
+                    if let vouchers = user.vouchers {
+                        print(vouchers)
+                    } else {
+                        print("NO VOUCHERS")
+                    }
+                } catch {
+                    print(error)
+                }
+            }
+        }
+    }
+
     var videoBtnWindow: VideoRecorderButtonWindow?
     
     ///螢幕錄製器
@@ -74,11 +97,22 @@ class ARViewController: UIViewController {
             }
             
             let token = LiGScanner.sharedInstance().accessToken
-            LiGScene.readFromCloud(lightId: lightId, accessToken: token) { scene in
-                self.arContext?.ligScene = scene
-                self.arContext?.load()
-            } failure: { error in
-                print(error?.localizedDescription ?? "99999")
+            
+            // Register User
+            Task.detached {
+                do {
+                    // We could configure more than one scenes to a specific LigTag (lightId)
+                    // Within `context.loadScenes()` call, context.ligScene will be set to first of scenes if not empty
+                    let scenes = try await context.loadScenes(lightId: self.lightId, accessToken: token)
+                    if let _ = context.ligScene {
+                        context.load()
+                    }
+
+                    // Regisiter your user with primary key (ex. "Plain002") in Lig Cloud, user token will be saved in `context` object
+                    try await context.registerUser(userID: "Plain002", accessToken: token)
+                } catch {
+                    print(error)
+                }
             }
         }
     }
