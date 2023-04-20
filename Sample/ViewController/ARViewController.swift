@@ -89,6 +89,7 @@ class ARViewController: UIViewController {
             context.sceneView = sceneView
             context.config = config
             context.delegate = self
+            context.gestureDelegate = self
             context.run()
             
 
@@ -101,11 +102,17 @@ class ARViewController: UIViewController {
             // Register User
             Task.detached {
                 do {
+                    // Load scene information from LiG Cloud
+                    let payload = try await context.loadScenes(lightId: self.lightId, accessToken: token)
                     // We could configure more than one scenes to a specific LigTag (lightId)
                     // Within `context.loadScenes()` call, context.ligScene will be set to first of scenes if not empty
-                    let scenes = try await context.loadScenes(lightId: self.lightId, accessToken: token)
-                    if let _ = context.ligScene {
-                        context.load()
+                    if let payload = payload, payload.scnObjc.count > 0 {
+                        if let arObjects = payload.scnObjc.first?.arObjects {
+                            // Put arObjects into LiGScene object
+                            context.ligScene = LiGScene(arObjects: arObjects)
+                            // Context will try to load AR objects in `context.ligScene`
+                            context.load()
+                        }
                     }
 
                     // Regisiter your user with primary key (ex. "Plain002") in Lig Cloud, user token will be saved in `context` object
@@ -274,10 +281,48 @@ extension ARViewController: ARSCNViewDelegate, ARSessionDelegate{
 
 //MARK: - SceneKitContext delegate
 extension ARViewController: SceneKitContextDelegate{
-    func didLoaded() {
+    func gameTypeAction(gameType: LiGPlayerKit.GameType, value: LiGPlayerKit.GameResponse) {
+        // Game-event is sent!
+        print("Game Type: \(gameType)")
+        print("Game Data: \(value)")
+        
+        // `value.data` is the reponse data after processing the rule of a game
+        // `coin_quantity` is the point configured at CMS web site
+        if let coin = value.data?.coin_quantity, gameType == .coinGame {
+            // An AR object is touched and configured to execute a COIN-GIVEN game
+            print("User got \(coin) points!")
+        }
     }
     
-    func sessionFailed() {
-        errorDidOccur()
+    func didLoaded() {
+        // Called when task that loads all AR objects is completed
+        print("Loading task is completed.")
+    }
+    
+    func didCustomActionActivated(objectID: Int, actionID: Int, values: [String : Any]?) {
+        // Non-LiG action is called on object `objectID`
+    }
+    
+    // Deprecated
+    func didUIInteractAction(para: String) {
+    }
+    
+    // Deprecated
+    func customEventActivated(value: Any?) -> LiGPlayerKit.ArEventEnum? {
+        return nil
+    }
+}
+
+extension ARViewController: SceneKitContextGestureDelegate {
+    func nodeDidTap(node: LiGPlayerKit.LiGBaseNode) -> Bool {
+        // Called when LiG-managed node is touched
+        // Return false to continue execute of Event-Action settings from LiG Cloud
+        return false
+    }
+    
+    func sceneViewDidTapped(gesture: UITapGestureRecognizer) -> Bool {
+        // Called when touch event occured
+        // Return false to continue execution of Event-Action settings from LiG Cloud
+        return false
     }
 }

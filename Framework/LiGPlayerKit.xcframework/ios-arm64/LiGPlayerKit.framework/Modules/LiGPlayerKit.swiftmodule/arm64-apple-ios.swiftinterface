@@ -164,9 +164,9 @@ public struct NavigationMap {
   @objc deinit
 }
 public struct AllScene : Swift.Codable {
-  public var scenes: [LiGPlayerKit.SceneObject]?
+  public var coordinate_system: LiGPlayerKit.CoordinateSystem?
   public init()
-  public init(scenes: [LiGPlayerKit.SceneObject]?)
+  public init(coordinate_system: LiGPlayerKit.CoordinateSystem)
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -180,6 +180,15 @@ public struct SceneObject : Swift.Codable {
   public var gameReset: Swift.Bool
   public init()
   public init(sceneID: Swift.Int?, name: Swift.String?, thumbnail: Swift.String?, arObjects: [LiGPlayerKit.ArObject]?, activityID: Swift.Int?, gameReset: Swift.Bool?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CoordinateSystem : Swift.Codable {
+  public var scenes: [LiGPlayerKit.SceneObject]?
+  public var mapUrl: Swift.String?
+  public var infoUrl: Swift.String?
+  public init()
+  public init(map: Swift.String?, info: Swift.String?, scenes: [LiGPlayerKit.SceneObject]?)
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -316,7 +325,8 @@ public struct ActionValues : Swift.Codable {
   public let impactFeedbackStyle: Swift.Int?
   public let subID: Swift.Int?
   public let gameType: Swift.Int?
-  public init(url: Swift.String?, time: Foundation.TimeInterval?, translating: Swift.Double?, objectId: Swift.Int?, directionX: CoreFoundation.CGFloat?, directionY: CoreFoundation.CGFloat?, directionZ: CoreFoundation.CGFloat?, group: Swift.Int?, animationSpeed: CoreFoundation.CGFloat?, startFrame: CoreFoundation.CGFloat?, endFrame: CoreFoundation.CGFloat?, fps: Swift.Double?, repeatCount: CoreFoundation.CGFloat?, scale: CoreFoundation.CGFloat?, transparency: CoreFoundation.CGFloat?, width: CoreFoundation.CGFloat?, height: CoreFoundation.CGFloat?, moveActionTime: Foundation.TimeInterval?, rotateActionTime: Foundation.TimeInterval?, clockwise: Swift.Bool?, radius: CoreFoundation.CGFloat?, startAngle: CoreFoundation.CGFloat?, endAngle: CoreFoundation.CGFloat?, faceTranslating: Swift.Double?, faceIsReturn: Swift.Bool?, faceWaitTime: Foundation.TimeInterval?, faceRotateToMe: Swift.Bool?, delayTime: Foundation.TimeInterval?, curveScale: CoreFoundation.CGFloat?, impactFeedbackStyle: Swift.Int?, subID: Swift.Int?, gameType: Swift.Int?)
+  public let uiInteractName: Swift.String?
+  public init(url: Swift.String?, time: Foundation.TimeInterval?, translating: Swift.Double?, objectId: Swift.Int?, directionX: CoreFoundation.CGFloat?, directionY: CoreFoundation.CGFloat?, directionZ: CoreFoundation.CGFloat?, group: Swift.Int?, animationSpeed: CoreFoundation.CGFloat?, startFrame: CoreFoundation.CGFloat?, endFrame: CoreFoundation.CGFloat?, fps: Swift.Double?, repeatCount: CoreFoundation.CGFloat?, scale: CoreFoundation.CGFloat?, transparency: CoreFoundation.CGFloat?, width: CoreFoundation.CGFloat?, height: CoreFoundation.CGFloat?, moveActionTime: Foundation.TimeInterval?, rotateActionTime: Foundation.TimeInterval?, clockwise: Swift.Bool?, radius: CoreFoundation.CGFloat?, startAngle: CoreFoundation.CGFloat?, endAngle: CoreFoundation.CGFloat?, faceTranslating: Swift.Double?, faceIsReturn: Swift.Bool?, faceWaitTime: Foundation.TimeInterval?, faceRotateToMe: Swift.Bool?, delayTime: Foundation.TimeInterval?, curveScale: CoreFoundation.CGFloat?, impactFeedbackStyle: Swift.Int?, subID: Swift.Int?, gameType: Swift.Int?, uiInteractName: Swift.String?)
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -462,14 +472,6 @@ public struct RegisterUserResponse : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-public struct CoordinateSystemResponse : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
-}
-public struct CoordinateSystem : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
-}
 public struct UserProfileResponse : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
@@ -489,6 +491,73 @@ public struct Voucher : Swift.Codable {
   public let serial: Swift.String?
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
+}
+public enum GameType : Swift.Int {
+  case collectGame
+  case groupCollectGame
+  case coinGame
+  case voucherGame
+  case error
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct GameResponse : Swift.Codable {
+  public let gameType: Swift.Int?
+  public let status: LiGPlayerKit.GameResponseStatus?
+  public let data: LiGPlayerKit.GameData?
+  public let action: LiGPlayerKit.GameActionType?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GameData : Swift.Codable {
+  public let count: Swift.Int?
+  public let total: Swift.Int?
+  public let collected: Swift.Int?
+  public let coin_quantity: Swift.Int?
+  public let code: LiGPlayerKit.GameDataConditionCode?
+  public let actionName: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum GameDataConditionCode : Swift.Int, Swift.Codable {
+  case notAvailable
+  case exchangedAlready
+  case InvalidVoucherID
+  case NotInRuleConfig
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum GameResponseStatus : Swift.Codable {
+  case success
+  case done
+  case failure
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public static func == (a: LiGPlayerKit.GameResponseStatus, b: LiGPlayerKit.GameResponseStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum GameActionType : Swift.Int, Swift.Codable {
+  case noAction
+  case customAction
+  case voucherAction
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 extension UIKit.UIImage {
   public class func gifImageWithData(_ data: Foundation.Data) -> UIKit.UIImage?
@@ -539,6 +608,10 @@ public struct ApiLocation : Swift.Codable {
 }
 public protocol SceneKitContextDelegate {
   func didLoaded()
+  func gameTypeAction(gameType: LiGPlayerKit.GameType, value: LiGPlayerKit.GameResponse)
+  func didCustomActionActivated(objectID: Swift.Int, actionID: Swift.Int, values: [Swift.String : Any]?)
+  func didUIInteractAction(para: Swift.String)
+  func customEventActivated(value: Any?) -> LiGPlayerKit.ArEventEnum?
 }
 public protocol SceneKitContextGestureDelegate {
   func sceneViewDidTapped(gesture: UIKit.UITapGestureRecognizer) -> Swift.Bool
@@ -568,7 +641,8 @@ public protocol SceneKitContextGestureDelegate {
   public var gestureDelegate: LiGPlayerKit.SceneKitContextGestureDelegate?
   public var frameUpdateDefaultActionEnabled: Swift.Bool
   @objc override dynamic public init()
-  public func run()
+  public func run(with userToken: Swift.String? = nil)
+  public func rest()
   public func pause()
   public func destroy()
   public func load()
@@ -580,14 +654,17 @@ public protocol SceneKitContextGestureDelegate {
   #if compiler(>=5.3) && $AsyncAwait
   @_Concurrency.MainActor public func removeNode(node: LiGPlayerKit.LiGBaseNode) async
   #endif
-  #if compiler(>=5.3) && $AsyncAwait && $Actors
-  public func loadScenes(lightId: Swift.Int, accessToken: Swift.String, session: Foundation.URLSession? = nil) async throws -> [LiGPlayerKit.LiGScene]
+  #if compiler(>=5.3) && $AsyncAwait
+  public func loadScenes(lightId: Swift.Int, accessToken: Swift.String, session: Foundation.URLSession? = nil) async throws -> (scnObjc: [LiGPlayerKit.SceneObject], coorInfo: (map: Swift.String?, info: Swift.String?))?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func registerUser(userID: Swift.String, accessToken: Swift.String) async throws
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func userProfile() async throws -> LiGPlayerKit.LightenARUser
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  open func postGameApi(arObjectID: Swift.Int) async throws
   #endif
   public func frameUpdated(_ session: ARKit.ARSession, didUpdate frame: ARKit.ARFrame)
   @objc deinit
@@ -618,6 +695,10 @@ extension SceneKit.SCNAnimation {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RotateByAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class GameAction : LiGPlayerKit.LiGBaseAction {
   override public func build(model: LiGPlayerKit.ActionValues)
   @objc deinit
 }
@@ -701,6 +782,7 @@ public enum ArEventEnum : Swift.Int, Swift.CaseIterable, Swift.Codable {
   case lookAt
   case repeatForever
   case period
+  case flowering
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [LiGPlayerKit.ArEventEnum]
   public typealias RawValue = Swift.Int
@@ -740,6 +822,8 @@ public struct ArActionEnum : Swift.RawRepresentable, Swift.Hashable {
   public static let playAudio: LiGPlayerKit.ArActionEnum
   public static let playImpactFeedback: LiGPlayerKit.ArActionEnum
   public static let executeServerAction: LiGPlayerKit.ArActionEnum
+  public static let game: LiGPlayerKit.ArActionEnum
+  public static let UIInteract: LiGPlayerKit.ArActionEnum
 }
 public enum ImpactFeedback : Swift.Int {
   case system
@@ -822,6 +906,17 @@ public actor LiGScene {
 }
 extension LiGPlayerKit.LiGBaseNode.NodeError : Swift.Equatable {}
 extension LiGPlayerKit.LiGBaseNode.NodeError : Swift.Hashable {}
+extension LiGPlayerKit.GameType : Swift.Equatable {}
+extension LiGPlayerKit.GameType : Swift.Hashable {}
+extension LiGPlayerKit.GameType : Swift.RawRepresentable {}
+extension LiGPlayerKit.GameDataConditionCode : Swift.Equatable {}
+extension LiGPlayerKit.GameDataConditionCode : Swift.Hashable {}
+extension LiGPlayerKit.GameDataConditionCode : Swift.RawRepresentable {}
+extension LiGPlayerKit.GameResponseStatus : Swift.Equatable {}
+extension LiGPlayerKit.GameResponseStatus : Swift.Hashable {}
+extension LiGPlayerKit.GameActionType : Swift.Equatable {}
+extension LiGPlayerKit.GameActionType : Swift.Hashable {}
+extension LiGPlayerKit.GameActionType : Swift.RawRepresentable {}
 extension LiGPlayerKit.SceneKitContext.ContextError : Swift.Equatable {}
 extension LiGPlayerKit.SceneKitContext.ContextError : Swift.Hashable {}
 extension LiGPlayerKit.ArModelTypeEnum : Swift.Equatable {}
