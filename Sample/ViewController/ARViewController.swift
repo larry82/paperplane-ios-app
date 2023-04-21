@@ -90,9 +90,11 @@ class ARViewController: UIViewController {
             context.config = config
             context.delegate = self
             context.gestureDelegate = self
+            
+            // Run AR Session configured with `sceneView` and `config` given
             context.run()
             
-
+            // Utilize 6DoF retrieved from LiGScannerKit (`lightId`) and position the worldOrigin
             LiGCoordinateSystem.getLightTagTransform(LightID: lightId, LightIDTransform: lightIdTransform) { matrix in
                 self.sceneView.session.setWorldOrigin(relativeTransform: matrix)
             }
