@@ -270,6 +270,11 @@ SWIFT_CLASS("_TtC12LiGPlayerKit8BallNode")
 @end
 
 
+SWIFT_CLASS("_TtC12LiGPlayerKit13DashboardNode")
+@interface DashboardNode : LiGBaseNode
+@end
+
+
 SWIFT_CLASS("_TtC12LiGPlayerKit20DirectionalLightNode")
 @interface DirectionalLightNode : LiGBaseNode
 @end
@@ -319,6 +324,7 @@ SWIFT_CLASS("_TtC12LiGPlayerKit15SceneKitContext")
 SWIFT_CLASS("_TtC12LiGPlayerKit8SnowNode")
 @interface SnowNode : LiGBaseNode
 @end
+
 
 
 
