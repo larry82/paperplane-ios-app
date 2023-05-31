@@ -148,9 +148,11 @@ public struct NavigationMap {
   #if compiler(>=5.3) && $AsyncAwait
   nonisolated public func textureDidDownloaded(url: Foundation.URL) async throws
   #endif
-  @objc deinit
   @_Concurrency.MainActor(unsafe) open func destroy()
   @_Concurrency.MainActor(unsafe) public func runLiGActionOf(type: LiGPlayerKit.ArEventEnum, completion: (() -> Swift.Void)? = nil)
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor(unsafe) public func runLiGAction(type: LiGPlayerKit.ArEventEnum) async
+  #endif
   #if compiler(>=5.3) && $AsyncAwait
   @_Concurrency.MainActor(unsafe) public class func buildFromAsync(arObject: LiGPlayerKit.ArObject) async throws -> LiGPlayerKit.LiGBaseNode
   #endif
@@ -158,6 +160,7 @@ public struct NavigationMap {
   @_Concurrency.MainActor(unsafe) open func wasCloseEnough(distance: Swift.Double)
   @_Concurrency.MainActor(unsafe) open func wasStaredAt()
   @_Concurrency.MainActor(unsafe) open func syncTransformState(with object: LiGPlayerKit.ArObject? = nil)
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SetRepeatAction : LiGPlayerKit.LiGBaseAction {
   override public func build(model: LiGPlayerKit.ActionValues)
@@ -274,6 +277,7 @@ public struct Event : Swift.Codable {
   public func lookAt() -> Foundation.TimeInterval
   public func activateDistance() -> Swift.Double
   public func activatperiode() -> Swift.String
+  public func periods() -> Swift.String
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -281,8 +285,9 @@ public struct EventValue : Swift.Codable {
   public var activateDistance: Swift.Double?
   public var lookAtTime: Foundation.TimeInterval?
   public var activatePeriod: Swift.String?
+  public var periods: Swift.String?
   public init()
-  public init(activateDistance: Swift.Double?, lookAtTime: Swift.Double?, activatePeriod: Swift.String?)
+  public init(activateDistance: Swift.Double?, lookAtTime: Swift.Double?, activatePeriod: Swift.String?, periods: Swift.String?)
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
@@ -804,6 +809,7 @@ public enum ArEventEnum : Swift.Int, Swift.CaseIterable, Swift.Codable {
   case lookAt
   case repeatForever
   case period
+  case periodTrigger
   case flowering
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [LiGPlayerKit.ArEventEnum]

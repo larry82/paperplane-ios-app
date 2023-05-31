@@ -3488,6 +3488,33 @@
           },
           {
             "kind": "Function",
+            "name": "runLiGAction",
+            "printedName": "runLiGAction(type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ArEventEnum",
+                "printedName": "LiGPlayerKit.ArEventEnum",
+                "usr": "s:12LiGPlayerKit11ArEventEnumO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit0A9GBaseNodeC03runA7GAction4typeyAA11ArEventEnumO_tYaF",
+            "mangledName": "$s12LiGPlayerKit0A9GBaseNodeC03runA7GAction4typeyAA11ArEventEnumO_tYaF",
+            "moduleName": "LiGPlayerKit",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "buildFromAsync",
             "printedName": "buildFromAsync(arObject:)",
             "children": [
@@ -9790,6 +9817,27 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "periods",
+            "printedName": "periods()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit5EventV7periodsSSyF",
+            "mangledName": "$s12LiGPlayerKit5EventV7periodsSSyF",
+            "moduleName": "LiGPlayerKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -10205,6 +10253,117 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "periods",
+            "printedName": "periods",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12LiGPlayerKit10EventValueV7periodsSSSgvp",
+            "mangledName": "$s12LiGPlayerKit10EventValueV7periodsSSSgvp",
+            "moduleName": "LiGPlayerKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit10EventValueV7periodsSSSgvg",
+                "mangledName": "$s12LiGPlayerKit10EventValueV7periodsSSSgvg",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit10EventValueV7periodsSSSgvs",
+                "mangledName": "$s12LiGPlayerKit10EventValueV7periodsSSSgvs",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit10EventValueV7periodsSSSgvM",
+                "mangledName": "$s12LiGPlayerKit10EventValueV7periodsSSSgvM",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -10228,7 +10387,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(activateDistance:lookAtTime:activatePeriod:)",
+            "printedName": "init(activateDistance:lookAtTime:activatePeriod:periods:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10277,11 +10436,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12LiGPlayerKit10EventValueV16activateDistance10lookAtTime0F6PeriodACSdSg_AGSSSgtcfc",
-            "mangledName": "$s12LiGPlayerKit10EventValueV16activateDistance10lookAtTime0F6PeriodACSdSg_AGSSSgtcfc",
+            "usr": "s:12LiGPlayerKit10EventValueV16activateDistance10lookAtTime0F6Period7periodsACSdSg_AHSSSgAItcfc",
+            "mangledName": "$s12LiGPlayerKit10EventValueV16activateDistance10lookAtTime0F6Period7periodsACSdSg_AHSSSgAItcfc",
             "moduleName": "LiGPlayerKit",
             "declAttributes": [
               "AccessControl"
@@ -31242,6 +31415,46 @@
           },
           {
             "kind": "Var",
+            "name": "periodTrigger",
+            "printedName": "periodTrigger",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LiGPlayerKit.ArEventEnum.Type) -> LiGPlayerKit.ArEventEnum",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArEventEnum",
+                    "printedName": "LiGPlayerKit.ArEventEnum",
+                    "usr": "s:12LiGPlayerKit11ArEventEnumO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LiGPlayerKit.ArEventEnum.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ArEventEnum",
+                        "printedName": "LiGPlayerKit.ArEventEnum",
+                        "usr": "s:12LiGPlayerKit11ArEventEnumO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12LiGPlayerKit11ArEventEnumO13periodTriggeryA2CmF",
+            "mangledName": "$s12LiGPlayerKit11ArEventEnumO13periodTriggeryA2CmF",
+            "moduleName": "LiGPlayerKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "flowering",
             "printedName": "flowering",
             "children": [
@@ -33399,6 +33612,20 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LiGPlayerKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LiGPlayerKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SceneKit",
+        "printedName": "SceneKit",
         "declKind": "Import",
         "moduleName": "LiGPlayerKit"
       },
@@ -38793,1575 +39020,1589 @@
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 12265,
+      "offset": 12421,
       "length": 19,
       "value": "\"activate_distance\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 12311,
+      "offset": 12467,
       "length": 14,
       "value": "\"look_at_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 12356,
+      "offset": 12512,
       "length": 17,
       "value": "\"activate_period\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 12265,
+      "offset": 12553,
+      "length": 9,
+      "value": "\"periods\""
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
+      "kind": "StringLiteral",
+      "offset": 12421,
       "length": 19,
       "value": "\"activate_distance\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 12311,
+      "offset": 12467,
       "length": 14,
       "value": "\"look_at_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 12356,
+      "offset": 12512,
       "length": 17,
       "value": "\"activate_period\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 14888,
+      "offset": 12553,
+      "length": 9,
+      "value": "\"periods\""
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
+      "kind": "StringLiteral",
+      "offset": 15126,
       "length": 8,
       "value": "\"obj_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 14923,
+      "offset": 15161,
       "length": 13,
       "value": "\"direction_x\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 14963,
+      "offset": 15201,
       "length": 13,
       "value": "\"direction_y\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15003,
+      "offset": 15241,
       "length": 13,
       "value": "\"direction_z\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15047,
+      "offset": 15285,
       "length": 17,
       "value": "\"animation_speed\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15091,
+      "offset": 15329,
       "length": 13,
       "value": "\"start_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15129,
+      "offset": 15367,
       "length": 11,
       "value": "\"end_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15168,
+      "offset": 15406,
       "length": 14,
       "value": "\"repeat_count\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15213,
+      "offset": 15451,
       "length": 18,
       "value": "\"move_action_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15264,
+      "offset": 15502,
       "length": 20,
       "value": "\"rotate_action_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15311,
+      "offset": 15549,
       "length": 13,
       "value": "\"start_angle\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15349,
+      "offset": 15587,
       "length": 11,
       "value": "\"end_angle\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15392,
+      "offset": 15630,
       "length": 18,
       "value": "\"face_translating\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15439,
+      "offset": 15677,
       "length": 16,
       "value": "\"face_is_return\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15484,
+      "offset": 15722,
       "length": 16,
       "value": "\"face_wait_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15531,
+      "offset": 15769,
       "length": 19,
       "value": "\"face_rotate_to_me\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15576,
+      "offset": 15814,
       "length": 12,
       "value": "\"delay_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15615,
+      "offset": 15853,
       "length": 13,
       "value": "\"curve_scale\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15664,
+      "offset": 15902,
       "length": 23,
       "value": "\"impact_feedback_style\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15709,
+      "offset": 15947,
       "length": 12,
       "value": "\"sub_obj_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15746,
+      "offset": 15984,
       "length": 11,
       "value": "\"game_type\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15788,
+      "offset": 16026,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 14888,
+      "offset": 15126,
       "length": 8,
       "value": "\"obj_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 14923,
+      "offset": 15161,
       "length": 13,
       "value": "\"direction_x\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 14963,
+      "offset": 15201,
       "length": 13,
       "value": "\"direction_y\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15003,
+      "offset": 15241,
       "length": 13,
       "value": "\"direction_z\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15047,
+      "offset": 15285,
       "length": 17,
       "value": "\"animation_speed\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15091,
+      "offset": 15329,
       "length": 13,
       "value": "\"start_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15129,
+      "offset": 15367,
       "length": 11,
       "value": "\"end_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15168,
+      "offset": 15406,
       "length": 14,
       "value": "\"repeat_count\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15213,
+      "offset": 15451,
       "length": 18,
       "value": "\"move_action_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15264,
+      "offset": 15502,
       "length": 20,
       "value": "\"rotate_action_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15311,
+      "offset": 15549,
       "length": 13,
       "value": "\"start_angle\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15349,
+      "offset": 15587,
       "length": 11,
       "value": "\"end_angle\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15392,
+      "offset": 15630,
       "length": 18,
       "value": "\"face_translating\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15439,
+      "offset": 15677,
       "length": 16,
       "value": "\"face_is_return\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15484,
+      "offset": 15722,
       "length": 16,
       "value": "\"face_wait_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15531,
+      "offset": 15769,
       "length": 19,
       "value": "\"face_rotate_to_me\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15576,
+      "offset": 15814,
       "length": 12,
       "value": "\"delay_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15615,
+      "offset": 15853,
       "length": 13,
       "value": "\"curve_scale\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15664,
+      "offset": 15902,
       "length": 23,
       "value": "\"impact_feedback_style\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15709,
+      "offset": 15947,
       "length": 12,
       "value": "\"sub_obj_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15746,
+      "offset": 15984,
       "length": 11,
       "value": "\"game_type\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15788,
+      "offset": 16026,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 18725,
+      "offset": 18963,
       "length": 13,
       "value": "\"ios_texture\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 18769,
+      "offset": 19007,
       "length": 17,
       "value": "\"android_texture\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 18725,
+      "offset": 18963,
       "length": 13,
       "value": "\"ios_texture\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 18769,
+      "offset": 19007,
       "length": 17,
       "value": "\"android_texture\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23485,
+      "offset": 23723,
       "length": 13,
       "value": "\"floor_count\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23526,
+      "offset": 23764,
       "length": 14,
       "value": "\"floor_height\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23565,
+      "offset": 23803,
       "length": 11,
       "value": "\"floor_gap\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23602,
+      "offset": 23840,
       "length": 12,
       "value": "\"face_count\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23638,
+      "offset": 23876,
       "length": 10,
       "value": "\"face_gap\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23674,
+      "offset": 23912,
       "length": 12,
       "value": "\"face_width\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23714,
+      "offset": 23952,
       "length": 7,
       "value": "\"speed\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23746,
+      "offset": 23984,
       "length": 11,
       "value": "\"hue_angle\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23782,
+      "offset": 24020,
       "length": 11,
       "value": "\"hue_range\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23820,
+      "offset": 24058,
       "length": 12,
       "value": "\"saturation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23863,
+      "offset": 24101,
       "length": 17,
       "value": "\"light_intensity\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23903,
+      "offset": 24141,
       "length": 9,
       "value": "\"face_me\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23937,
+      "offset": 24175,
       "length": 11,
       "value": "\"is_ignore\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23980,
+      "offset": 24218,
       "length": 18,
       "value": "\"visible_distance\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24021,
+      "offset": 24259,
       "length": 9,
       "value": "\"is_play\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24055,
+      "offset": 24293,
       "length": 11,
       "value": "\"is_hidden\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24100,
+      "offset": 24338,
       "length": 21,
       "value": "\"video_play_distance\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24148,
+      "offset": 24386,
       "length": 14,
       "value": "\"is_loop_play\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24186,
+      "offset": 24424,
       "length": 10,
       "value": "\"icon_url\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24226,
+      "offset": 24464,
       "length": 17,
       "value": "\"is_double_sided\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24266,
+      "offset": 24504,
       "length": 9,
       "value": "\"tw_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24298,
+      "offset": 24536,
       "length": 9,
       "value": "\"en_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24330,
+      "offset": 24568,
       "length": 9,
       "value": "\"ko_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24362,
+      "offset": 24600,
       "length": 9,
       "value": "\"ja_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24394,
+      "offset": 24632,
       "length": 9,
       "value": "\"th_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24435,
+      "offset": 24673,
       "length": 20,
       "value": "\"is_size_scale_lock\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24482,
+      "offset": 24720,
       "length": 13,
       "value": "\"preview_url\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24526,
+      "offset": 24764,
       "length": 17,
       "value": "\"animation_speed\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24570,
+      "offset": 24808,
       "length": 13,
       "value": "\"start_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24608,
+      "offset": 24846,
       "length": 11,
       "value": "\"end_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24650,
+      "offset": 24888,
       "length": 17,
       "value": "\"multiply_number\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24698,
+      "offset": 24936,
       "length": 17,
       "value": "\"multiply_radius\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24745,
+      "offset": 24983,
       "length": 16,
       "value": "\"multiply_range\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24789,
+      "offset": 25027,
       "length": 14,
       "value": "\"is_occlusion\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24835,
+      "offset": 25073,
       "length": 20,
       "value": "\"multiply_is_zero_y\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24883,
+      "offset": 25121,
       "length": 14,
       "value": "\"floor_angles\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24925,
+      "offset": 25163,
       "length": 15,
       "value": "\"face_gap_list\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24974,
+      "offset": 25212,
       "length": 21,
       "value": "\"particle_birth_rate\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25038,
+      "offset": 25276,
       "length": 31,
       "value": "\"particle_birth_rate_variation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25102,
+      "offset": 25340,
       "length": 20,
       "value": "\"particle_life_span\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25164,
+      "offset": 25402,
       "length": 30,
       "value": "\"particle_life_span_variation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25227,
+      "offset": 25465,
       "length": 19,
       "value": "\"particle_velocity\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25288,
+      "offset": 25526,
       "length": 29,
       "value": "\"particle_velocity_variation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25348,
+      "offset": 25586,
       "length": 17,
       "value": "\"bloom_intensity\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25393,
+      "offset": 25631,
       "length": 14,
       "value": "\"bloom_radius\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25444,
+      "offset": 25682,
       "length": 14,
       "value": "\"resource_url\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25499,
+      "offset": 25737,
       "length": 10,
       "value": "\"interval\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25544,
+      "offset": 25782,
       "length": 11,
       "value": "\"direction\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25591,
+      "offset": 25829,
       "length": 13,
       "value": "\"farmland_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23485,
+      "offset": 23723,
       "length": 13,
       "value": "\"floor_count\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23526,
+      "offset": 23764,
       "length": 14,
       "value": "\"floor_height\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23565,
+      "offset": 23803,
       "length": 11,
       "value": "\"floor_gap\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23602,
+      "offset": 23840,
       "length": 12,
       "value": "\"face_count\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23638,
+      "offset": 23876,
       "length": 10,
       "value": "\"face_gap\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23674,
+      "offset": 23912,
       "length": 12,
       "value": "\"face_width\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23714,
+      "offset": 23952,
       "length": 7,
       "value": "\"speed\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23746,
+      "offset": 23984,
       "length": 11,
       "value": "\"hue_angle\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23782,
+      "offset": 24020,
       "length": 11,
       "value": "\"hue_range\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23820,
+      "offset": 24058,
       "length": 12,
       "value": "\"saturation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23863,
+      "offset": 24101,
       "length": 17,
       "value": "\"light_intensity\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23903,
+      "offset": 24141,
       "length": 9,
       "value": "\"face_me\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23937,
+      "offset": 24175,
       "length": 11,
       "value": "\"is_ignore\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 23980,
+      "offset": 24218,
       "length": 18,
       "value": "\"visible_distance\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24021,
+      "offset": 24259,
       "length": 9,
       "value": "\"is_play\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24055,
+      "offset": 24293,
       "length": 11,
       "value": "\"is_hidden\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24100,
+      "offset": 24338,
       "length": 21,
       "value": "\"video_play_distance\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24148,
+      "offset": 24386,
       "length": 14,
       "value": "\"is_loop_play\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24186,
+      "offset": 24424,
       "length": 10,
       "value": "\"icon_url\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24226,
+      "offset": 24464,
       "length": 17,
       "value": "\"is_double_sided\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24266,
+      "offset": 24504,
       "length": 9,
       "value": "\"tw_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24298,
+      "offset": 24536,
       "length": 9,
       "value": "\"en_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24330,
+      "offset": 24568,
       "length": 9,
       "value": "\"ko_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24362,
+      "offset": 24600,
       "length": 9,
       "value": "\"ja_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24394,
+      "offset": 24632,
       "length": 9,
       "value": "\"th_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24435,
+      "offset": 24673,
       "length": 20,
       "value": "\"is_size_scale_lock\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24482,
+      "offset": 24720,
       "length": 13,
       "value": "\"preview_url\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24526,
+      "offset": 24764,
       "length": 17,
       "value": "\"animation_speed\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24570,
+      "offset": 24808,
       "length": 13,
       "value": "\"start_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24608,
+      "offset": 24846,
       "length": 11,
       "value": "\"end_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24650,
+      "offset": 24888,
       "length": 17,
       "value": "\"multiply_number\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24698,
+      "offset": 24936,
       "length": 17,
       "value": "\"multiply_radius\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24745,
+      "offset": 24983,
       "length": 16,
       "value": "\"multiply_range\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24789,
+      "offset": 25027,
       "length": 14,
       "value": "\"is_occlusion\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24835,
+      "offset": 25073,
       "length": 20,
       "value": "\"multiply_is_zero_y\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24883,
+      "offset": 25121,
       "length": 14,
       "value": "\"floor_angles\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24925,
+      "offset": 25163,
       "length": 15,
       "value": "\"face_gap_list\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24974,
+      "offset": 25212,
       "length": 21,
       "value": "\"particle_birth_rate\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25038,
+      "offset": 25276,
       "length": 31,
       "value": "\"particle_birth_rate_variation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25102,
+      "offset": 25340,
       "length": 20,
       "value": "\"particle_life_span\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25164,
+      "offset": 25402,
       "length": 30,
       "value": "\"particle_life_span_variation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25227,
+      "offset": 25465,
       "length": 19,
       "value": "\"particle_velocity\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25288,
+      "offset": 25526,
       "length": 29,
       "value": "\"particle_velocity_variation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25348,
+      "offset": 25586,
       "length": 17,
       "value": "\"bloom_intensity\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25393,
+      "offset": 25631,
       "length": 14,
       "value": "\"bloom_radius\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25444,
+      "offset": 25682,
       "length": 14,
       "value": "\"resource_url\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25499,
+      "offset": 25737,
       "length": 10,
       "value": "\"interval\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25544,
+      "offset": 25782,
       "length": 11,
       "value": "\"direction\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25591,
+      "offset": 25829,
       "length": 13,
       "value": "\"farmland_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 33536,
+      "offset": 33774,
       "length": 9,
       "value": "\"zh-Hant\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 33565,
+      "offset": 33803,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 33590,
+      "offset": 33828,
       "length": 4,
       "value": "\"ja\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 33613,
+      "offset": 33851,
       "length": 4,
       "value": "\"ko\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 33634,
+      "offset": 33872,
       "length": 4,
       "value": "\"th\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 33536,
+      "offset": 33774,
       "length": 9,
       "value": "\"zh-Hant\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 33565,
+      "offset": 33803,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 33590,
+      "offset": 33828,
       "length": 4,
       "value": "\"ja\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 33613,
+      "offset": 33851,
       "length": 4,
       "value": "\"ko\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 33634,
+      "offset": 33872,
       "length": 4,
       "value": "\"th\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 34218,
+      "offset": 34456,
       "length": 22,
       "value": "\"coordinate_system_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 34267,
+      "offset": 34505,
       "length": 13,
       "value": "\"light_poses\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 34218,
+      "offset": 34456,
       "length": 22,
       "value": "\"coordinate_system_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 34267,
+      "offset": 34505,
       "length": 13,
       "value": "\"light_poses\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 34480,
+      "offset": 34718,
       "length": 10,
       "value": "\"light_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 34480,
+      "offset": 34718,
       "length": 10,
       "value": "\"light_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35085,
+      "offset": 35323,
       "length": 17,
       "value": "\"profile_picture\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35085,
+      "offset": 35323,
       "length": 17,
       "value": "\"profile_picture\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "BooleanLiteral",
-      "offset": 35268,
+      "offset": 35506,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35546,
+      "offset": 35784,
       "length": 19,
       "value": "\"exchange_end_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35588,
+      "offset": 35826,
       "length": 9,
       "value": "\"is_used\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35627,
+      "offset": 35865,
       "length": 17,
       "value": "\"voucher_type_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35670,
+      "offset": 35908,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35708,
+      "offset": 35946,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35745,
+      "offset": 35983,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35785,
+      "offset": 36023,
       "length": 16,
       "value": "\"user_code_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35546,
+      "offset": 35784,
       "length": 19,
       "value": "\"exchange_end_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35588,
+      "offset": 35826,
       "length": 9,
       "value": "\"is_used\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35627,
+      "offset": 35865,
       "length": 17,
       "value": "\"voucher_type_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35670,
+      "offset": 35908,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35708,
+      "offset": 35946,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35745,
+      "offset": 35983,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35785,
+      "offset": 36023,
       "length": 16,
       "value": "\"user_code_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35891,
+      "offset": 36129,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35921,
+      "offset": 36159,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35943,
+      "offset": 36181,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35968,
+      "offset": 36206,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35987,
+      "offset": 36225,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35891,
+      "offset": 36129,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35921,
+      "offset": 36159,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35943,
+      "offset": 36181,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35968,
+      "offset": 36206,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35987,
+      "offset": 36225,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35891,
+      "offset": 36129,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35921,
+      "offset": 36159,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35943,
+      "offset": 36181,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35968,
+      "offset": 36206,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 35987,
+      "offset": 36225,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36276,
+      "offset": 36514,
       "length": 11,
       "value": "\"game_type\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36276,
+      "offset": 36514,
       "length": 11,
       "value": "\"game_type\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36716,
+      "offset": 36954,
       "length": 13,
       "value": "\"action_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36716,
+      "offset": 36954,
       "length": 13,
       "value": "\"action_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 36819,
+      "offset": 37057,
       "length": 16,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 36845,
+      "offset": 37083,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 36871,
+      "offset": 37109,
       "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 36819,
+      "offset": 37057,
       "length": 16,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 36845,
+      "offset": 37083,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 36871,
+      "offset": 37109,
       "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 36819,
+      "offset": 37057,
       "length": 16,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 36845,
+      "offset": 37083,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 36871,
+      "offset": 37109,
       "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38657,
+      "offset": 38895,
       "length": 12,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38679,
+      "offset": 38917,
       "length": 13,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38657,
+      "offset": 38895,
       "length": 12,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38679,
+      "offset": 38917,
       "length": 13,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38657,
+      "offset": 38895,
       "length": 12,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38679,
+      "offset": 38917,
       "length": 13,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39486,
+      "offset": 39724,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39505,
+      "offset": 39743,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39486,
+      "offset": 39724,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39505,
+      "offset": 39743,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39486,
+      "offset": 39724,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39505,
+      "offset": 39743,
       "length": 1,
       "value": "2"
     },
@@ -40543,14 +40784,14 @@
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/AR\/SceneKitContext.swift",
       "kind": "BooleanLiteral",
-      "offset": 5518,
+      "offset": 5685,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/AR\/SceneKitContext.swift",
       "kind": "BooleanLiteral",
-      "offset": 5560,
+      "offset": 5727,
       "length": 5,
       "value": "false"
     },
@@ -41054,415 +41295,450 @@
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1861,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1471,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1522,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1565,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1614,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1658,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1700,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1767,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1813,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1861,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1471,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1522,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1565,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1614,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1658,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1700,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1767,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1813,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1861,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2169,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2263,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2346,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2431,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2549,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2657,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2759,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2845,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2934,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3039,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3147,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3265,
+      "offset": 1872,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 3353,
+      "offset": 1917,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1471,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1522,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1565,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1614,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1658,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1700,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1767,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1813,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1872,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1917,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1471,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1522,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1565,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1614,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1658,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1700,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1767,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1813,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1872,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1917,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2225,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2319,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2402,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2487,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2605,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2713,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2815,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2901,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2990,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3095,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3203,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3321,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3409,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 3425,
+      "offset": 3481,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 3498,
+      "offset": 3554,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 3572,
+      "offset": 3628,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 3647,
+      "offset": 3703,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 3741,
+      "offset": 3797,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 3831,
+      "offset": 3887,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 3913,
+      "offset": 3969,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 3996,
+      "offset": 4052,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4087,
+      "offset": 4143,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4170,
+      "offset": 4226,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4256,
+      "offset": 4312,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4341,
+      "offset": 4397,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4421,
+      "offset": 4477,
       "length": 2,
       "value": "26"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4493,
+      "offset": 4549,
       "length": 2,
       "value": "27"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4580,
+      "offset": 4636,
       "length": 2,
       "value": "34"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4667,
+      "offset": 4723,
       "length": 2,
       "value": "35"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4752,
+      "offset": 4808,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4839,
+      "offset": 4895,
       "length": 3,
       "value": "106"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4906,
+      "offset": 4962,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4921,
+      "offset": 4977,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4936,
+      "offset": 4992,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4906,
+      "offset": 4962,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4921,
+      "offset": 4977,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4936,
+      "offset": 4992,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4906,
+      "offset": 4962,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4921,
+      "offset": 4977,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4936,
+      "offset": 4992,
       "length": 5,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/PeriodTriggeringChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 173,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Model\/PeriodTriggeringChecker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 197,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/Action\/NotLiGDefaultAction.swift",
@@ -41495,35 +41771,42 @@
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/AR\/LiGScene.swift",
       "kind": "Array",
-      "offset": 456,
+      "offset": 455,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/AR\/LiGScene.swift",
+      "kind": "Array",
+      "offset": 504,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/AR\/LiGScene.swift",
       "kind": "BooleanLiteral",
-      "offset": 517,
+      "offset": 565,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/AR\/LiGScene.swift",
       "kind": "BooleanLiteral",
-      "offset": 558,
+      "offset": 606,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/AR\/LiGScene.swift",
       "kind": "BooleanLiteral",
-      "offset": 598,
+      "offset": 646,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/arlib\/LiGPlayerKit\/AR\/LiGScene.swift",
       "kind": "BooleanLiteral",
-      "offset": 637,
+      "offset": 685,
       "length": 5,
       "value": "false"
     },
