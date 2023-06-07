@@ -283,6 +283,11 @@ extension ARViewController: ARSCNViewDelegate, ARSessionDelegate{
 
 //MARK: - SceneKitContext delegate
 extension ARViewController: SceneKitContextDelegate{
+    func nodeDidCallNonLiGAction(objectID: Int, action: LiGPlayerKit.Action) {
+        // Called when non-lig action is invoked on objectID
+        
+    }
+    
     func gameTypeAction(gameType: LiGPlayerKit.GameType, value: LiGPlayerKit.GameResponse) {
         // Game-event is sent!
         print("Game Type: \(gameType)")
@@ -299,19 +304,6 @@ extension ARViewController: SceneKitContextDelegate{
     func didLoaded() {
         // Called when task that loads all AR objects is completed
         print("Loading task is completed.")
-    }
-    
-    func didCustomActionActivated(objectID: Int, actionID: Int, values: [String : Any]?) {
-        // Non-LiG action is called on object `objectID`
-    }
-    
-    // Deprecated
-    func didUIInteractAction(para: String) {
-    }
-    
-    // Deprecated
-    func customEventActivated(value: Any?) -> LiGPlayerKit.ArEventEnum? {
-        return nil
     }
 }
 

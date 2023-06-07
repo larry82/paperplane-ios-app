@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		93B2FC4629E157D8007C9792 /* LiGScannerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93B2FC4529E157D8007C9792 /* LiGScannerKit */; };
 		93B2FC9429E2CB6F007C9792 /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93B2FC9329E2CB6F007C9792 /* GLTFSceneKit */; };
-		93FE0F2729F17708002D55BC /* LiGPlayerKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FE0F2529F176FB002D55BC /* LiGPlayerKit.xcframework */; };
-		93FE0F2829F17708002D55BC /* LiGPlayerKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93FE0F2529F176FB002D55BC /* LiGPlayerKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		93E5E89E2A302728000C7223 /* LiGPlayerKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E5E89C2A302709000C7223 /* LiGPlayerKit.xcframework */; };
+		93E5E89F2A302728000C7223 /* LiGPlayerKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93E5E89C2A302709000C7223 /* LiGPlayerKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B06CD390292C732100FBD7E5 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06CD38F292C732100FBD7E5 /* RecordButton.swift */; };
 		B06CD393292CD63600FBD7E5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06CD392292CD63600FBD7E5 /* Extension.swift */; };
 		B090B2BF292E0A9B00AC7931 /* StopRecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B090B2BD292E0A9B00AC7931 /* StopRecordingView.swift */; };
@@ -31,13 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		93B2FC5C29E159CF007C9792 /* Embed Frameworks */ = {
+		93E5E89B2A30262C000C7223 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				93FE0F2829F17708002D55BC /* LiGPlayerKit.xcframework in Embed Frameworks */,
+				93E5E89F2A302728000C7223 /* LiGPlayerKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		93FE0F2529F176FB002D55BC /* LiGPlayerKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LiGPlayerKit.xcframework; path = Framework/LiGPlayerKit.xcframework; sourceTree = "<group>"; };
+		93E5E89C2A302709000C7223 /* LiGPlayerKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LiGPlayerKit.xcframework; path = Framework/LiGPlayerKit.xcframework; sourceTree = "<group>"; };
 		B06CD38F292C732100FBD7E5 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		B06CD392292CD63600FBD7E5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		B090B2BD292E0A9B00AC7931 /* StopRecordingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopRecordingView.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93B2FC9429E2CB6F007C9792 /* GLTFSceneKit in Frameworks */,
-				93FE0F2729F17708002D55BC /* LiGPlayerKit.xcframework in Frameworks */,
+				93E5E89E2A302728000C7223 /* LiGPlayerKit.xcframework in Frameworks */,
 				93B2FC4629E157D8007C9792 /* LiGScannerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,7 +121,7 @@
 		B0B427D8292628DD00BDFB26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93FE0F2529F176FB002D55BC /* LiGPlayerKit.xcframework */,
+				93E5E89C2A302709000C7223 /* LiGPlayerKit.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 				B0B60B94291E319F005928CA /* Sources */,
 				B0B60B95291E319F005928CA /* Frameworks */,
 				B0B60B96291E319F005928CA /* Resources */,
-				93B2FC5C29E159CF007C9792 /* Embed Frameworks */,
+				93E5E89B2A30262C000C7223 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -435,7 +435,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,7 +475,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
