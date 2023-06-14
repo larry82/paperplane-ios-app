@@ -3,7 +3,11 @@ import LiGScannerKit
 
 class ScannerView: UIView{
     lazy var targetView: TargetView = {
-        let v = TargetView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+//        let v = DefaultTargetView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        let v = ImageTargetView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        if let size = v.unknownImage?.size {
+            v.frame.size = size
+        }
         
         return v
     }()
@@ -53,7 +57,7 @@ class ScannerView: UIView{
             let aimPosY = CGFloat(windowHeight * lightID.coordinateY)
             
             self.targetView.isHidden = false
-            self.targetView.updateUI(isDetected: lightID.isDetected, isReady: lightID.isReady, id: String(lightID.deviceId))
+            self.targetView.update(device: lightID)
             self.targetView.center.x = aimPosX
             self.targetView.center.y = aimPosY
         }

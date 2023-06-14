@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		93B2FC4629E157D8007C9792 /* LiGScannerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93B2FC4529E157D8007C9792 /* LiGScannerKit */; };
 		93B2FC9429E2CB6F007C9792 /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93B2FC9329E2CB6F007C9792 /* GLTFSceneKit */; };
+		93CA5FC02A39A929006F8797 /* ThemeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA5FBF2A39A929006F8797 /* ThemeScanViewController.swift */; };
+		93CA5FC22A39AE35006F8797 /* DefaultTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA5FC12A39AE35006F8797 /* DefaultTargetView.swift */; };
+		93CA5FC42A39AFBF006F8797 /* ImageTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA5FC32A39AFBF006F8797 /* ImageTargetView.swift */; };
 		93E5E89E2A302728000C7223 /* LiGPlayerKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E5E89C2A302709000C7223 /* LiGPlayerKit.xcframework */; };
 		93E5E89F2A302728000C7223 /* LiGPlayerKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93E5E89C2A302709000C7223 /* LiGPlayerKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B06CD390292C732100FBD7E5 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06CD38F292C732100FBD7E5 /* RecordButton.swift */; };
@@ -45,6 +48,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		93CA5FBF2A39A929006F8797 /* ThemeScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeScanViewController.swift; sourceTree = "<group>"; };
+		93CA5FC12A39AE35006F8797 /* DefaultTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTargetView.swift; sourceTree = "<group>"; };
+		93CA5FC32A39AFBF006F8797 /* ImageTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTargetView.swift; sourceTree = "<group>"; };
 		93E5E89C2A302709000C7223 /* LiGPlayerKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LiGPlayerKit.xcframework; path = Framework/LiGPlayerKit.xcframework; sourceTree = "<group>"; };
 		B06CD38F292C732100FBD7E5 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		B06CD392292CD63600FBD7E5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 				B0B42550292380E100BDFB26 /* ARViewController.swift */,
 				B0F4DE4D292F472C00208DE7 /* ARViewController+Replay.swift */,
 				B0F4DE4F292F4CC800208DE7 /* ARViewController+Snapshot.swift */,
+				93CA5FBF2A39A929006F8797 /* ThemeScanViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -167,6 +174,8 @@
 				B0B60BB62921F02B005928CA /* ScannerView.swift */,
 				B0B4254E292234D000BDFB26 /* TargetView.swift */,
 				B06CD392292CD63600FBD7E5 /* Extension.swift */,
+				93CA5FC12A39AE35006F8797 /* DefaultTargetView.swift */,
+				93CA5FC32A39AFBF006F8797 /* ImageTargetView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +277,9 @@
 				B06CD393292CD63600FBD7E5 /* Extension.swift in Sources */,
 				B0B60B9E291E319F005928CA /* SceneDelegate.swift in Sources */,
 				B0ECCBF2292B7EAF00CD03F2 /* RecordView.swift in Sources */,
+				93CA5FC42A39AFBF006F8797 /* ImageTargetView.swift in Sources */,
+				93CA5FC22A39AE35006F8797 /* DefaultTargetView.swift in Sources */,
+				93CA5FC02A39A929006F8797 /* ThemeScanViewController.swift in Sources */,
 				B0B42551292380E100BDFB26 /* ARViewController.swift in Sources */,
 				B0B4254F292234D000BDFB26 /* TargetView.swift in Sources */,
 				B090B2BF292E0A9B00AC7931 /* StopRecordingView.swift in Sources */,
