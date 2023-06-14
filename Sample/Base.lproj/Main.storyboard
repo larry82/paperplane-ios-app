@@ -10,15 +10,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Scan View Controller-->
+        <!--Default Scan View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ScanViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DefaultScanViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqh-Qq-Mk5" customClass="ScannerView" customModule="Sample" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqh-Qq-Mk5" customClass="DefaultScannerView" customModule="Sample" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="375" height="375"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
@@ -68,10 +68,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lightIDMessageTextView" destination="trX-sU-a58" id="omJ-pu-D18"/>
-                        <outlet property="messageTextView" destination="RUI-ki-tqE" id="Pqg-Pg-nTN"/>
-                        <outlet property="scannerView" destination="hqh-Qq-Mk5" id="rk9-sB-REH"/>
-                        <outlet property="versionLabel" destination="e5O-ND-xTi" id="lur-Fx-EgW"/>
+                        <outlet property="lightIDMessageTextView" destination="trX-sU-a58" id="3j5-kX-BNC"/>
+                        <outlet property="messageTextView" destination="RUI-ki-tqE" id="tpE-bx-yoI"/>
+                        <outlet property="scannerView" destination="hqh-Qq-Mk5" id="zpe-XK-n6y"/>
+                        <outlet property="versionLabel" destination="e5O-ND-xTi" id="WoE-sM-qEA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,13 +85,60 @@
                     <view key="view" contentMode="scaleToFill" id="0ia-3l-E4B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3O-j1-PkW" customClass="ThemeScannerView" customModule="Sample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqH-kz-XuY">
+                                        <rect key="frame" x="72.5" y="72.5" width="230" height="230"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanBox" translatesAutoresizingMaskIntoConstraints="NO" id="FHu-sh-GYc">
+                                                <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanBoxCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Vd0-fK-Cvg">
+                                                <rect key="frame" x="50" y="50" width="130" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="Qpb-Qv-Ft4"/>
+                                                    <constraint firstAttribute="width" constant="130" id="Xj5-Uj-N8T"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="FHu-sh-GYc" secondAttribute="trailing" id="52T-PA-SeH"/>
+                                            <constraint firstItem="Vd0-fK-Cvg" firstAttribute="centerY" secondItem="EqH-kz-XuY" secondAttribute="centerY" id="QEy-OO-jaR"/>
+                                            <constraint firstItem="FHu-sh-GYc" firstAttribute="leading" secondItem="EqH-kz-XuY" secondAttribute="leading" id="cb5-Je-1bK"/>
+                                            <constraint firstItem="FHu-sh-GYc" firstAttribute="top" secondItem="EqH-kz-XuY" secondAttribute="top" id="cjM-Q0-TO2"/>
+                                            <constraint firstItem="Vd0-fK-Cvg" firstAttribute="centerX" secondItem="EqH-kz-XuY" secondAttribute="centerX" id="h9l-7x-YaB"/>
+                                            <constraint firstAttribute="bottom" secondItem="FHu-sh-GYc" secondAttribute="bottom" id="hyf-jN-6hB"/>
+                                            <constraint firstAttribute="width" constant="230" id="pIz-2v-C0U"/>
+                                            <constraint firstAttribute="height" constant="230" id="pqF-D5-Xd9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="EqH-kz-XuY" firstAttribute="centerY" secondItem="U3O-j1-PkW" secondAttribute="centerY" id="LOA-gB-Cei"/>
+                                    <constraint firstAttribute="width" secondItem="U3O-j1-PkW" secondAttribute="height" multiplier="1:1" id="fdB-3g-dKS"/>
+                                    <constraint firstItem="EqH-kz-XuY" firstAttribute="centerX" secondItem="U3O-j1-PkW" secondAttribute="centerX" id="zdK-0i-aVe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="A0D-O3-Lj9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A0D-O3-Lj9" firstAttribute="trailing" secondItem="U3O-j1-PkW" secondAttribute="trailing" id="kYJ-8V-UdP"/>
+                            <constraint firstItem="A0D-O3-Lj9" firstAttribute="top" secondItem="U3O-j1-PkW" secondAttribute="top" constant="20" id="qa8-am-PZ3"/>
+                            <constraint firstItem="U3O-j1-PkW" firstAttribute="leading" secondItem="A0D-O3-Lj9" secondAttribute="leading" id="qwV-uj-Kjj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scannerView" destination="U3O-j1-PkW" id="aQV-Ke-FPh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ClP-Th-f4l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="659"/>
+            <point key="canvasLocation" x="-39.200000000000003" y="658.92053973013503"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6k3-U9-KiS">
@@ -206,6 +253,8 @@
     </scenes>
     <resources>
         <image name="LeaveAr_Btn" width="45" height="45"/>
+        <image name="scanBox" width="220" height="220"/>
+        <image name="scanBoxCenter" width="130" height="130"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
