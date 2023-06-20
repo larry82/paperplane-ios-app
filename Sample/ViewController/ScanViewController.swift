@@ -29,6 +29,12 @@ class ScanViewController: UIViewController {
         startScan()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        stopScan()
+    }
+    
 //    MARK: - functions
     private func initARViewController(){
         if let storyboard = storyboard{
