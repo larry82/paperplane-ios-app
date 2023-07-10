@@ -4,69 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierFragment_VRMUnlitTexture.shader</key>
-		<data>
-		W/w2q+LDGMX49lokU1SAs9wKvRs=
-		</data>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierFragment_VRMUnlitTexture_Cutoff.shader</key>
-		<data>
-		eaRtNbSVKcA+FTRNDNil5V56i4w=
-		</data>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierFragment_alphaCutoff.shader</key>
-		<data>
-		v4+ysm18ImFveph+PZHQKmwIocg=
-		</data>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierSurface.shader</key>
-		<data>
-		hm0gniQmhtimaHHsyL4/D9KL7F0=
-		</data>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierSurface_VRMMToon.shader</key>
-		<data>
-		UuJmH8aP+oxGCQNsnkvJA+Glx/U=
-		</data>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierSurface_alphaModeBlend.shader</key>
-		<data>
-		ET0XWs1BQb8kas2wym/U2+o4QHY=
-		</data>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierSurface_doubleSidedWorkaround.shader</key>
-		<data>
-		Jf9RHzTQ8FaGzMwclhtbyNAfu6s=
-		</data>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierSurface_pbrSpecularGlossiness.shader</key>
-		<data>
-		BtimpXhUaunZufiaMm7ELFCMgUY=
-		</data>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader</key>
-		<data>
-		IUeOE458Xi/5bU9YPJk4uT1Evrw=
-		</data>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader</key>
-		<data>
-		GWfCNOO1z8XqVHOwy3yAEfacFmk=
-		</data>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/Info.plist</key>
-		<data>
-		bn01IBe/AkTMr6sjPy76l79uWHk=
-		</data>
 		<key>Headers/LiGPlayerKit-Swift.h</key>
 		<data>
 		nDLNFapULK8jxHzsO6mcmOvVjBY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		q35q2QC+Itmq6flH0L9FYTawijQ=
-		</data>
-		<key>Modules/LiGPlayerKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<data>
-		dCiTj+uFesbeAWJr4EFsWsOWWJ0=
+		h6Ne8+dJ5WEYMjTdsQaa2i/uMyM=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		JsocitMqCzGK3SG8QfWfgj6bSiE=
+		6DemT6d2crGZNe99Qp0Tk6KQLj0=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		XlQjwLzQqFZfPEhfsxoPzfVMhTQ=
+		w2QijN95InGF1N2Uj2FXdCdcH8M=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -74,11 +26,11 @@
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		XlQjwLzQqFZfPEhfsxoPzfVMhTQ=
+		w2QijN95InGF1N2Uj2FXdCdcH8M=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		IpTbnWS89aVljCNcuP6TDtXy7xc=
+		OlfaHLvjD6tOSrPh5pwIkCYIlNA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -127,83 +79,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierFragment_VRMUnlitTexture.shader</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7tTep/BZnJaWfZeXe5afJ6FwFD1q0SEQrYHTtOYuPhA=
-			</data>
-		</dict>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierFragment_VRMUnlitTexture_Cutoff.shader</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NmDjhwKH73+lmdnVROXxnA0IP4uohejVk8+H/1i9xTk=
-			</data>
-		</dict>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierFragment_alphaCutoff.shader</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Usd5a1S/9iUaK1wmpzjq+7V50w4cjSP0xWZU2IA9Fx4=
-			</data>
-		</dict>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierSurface.shader</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			iOuckoznX248DSHgmFN0hQJjzZfaVXhcycjUS9w74KE=
-			</data>
-		</dict>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierSurface_VRMMToon.shader</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IVUQyE9ZJiYoO3yaOxg1d+YYmr3QD/tm2inXTpwAh+o=
-			</data>
-		</dict>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierSurface_alphaModeBlend.shader</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pMb/pfiknEw8avN6wo7/YrUQizPBV/O5bGoOTP/BN4A=
-			</data>
-		</dict>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierSurface_doubleSidedWorkaround.shader</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ObklonuTaEvjTG4hiutHAn0gUsvq6cJfY2YacuIJt3s=
-			</data>
-		</dict>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierSurface_pbrSpecularGlossiness.shader</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gq1fzqK3BauceFRxtVTKsEkvhk07lAYEoyrstdPRIuk=
-			</data>
-		</dict>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierSurface_pbrSpecularGlossiness_doubleSidedWorkaround.shader</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vHQmCgz/Cb0F0/lwrftlWMNbf7ad8FMSEyKr0nOw9Bk=
-			</data>
-		</dict>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/GLTFShaderModifierSurface_pbrSpecularGlossiness_texture_doubleSidedWorkaround.shader</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/+sY0fZ79I2yjYuj/2u/Sm+JvtU71OzJGQV+vuxzMVc=
-			</data>
-		</dict>
-		<key>GLTFSceneKit_GLTFSceneKit.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dQdC5H7cRn19mXRg80SyIbj8T1FML8I8vqCfMU5+JcY=
-			</data>
-		</dict>
 		<key>Headers/LiGPlayerKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -211,25 +86,18 @@
 			uqlFV28Bc3lk55Rstn3lP/pGLv2enXZd0WtitDXpUOk=
 			</data>
 		</dict>
-		<key>Modules/LiGPlayerKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1y8ctcuHFOdflF2E4RisT5fUkBADuApU376dl/O35Zs=
-			</data>
-		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xi4sG3JfrWMx68KuqfEWUAWHVdYUCJUQErx6aIh/MDE=
+			DFIbovjSS9KM6svTK36EdzlhqbI5UixLcOLqu8tNKww=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fsk8sOjA3mNGZ5edSeAAnS8iTq3sEYGCtVkj5p4z05U=
+			SsLPMsgsuuZxFStZPrHbYJp82eXsJtyXTOZCvjK1Vtc=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -243,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fsk8sOjA3mNGZ5edSeAAnS8iTq3sEYGCtVkj5p4z05U=
+			SsLPMsgsuuZxFStZPrHbYJp82eXsJtyXTOZCvjK1Vtc=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0xpbqzwy8Un/isMQY4DHy2earntl9Ox/L5yV8jDscnE=
+			3R881OhVDx8I3VDRzrwObwXmNJOV4Ak5ktBSPVp2Xhs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
