@@ -1,0 +1,1005 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name LiGPlayerKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import ARKit
+import AVFoundation
+import AudioToolbox
+import CoreGraphics
+import Foundation
+import GLTFSceneKit
+import ImageIO
+import SceneKit
+import SpriteKit
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import simd
+public enum ArModelTypeEnum : Swift.Int, Swift.CaseIterable, Swift.Codable {
+  case plane
+  case ball
+  case cylinder
+  case planeWithSize
+  case custom3DModel
+  case video
+  case floor
+  case directionalLight
+  case omniLight
+  case newPolyhedron
+  case previewVideo
+  case shop
+  case snow
+  case dashboard
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [LiGPlayerKit.ArModelTypeEnum]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [LiGPlayerKit.ArModelTypeEnum] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum ArEventEnum : Swift.Int, Swift.CaseIterable, Swift.Codable {
+  case touch
+  case pinch
+  case pan
+  case longPress
+  case location
+  case lookAt
+  case repeatForever
+  case period
+  case periodTrigger
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [LiGPlayerKit.ArEventEnum]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [LiGPlayerKit.ArEventEnum] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct ArActionEnum : Swift.RawRepresentable, Swift.Hashable {
+  public let rawValue: Swift.Int
+  public typealias RawValue = Swift.Int
+  public init(rawValue: Swift.Int)
+  public static let displayText: LiGPlayerKit.ArActionEnum
+  public static let display2DView: LiGPlayerKit.ArActionEnum
+  public static let move: LiGPlayerKit.ArActionEnum
+  public static let rotate: LiGPlayerKit.ArActionEnum
+  public static let displayImageOrVideo: LiGPlayerKit.ArActionEnum
+  public static let playVideo: LiGPlayerKit.ArActionEnum
+  public static let showHiddenNode: LiGPlayerKit.ArActionEnum
+  public static let openWeb: LiGPlayerKit.ArActionEnum
+  public static let hiddenNode: LiGPlayerKit.ArActionEnum
+  public static let animateSpeed: LiGPlayerKit.ArActionEnum
+  public static let animateControl: LiGPlayerKit.ArActionEnum
+  public static let animateRepeatCount: LiGPlayerKit.ArActionEnum
+  public static let rotateBy: LiGPlayerKit.ArActionEnum
+  public static let wait: LiGPlayerKit.ArActionEnum
+  public static let scale: LiGPlayerKit.ArActionEnum
+  public static let fadeIn: LiGPlayerKit.ArActionEnum
+  public static let fadeOut: LiGPlayerKit.ArActionEnum
+  public static let fadeOpacityBy: LiGPlayerKit.ArActionEnum
+  public static let fadeOpacityTo: LiGPlayerKit.ArActionEnum
+  public static let rectMove: LiGPlayerKit.ArActionEnum
+  public static let curveMove: LiGPlayerKit.ArActionEnum
+  public static let moveToFace: LiGPlayerKit.ArActionEnum
+  public static let playAudio: LiGPlayerKit.ArActionEnum
+  public static let playImpactFeedback: LiGPlayerKit.ArActionEnum
+  public static let switchScene: LiGPlayerKit.ArActionEnum
+  public static let UIInteract: LiGPlayerKit.ArActionEnum
+  public static let game: LiGPlayerKit.ArActionEnum
+  public static let moveTo: LiGPlayerKit.ArActionEnum
+  public static let aim: LiGPlayerKit.ArActionEnum
+  public static let stopAnimation: LiGPlayerKit.ArActionEnum
+  public static let disableNode: LiGPlayerKit.ArActionEnum
+  public static let enableNode: LiGPlayerKit.ArActionEnum
+  public static let executeServerAction: LiGPlayerKit.ArActionEnum
+}
+public enum ImpactFeedback : Swift.Int {
+  case system
+  case light
+  case heavy
+  case rigid
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension CoreFoundation.CGFloat {
+  public func toRad() -> CoreFoundation.CGFloat
+  public func toEulerAngle() -> CoreFoundation.CGFloat
+}
+extension AVFoundation.AVPlayer {
+  public var isPlaying: Swift.Bool {
+    get
+  }
+}
+public class Dijkstra {
+  public init(vertices: Swift.Set<LiGPlayerKit.DijkstraVertex>)
+  public func findShortestPaths(from startVertex: LiGPlayerKit.DijkstraVertex)
+  @objc deinit
+}
+public struct AnyCodingKey : Swift.CodingKey {
+  public var stringValue: Swift.String
+  public var intValue: Swift.Int?
+  public init?(stringValue: Swift.String)
+  public init?(intValue: Swift.Int)
+}
+extension Swift.KeyedDecodingContainer {
+  public func decode(_ type: [Any].Type, forKey key: Swift.KeyedDecodingContainer<K>.Key) throws -> [Any]
+  public func decode(_ type: [Swift.String : Any].Type, forKey key: Swift.KeyedDecodingContainer<K>.Key) throws -> [Swift.String : Any]
+  public func decodeIfPresent(_ type: [Any].Type, forKey key: Swift.KeyedDecodingContainer<K>.Key) throws -> [Any]?
+  public func decodeIfPresent(_ type: [Swift.String : Any].Type, forKey key: Swift.KeyedDecodingContainer<K>.Key) throws -> [Swift.String : Any]?
+}
+extension Swift.KeyedEncodingContainer {
+  public mutating func encode(_ value: [Swift.String : Any], forKey key: Swift.KeyedEncodingContainer<K>.Key) throws
+  public mutating func encode(_ value: [Any], forKey key: Swift.KeyedEncodingContainer<K>.Key) throws
+  public mutating func encodeIfPresent(_ value: [Swift.String : Any]?, forKey key: Swift.KeyedEncodingContainer<K>.Key) throws
+  public mutating func encodeIfPresent(_ value: [Any]?, forKey key: Swift.KeyedEncodingContainer<K>.Key) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ChangeOpacityToAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class FloorNode : LiGPlayerKit.LiGBaseNode {
+  @objc deinit
+}
+public struct DashboardRes : Swift.Codable {
+  public let d: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class DashboardNode : LiGPlayerKit.LiGBaseNode {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class FadeInAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MoveToAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SnowNode : LiGPlayerKit.LiGBaseNode {
+  #if compiler(>=5.3) && $AsyncAwait
+  nonisolated override public func textureDidDownloaded(url: Foundation.URL) async throws
+  #endif
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CurveMoveAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class HideNodeAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SleepAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+extension UIKit.UIImage {
+  public class func gifImageWithData(_ data: Foundation.Data) -> UIKit.UIImage?
+  public class func gifImageWithURL(_ gifUrl: Foundation.URL) -> UIKit.UIImage?
+  public class func gifImageWithName(_ name: Swift.String) -> UIKit.UIImage?
+}
+public class AsyncDownloader {
+  public enum ErrorState : Swift.Error {
+    case HttpNotOk
+    public static func == (a: LiGPlayerKit.AsyncDownloader.ErrorState, b: LiGPlayerKit.AsyncDownloader.ErrorState) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init()
+  #if compiler(>=5.3) && $AsyncAwait
+  public func download(url: Foundation.URL, invalidateCachedCopy: Swift.Bool = false) async throws -> Foundation.URL
+  #endif
+  public class func cleanupFlagFiles()
+  public class func deleteData()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RotateAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LiGPlayer {
+  final public let version: Swift.String
+  public static let sharedContext: LiGPlayerKit.SceneKitContext
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SetScaleAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class EnableNodeAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+#if compiler(>=5.3) && $Actors
+public actor LiGScene {
+  public var hasTouchEvents: Swift.Bool
+  public var hasLocationEvents: Swift.Bool
+  public var hasStaringEvents: Swift.Bool
+  public var hasPeriodEvents: Swift.Bool
+  public enum LiGSceneError : Swift.Error {
+    case apiError
+    public static func == (a: LiGPlayerKit.LiGScene.LiGSceneError, b: LiGPlayerKit.LiGScene.LiGSceneError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init(arObjects: [LiGPlayerKit.ArObject])
+  public static func readFromCloud(lightId: Swift.Int, accessToken: Swift.String, success done: @escaping ((LiGPlayerKit.LiGScene?) -> Swift.Void), failure onError: (((any Swift.Error)?) -> Swift.Void)? = nil)
+  public func forEach(doWork: (LiGPlayerKit.ArObject) -> Swift.Void)
+  public func arObjectsAsync() -> _Concurrency.AsyncStream<LiGPlayerKit.ArObject>
+  public func parseEvents()
+  public func removeObject(_ object: LiGPlayerKit.ArObject)
+  public func clear()
+  public func getObject(id: Swift.Int) -> LiGPlayerKit.ArObject?
+  public func updateObject(_ object: LiGPlayerKit.ArObject)
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
+}
+#endif
+@_hasMissingDesignatedInitializers public class LiGCoordinateSystem {
+  public static func getLightTagTransform(LightID lightId: Swift.Int, LightIDTransform lightIdTransform: simd.matrix_float4x4, Result transform: @escaping (simd.matrix_float4x4) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func buildTransformForCoordinateSystem(for ligTagID: Swift.Int, with phone2LigTagTransform: simd.matrix_float4x4) async -> simd.matrix_float4x4
+  #endif
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ShowNodeAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ActionGroup {
+  public class func buildSortedActions(actions: [LiGPlayerKit.Action]) -> SceneKit.SCNAction
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PlaneNode : LiGPlayerKit.LiGBaseNode {
+  #if compiler(>=5.3) && $AsyncAwait
+  nonisolated override public func textureDidDownloaded(url: Foundation.URL) async throws
+  #endif
+  @_Concurrency.MainActor(unsafe) override public func syncTransformState(with object: LiGPlayerKit.ArObject? = nil)
+  @_Concurrency.MainActor(unsafe) public func loadBasicConfiguration()
+  @objc deinit
+}
+extension SceneKit.SCNNode {
+  @_Concurrency.MainActor(unsafe) public func set3DAnimate(startingAtFrame start: CoreFoundation.CGFloat, endingAtFrame end: CoreFoundation.CGFloat, fps: Swift.Double = 25)
+  @_Concurrency.MainActor(unsafe) public func set3DAnimate(speed: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func set3DAnimate(stopsOnFinalFrame: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func set3DAnimate(play: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func set3DAnimate(pause: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func set3DAnimateRepeatCount(repeatCount: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func didAnimateComplete(complete: SceneKit.SCNAnimationDidStopBlock?)
+  @_Concurrency.MainActor(unsafe) public func setHighlighted(_ highlighted: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public func highlighted() -> Swift.Bool
+}
+extension SceneKit.SCNAnimation {
+  public func cut(startingAtFrame start: CoreFoundation.CGFloat, endingAtFrame end: CoreFoundation.CGFloat, fps: Swift.Double) -> SceneKit.SCNAnimation
+  public class func timeRange(forStartingAtFrame start: CoreFoundation.CGFloat, endingAtFrame end: CoreFoundation.CGFloat, fps: Swift.Double = 25) -> (offset: Foundation.TimeInterval, duration: Foundation.TimeInterval)
+  public class func time(atFrame frame: CoreFoundation.CGFloat, fps: Swift.Double = 25) -> Foundation.TimeInterval
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class VibrateAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BrowserAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RectMoveAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class DirectionalLightNode : LiGPlayerKit.LiGBaseNode {
+  @objc deinit
+}
+extension CoreFoundation.CGFloat {
+  public func converRadians() -> CoreFoundation.CGFloat
+}
+public struct AllScene : Swift.Codable {
+  public var coordinate_system: LiGPlayerKit.CoordinateSystem?
+  public init()
+  public init(coordinate_system: LiGPlayerKit.CoordinateSystem)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SceneObject : Swift.Codable {
+  public var sceneID: Swift.Int?
+  public var name: Swift.String?
+  public var thumbnail: Swift.String?
+  public var arObjects: [LiGPlayerKit.ArObject]?
+  public var coordinateSystemsIDS: [LiGPlayerKit.CoordinateSystemsID]?
+  public var activityID: Swift.Int?
+  public var gameReset: Swift.Bool
+  public init()
+  public init(sceneID: Swift.Int?, name: Swift.String?, thumbnail: Swift.String?, arObjects: [LiGPlayerKit.ArObject]?, activityID: Swift.Int?, gameReset: Swift.Bool?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CoordinateSystem : Swift.Codable {
+  public var scenes: [LiGPlayerKit.SceneObject]?
+  public var mapUrl: Swift.String?
+  public var infoUrl: Swift.String?
+  public init()
+  public init(map: Swift.String?, info: Swift.String?, scenes: [LiGPlayerKit.SceneObject]?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ArObject : Swift.Codable {
+  public var id: Swift.Int?
+  public var name: Swift.String?
+  public var location: LiGPlayerKit.Location?
+  public var zoom: LiGPlayerKit.Zoom?
+  public var transparency: Swift.Double?
+  public var model: LiGPlayerKit.Model?
+  public var events: [LiGPlayerKit.Event]?
+  public var sceneId: Swift.Int?
+  public var subEvents: [Swift.String : [LiGPlayerKit.Event]]?
+  public init()
+  public init(id: Swift.Int?, name: Swift.String?, location: LiGPlayerKit.Location?, zoom: LiGPlayerKit.Zoom?, transparency: Swift.Double?, model: LiGPlayerKit.Model?, events: [LiGPlayerKit.Event]?, sceneId: Swift.Int?, subEvents: [Swift.String : [LiGPlayerKit.Event]]?)
+  public func clone() -> LiGPlayerKit.ArObject
+  public func doubleSided() -> Swift.Bool
+  public func faceMe() -> Swift.Bool
+  public func occluded() -> Swift.Bool
+  public func hidden() -> Swift.Bool
+  public func alwaysVisible() -> Swift.Bool
+  public func textureUrl() -> Swift.String?
+  public func height() -> CoreFoundation.CGFloat?
+  public func width() -> CoreFoundation.CGFloat?
+  public func aspectRatio() -> Swift.Bool
+  public func multiplyRange() -> CoreFoundation.CGFloat?
+  public func multiplyNumber() -> Swift.Int?
+  public func multiplyRadius() -> CoreFoundation.CGFloat?
+  public func multiplyIsZeroY() -> Swift.Bool
+  public func autoPlay() -> Swift.Bool
+  public func hueAngle() -> Swift.Float?
+  public func hueRange() -> Swift.Float
+  public func saturation() -> Swift.Float
+  public func loopPlay() -> Swift.Bool
+  public func floorCount() -> Swift.Int?
+  public func floorHeight() -> CoreFoundation.CGFloat?
+  public func floorGap() -> CoreFoundation.CGFloat?
+  public func faceCount() -> Swift.Int?
+  public func faceWidth() -> CoreFoundation.CGFloat?
+  public func floorAngles() -> [CoreFoundation.CGFloat]?
+  public func faceGapList() -> [CoreFoundation.CGFloat]?
+  public func rotateSpeed() -> Foundation.TimeInterval?
+  public func faceGap() -> CoreFoundation.CGFloat?
+  public func particleBirthRate() -> CoreFoundation.CGFloat
+  public func particleBirthRateVariation() -> CoreFoundation.CGFloat
+  public func particleLifeSpan() -> CoreFoundation.CGFloat
+  public func particleLifeSpanVariation() -> CoreFoundation.CGFloat
+  public func particleVelocity() -> CoreFoundation.CGFloat
+  public func particleVelocityVariation() -> CoreFoundation.CGFloat
+  public func bloomIntensity() -> CoreFoundation.CGFloat?
+  public func bloomRadius() -> CoreFoundation.CGFloat
+  public func visibleDistance() -> Swift.Float
+  public func radius() -> CoreFoundation.CGFloat
+  public func fieldsName() -> Swift.String
+  public func polygonChildren() -> [LiGPlayerKit.ArObject]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Location : Swift.Codable {
+  public var x: Swift.Double?
+  public var y: Swift.Double?
+  public var z: Swift.Double?
+  public var rotateX: Swift.Double?
+  public var rotateY: Swift.Double?
+  public var rotateZ: Swift.Double?
+  public var position: SceneKit.SCNVector3 {
+    get
+  }
+  public var angle: SceneKit.SCNVector3 {
+    get
+  }
+  public init()
+  public init(x: Swift.Double?, y: Swift.Double?, z: Swift.Double?, rotateX: Swift.Double?, rotateY: Swift.Double?, rotateZ: Swift.Double?)
+  public func clone() -> LiGPlayerKit.Location
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Event : Swift.Codable {
+  public var id: Swift.Int?
+  public var values: LiGPlayerKit.EventValue?
+  public var actions: [LiGPlayerKit.Action]?
+  public init()
+  public init(id: Swift.Int?, values: LiGPlayerKit.EventValue?, actions: [LiGPlayerKit.Action]?)
+  public func lookAt() -> Foundation.TimeInterval
+  public func activateDistance() -> Swift.Double
+  public func activatperiode() -> Swift.String
+  public func periods() -> Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EventValue : Swift.Codable {
+  public var activateDistance: Swift.Double?
+  public var lookAtTime: Foundation.TimeInterval?
+  public var activatePeriod: Swift.String?
+  public var periods: Swift.String?
+  public init()
+  public init(activateDistance: Swift.Double?, lookAtTime: Swift.Double?, activatePeriod: Swift.String?, periods: Swift.String?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Action : Swift.Codable {
+  public var id: Swift.Int?
+  public var values: [Swift.String : Any]?
+  public init()
+  public init(id: Swift.Int?, values: [Swift.String : Any]?)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct ActionValues : Swift.Codable {
+  public let url: Swift.String?
+  public let time: Foundation.TimeInterval?
+  public let translating: Swift.Double?
+  public let objectId: Swift.Int?
+  public let directionX: CoreFoundation.CGFloat?, directionY: CoreFoundation.CGFloat?, directionZ: CoreFoundation.CGFloat?
+  public let group: Swift.Int?
+  public let animationSpeed: CoreFoundation.CGFloat?
+  public let startFrame: CoreFoundation.CGFloat?
+  public let endFrame: CoreFoundation.CGFloat?
+  public let fps: Swift.Double?
+  public let repeatCount: CoreFoundation.CGFloat?
+  public let scale: CoreFoundation.CGFloat?
+  public let transparency: CoreFoundation.CGFloat?
+  public let width: CoreFoundation.CGFloat?
+  public let height: CoreFoundation.CGFloat?
+  public let moveActionTime: Foundation.TimeInterval?
+  public let rotateActionTime: Foundation.TimeInterval?
+  public let clockwise: Swift.Bool?
+  public let radius: CoreFoundation.CGFloat?
+  public let startAngle: CoreFoundation.CGFloat?
+  public let endAngle: CoreFoundation.CGFloat?
+  public let faceTranslating: Swift.Double?
+  public let faceIsReturn: Swift.Bool?
+  public let faceWaitTime: Foundation.TimeInterval?
+  public let faceRotateToMe: Swift.Bool?
+  public let delayTime: Foundation.TimeInterval?
+  public let curveScale: CoreFoundation.CGFloat?
+  public let impactFeedbackStyle: Swift.Int?
+  public let subID: Swift.Int?
+  public let gameType: Swift.Int?
+  public let uiInteractName: Swift.String?
+  public let target: Swift.Int?
+  public let offset: Swift.Float?
+  public let playCount: Swift.Int?
+  public let duration: CoreFoundation.CGFloat?
+  public init(url: Swift.String?, time: Foundation.TimeInterval?, translating: Swift.Double?, objectId: Swift.Int?, directionX: CoreFoundation.CGFloat?, directionY: CoreFoundation.CGFloat?, directionZ: CoreFoundation.CGFloat?, group: Swift.Int?, animationSpeed: CoreFoundation.CGFloat?, startFrame: CoreFoundation.CGFloat?, endFrame: CoreFoundation.CGFloat?, fps: Swift.Double?, repeatCount: CoreFoundation.CGFloat?, scale: CoreFoundation.CGFloat?, transparency: CoreFoundation.CGFloat?, width: CoreFoundation.CGFloat?, height: CoreFoundation.CGFloat?, moveActionTime: Foundation.TimeInterval?, rotateActionTime: Foundation.TimeInterval?, clockwise: Swift.Bool?, radius: CoreFoundation.CGFloat?, startAngle: CoreFoundation.CGFloat?, endAngle: CoreFoundation.CGFloat?, faceTranslating: Swift.Double?, faceIsReturn: Swift.Bool?, faceWaitTime: Foundation.TimeInterval?, faceRotateToMe: Swift.Bool?, delayTime: Foundation.TimeInterval?, curveScale: CoreFoundation.CGFloat?, impactFeedbackStyle: Swift.Int?, subID: Swift.Int?, gameType: Swift.Int?, uiInteractName: Swift.String?, target: Swift.Int?, offset: Swift.Float?, playCount: Swift.Int?, duration: CoreFoundation.CGFloat?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Model : Swift.Codable {
+  public var type: Swift.Int?
+  public var fields: LiGPlayerKit.ModelFields?
+  public var texture: LiGPlayerKit.Texture?
+  public var iosTexture: LiGPlayerKit.Texture?
+  public var androidTexture: LiGPlayerKit.Texture?
+  public init()
+  public init(type: Swift.Int?, fields: LiGPlayerKit.ModelFields?, texture: LiGPlayerKit.Texture?, iosTexture: LiGPlayerKit.Texture?, androidTexture: LiGPlayerKit.Texture?)
+  public func clone() -> LiGPlayerKit.Model
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ModelFields : Swift.Codable {
+  public var width: CoreFoundation.CGFloat?
+  public var height: CoreFoundation.CGFloat?
+  public var radius: CoreFoundation.CGFloat?
+  public var floorHeight: CoreFoundation.CGFloat?
+  public var floorGap: CoreFoundation.CGFloat?
+  public var faceGap: CoreFoundation.CGFloat?
+  public var faceWidth: CoreFoundation.CGFloat?
+  public var floorCount: Swift.Int?
+  public var faceCount: Swift.Int?
+  public var rotateSpeed: Foundation.TimeInterval?
+  public var hueAngle: Swift.Float?
+  public var hueRange: Swift.Float?
+  public var saturation: Swift.Float?
+  public var faceMe: Swift.Bool?
+  public var lightIntensity: CoreFoundation.CGFloat?
+  public var color: [CoreFoundation.CGFloat]?
+  public var isIgnore: Swift.Bool?
+  public var visibleDistance: Swift.Float?
+  public var isPlay: Swift.Bool?
+  public var isHidden: Swift.Bool?
+  public var videoPlayDistance: Swift.Float?
+  public var isLoopPlay: Swift.Bool?
+  public var iconURL: Swift.String?
+  public var isDoubleSided: Swift.Bool?
+  public var twName: Swift.String?
+  public var enName: Swift.String?
+  public var koName: Swift.String?
+  public var jaName: Swift.String?
+  public var thName: Swift.String?
+  public var isSizeScaleLock: Swift.Bool?
+  public var previewUrl: Swift.String?
+  public var animationSpeed: CoreFoundation.CGFloat?
+  public var startFrame: CoreFoundation.CGFloat?
+  public var endFrame: CoreFoundation.CGFloat?
+  public var fps: Swift.Double?
+  public var multiplyNumber: Swift.Int?
+  public var multiplyRadius: CoreFoundation.CGFloat?
+  public var multiplyRange: CoreFoundation.CGFloat?
+  public var isOcclusion: Swift.Bool?
+  public var multiplyIsZeroY: Swift.Bool?
+  public var floorAngles: [CoreFoundation.CGFloat]?
+  public var faceGapList: [CoreFoundation.CGFloat]?
+  public var particleBirthRate: CoreFoundation.CGFloat?
+  public var particleBirthRateVariation: CoreFoundation.CGFloat?
+  public var particleLifeSpan: CoreFoundation.CGFloat?
+  public var particleLifeSpanVariation: CoreFoundation.CGFloat?
+  public var particleVelocity: CoreFoundation.CGFloat?
+  public var particleVelocityVariation: CoreFoundation.CGFloat?
+  public var bloomIntensity: CoreFoundation.CGFloat?
+  public var bloomRadius: CoreFoundation.CGFloat?
+  public var dashboardResourceUrl: Swift.String?
+  public var dashboardRefreshInterval: Swift.Double?
+  public var dashboardDirection: LiGPlayerKit.DashboardDirection?
+  public var dashboardFarmlandID: Swift.String?
+  public var name: Swift.String?
+  public init()
+  public init(width: CoreFoundation.CGFloat?, height: CoreFoundation.CGFloat?, radius: CoreFoundation.CGFloat?, floorHeight: CoreFoundation.CGFloat?, floorGap: CoreFoundation.CGFloat?, faceWidth: CoreFoundation.CGFloat?, faceGap: CoreFoundation.CGFloat?, floorCount: Swift.Int?, faceCount: Swift.Int?, rotateSpeed: Foundation.TimeInterval?, hueAngle: Swift.Float?, hueRange: Swift.Float?, saturation: Swift.Float?, faceMe: Swift.Bool?, lightIntensity: CoreFoundation.CGFloat?, color: [CoreFoundation.CGFloat]?, isIgnore: Swift.Bool?, visibleDistance: Swift.Float?, isPlay: Swift.Bool?, isHidden: Swift.Bool?, videoPlayDistance: Swift.Float?, isLoopPlay: Swift.Bool?, iconURL: Swift.String?, isDoubleSided: Swift.Bool?, twName: Swift.String?, enName: Swift.String?, koName: Swift.String?, jaName: Swift.String?, thName: Swift.String?, isSizeScaleLock: Swift.Bool?, previewUrl: Swift.String?, animationSpeed: CoreFoundation.CGFloat?, startFrame: CoreFoundation.CGFloat?, endFrame: CoreFoundation.CGFloat?, fps: Swift.Double?, multiplyNumber: Swift.Int?, multiplyRadius: CoreFoundation.CGFloat?, multiplyRange: CoreFoundation.CGFloat?, isOcclusion: Swift.Bool?, floorAngles: [CoreFoundation.CGFloat]?, faceGapList: [CoreFoundation.CGFloat]?, particleBirthRate: CoreFoundation.CGFloat?, particleBirthRateVariation: CoreFoundation.CGFloat?, particleLifeSpan: CoreFoundation.CGFloat?, particleLifeSpanVariation: CoreFoundation.CGFloat?, particleVelocity: CoreFoundation.CGFloat?, particleVelocityVariation: CoreFoundation.CGFloat?, bloomIntensity: CoreFoundation.CGFloat?, bloomRadius: CoreFoundation.CGFloat?, dashboardResourceUrl: Swift.String?, dashboardRefreshInterval: Swift.Double?, dashboardDirection: Swift.Int?, dashboardFarmlandID: Swift.String?, name: Swift.String?)
+  public func clone() -> LiGPlayerKit.ModelFields
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Texture : Swift.Codable {
+  public var id: Swift.String?
+  public var url: Swift.String?
+  public var photos: [Swift.String]?
+  public init()
+  public init(id: Swift.String?, url: Swift.String?, photos: [Swift.String]?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Zoom : Swift.Codable {
+  public var x: Swift.Double?
+  public var y: Swift.Double?
+  public var z: Swift.Double?
+  public init()
+  public init(x: Swift.Double?, y: Swift.Double?, z: Swift.Double?)
+  public func clone() -> LiGPlayerKit.Zoom
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LiGPlayerKit.ArObject {
+  public var opacity: CoreFoundation.CGFloat {
+    get
+  }
+  public var position: SceneKit.SCNVector3 {
+    get
+  }
+  public var eulerAngles: SceneKit.SCNVector3 {
+    get
+  }
+  public var scale: SceneKit.SCNVector3 {
+    get
+  }
+  public var objectName: Swift.String {
+    get
+  }
+  public var lightColor: UIKit.UIColor {
+    get
+  }
+  public var shopName: Swift.String? {
+    get
+  }
+  public var shopFileName: Swift.String? {
+    get
+  }
+}
+extension Swift.Double {
+  public var radians: Swift.Double {
+    get
+  }
+  public var angle: Swift.Double {
+    get
+  }
+}
+extension Swift.Float {
+  public var radians: Swift.Float {
+    get
+  }
+  public var angle: Swift.Float {
+    get
+  }
+}
+public struct CoordinateSystemsID : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LightPose : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RegisterUserResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserProfileResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LightenARUser : Swift.Codable {
+  public let coins: Swift.Int?
+  public let vouchers: [LiGPlayerKit.Voucher]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Voucher : Swift.Codable {
+  public let id: Swift.Int?
+  public let exchangeEndTime: Swift.String?
+  public let isUsed: Swift.Bool
+  public let voucherTypeID: Swift.Int?
+  public let userCodeName: Swift.String?
+  public let serial: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum GameType : Swift.Int {
+  case collectGame
+  case groupCollectGame
+  case coinGame
+  case voucherGame
+  case QAGame
+  case error
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct GameResponse : Swift.Codable {
+  public let gameType: Swift.Int?
+  public let status: LiGPlayerKit.GameResponseStatus?
+  public let gameId: Swift.Int?
+  public let gameName: Swift.String?
+  public let data: LiGPlayerKit.GameData?
+  public let action: LiGPlayerKit.GameActionType?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GameData : Swift.Codable {
+  public let count: Swift.Int?
+  public let total: Swift.Int?
+  public let collected: Swift.Int?
+  public let coin_quantity: Swift.Int?
+  public let code: LiGPlayerKit.GameDataConditionCode?
+  public let actionName: Swift.String?
+  public let voucherTypeId: Swift.Int?
+  public let poolId: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum GameDataConditionCode : Swift.Int, Swift.Codable {
+  case notAvailable
+  case exchangedAlready
+  case InvalidVoucherID
+  case NotInRuleConfig
+  case onePerDay
+  case timeLimit
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum GameResponseStatus : Swift.Codable {
+  case success
+  case done
+  case failure
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (a: LiGPlayerKit.GameResponseStatus, b: LiGPlayerKit.GameResponseStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum GameActionType : Swift.Int, Swift.Codable {
+  case noAction
+  case customAction
+  case voucherAction
+  case coinAction
+  case FWCoinAction
+  case FWVoucherAction
+  case FWLotteryAction
+  case FWPoolAction
+  case error
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum DashboardDirection : Swift.Int, Swift.Codable {
+  case left
+  case right
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RotateByAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NetworkView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var urlString: Swift.String?
+  @_Concurrency.MainActor(unsafe) public var didClickCloseButton: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func load()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PolygonNode : LiGPlayerKit.LiGBaseNode {
+  @_Concurrency.MainActor(unsafe) override public func destroy()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LiGBaseAction {
+  weak public var action: SceneKit.SCNAction?
+  public var group: Swift.Int?
+  public class func from(config: LiGPlayerKit.Action) -> LiGPlayerKit.LiGBaseAction?
+  open func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class VideoNode : LiGPlayerKit.LiGBaseNode {
+  @_Concurrency.MainActor(unsafe) override public func destroy()
+  #if compiler(>=5.3) && $AsyncAwait
+  nonisolated override public func textureDidDownloaded(url: Foundation.URL) async throws
+  #endif
+  @_Concurrency.MainActor(unsafe) override public func distanceWithPhoneChanged(distance: Swift.Double)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SetRepeatAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BallNode : LiGPlayerKit.LiGBaseNode {
+  #if compiler(>=5.3) && $AsyncAwait
+  nonisolated override public func textureDidDownloaded(url: Foundation.URL) async throws
+  #endif
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MoveToFaceAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class StopAnimationAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Common {
+  public class func decodeFromAny<T>(decodeFrom data: Any?, decodeType: T.Type, dateFormat: Swift.String? = nil) throws -> T? where T : Swift.Decodable, T : Swift.Encodable
+  public class func decodeFromData<T>(decodeFrom data: Foundation.Data, decodeType: T.Type, dateFormat: Swift.String? = nil) throws -> T? where T : Swift.Decodable, T : Swift.Encodable
+  @objc deinit
+}
+public struct ApiLightPosition : Swift.Codable {
+  public let id: Swift.Int
+  public let location: LiGPlayerKit.ApiLocation
+  public let matrix: [Swift.Double]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ApiLocation : Swift.Codable {
+  public let x: Swift.Double, y: Swift.Double, z: Swift.Double, rotateX: Swift.Double
+  public let rotateY: Swift.Double, rotateZ: Swift.Double
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class OmniLightNode : LiGPlayerKit.LiGBaseNode {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class GameAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LiGBaseNode : SceneKit.SCNNode {
+  public enum NodeError : Swift.Error {
+    case unknownType
+    public static func == (a: LiGPlayerKit.LiGBaseNode.NodeError, b: LiGPlayerKit.LiGBaseNode.NodeError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) final public let maxDistance: Swift.Float
+  public typealias DidLoadedBlock = ((LiGPlayerKit.LiGBaseNode?) -> Swift.Void)
+  public typealias CompletionBlock = (() -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public var arObject: LiGPlayerKit.ArObject?
+  @_Concurrency.MainActor(unsafe) public var actionPerformed: LiGPlayerKit.LiGBaseNode.CompletionBlock?
+  @_Concurrency.MainActor(unsafe) public var changed: Swift.Bool
+  #if compiler(>=5.3) && $AsyncAwait
+  nonisolated public func textureDidDownloaded(url: Foundation.URL) async throws
+  #endif
+  @_Concurrency.MainActor(unsafe) open func destroy()
+  @_Concurrency.MainActor(unsafe) public func runLiGActionOf(type: LiGPlayerKit.ArEventEnum, completion: (() -> Swift.Void)? = nil)
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor(unsafe) public func runLiGAction(type: LiGPlayerKit.ArEventEnum) async
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor(unsafe) public class func buildFromAsync(arObject: LiGPlayerKit.ArObject) async throws -> LiGPlayerKit.LiGBaseNode
+  #endif
+  @_Concurrency.MainActor(unsafe) open func distanceWithPhoneChanged(distance: Swift.Double)
+  @_Concurrency.MainActor(unsafe) open func wasCloseEnough(distance: Swift.Double)
+  @_Concurrency.MainActor(unsafe) open func wasStaredAt()
+  @_Concurrency.MainActor(unsafe) open func syncTransformState(with object: LiGPlayerKit.ArObject? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SetSpeedAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+public protocol SceneKitContextDelegate {
+  func didLoaded()
+  func gameTypeAction(gameType: LiGPlayerKit.GameType, value: LiGPlayerKit.GameResponse)
+  func nodeDidCallNonLiGAction(objectID: Swift.Int, action: LiGPlayerKit.Action)
+}
+public protocol SceneKitContextGestureDelegate {
+  func sceneViewDidTapped(gesture: UIKit.UITapGestureRecognizer) -> Swift.Bool
+  func nodeDidTap(node: LiGPlayerKit.LiGBaseNode) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers public class SceneKitContext : ObjectiveC.NSObject {
+  public static let shared: LiGPlayerKit.SceneKitContext
+  public enum ContextError : Swift.Error {
+    case HttpError
+    case buildUriError
+    case apiError
+    case noDataError
+    public static func == (a: LiGPlayerKit.SceneKitContext.ContextError, b: LiGPlayerKit.SceneKitContext.ContextError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var config: ARKit.ARConfiguration?
+  public var sceneView: ARKit.ARSCNView? {
+    get
+    set
+  }
+  public var ligScene: LiGPlayerKit.LiGScene?
+  public var coordinateSystem: LiGPlayerKit.CoordinateSystem?
+  public var delegate: (any LiGPlayerKit.SceneKitContextDelegate)?
+  public var gestureDelegate: (any LiGPlayerKit.SceneKitContextGestureDelegate)?
+  public var frameUpdateDefaultActionEnabled: Swift.Bool
+  @objc override dynamic public init()
+  public func run()
+  public func rest()
+  public func pause()
+  public func destroy()
+  public func load()
+  public func setWorldOriginal(worldOriginTransform: simd.simd_float4x4?)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func findInteractiveNode(at point: CoreFoundation.CGPoint, onlyLiG ligNodeOnly: Swift.Bool = false, childIncluded includeChild: Swift.Bool = false) async -> SceneKit.SCNNode?
+  #endif
+  @_Concurrency.MainActor public func findLiGNode(id: Swift.Int) -> LiGPlayerKit.LiGBaseNode?
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func removeNode(node: LiGPlayerKit.LiGBaseNode) async
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func loadScenes(lightId: Swift.Int, accessToken: Swift.String, session: Foundation.URLSession? = nil) async throws -> (scnObjc: [LiGPlayerKit.SceneObject], coorInfo: (map: Swift.String?, info: Swift.String?))?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func registerUser(userID: Swift.String, accessToken: Swift.String) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func userProfile() async throws -> LiGPlayerKit.LightenARUser
+  #endif
+  public func frameUpdated(_ session: ARKit.ARSession, didUpdate frame: ARKit.ARFrame)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class FadeOutAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FinderNode : LiGPlayerKit.DijkstraVertex {
+  public func addNeighbor(node: LiGPlayerKit.FinderNode)
+  override public func hash(into hasher: inout Swift.Hasher)
+  @objc deinit
+}
+public struct NavigationPath {
+}
+public struct Landmark {
+}
+public struct NavigationMap {
+}
+@_hasMissingDesignatedInitializers public class PathFinder {
+  public class func load(map: LiGPlayerKit.NavigationMap?) -> LiGPlayerKit.PathFinder?
+  public func buildRoute(from startPos: simd.simd_float3, to destination: Swift.String) -> [LiGPlayerKit.DijkstraVertex]
+  @objc deinit
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func asImage() -> UIKit.UIImage
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DisableNodeAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AimAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MoveAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ModelNode : LiGPlayerKit.LiGBaseNode {
+  #if compiler(>=5.3) && $AsyncAwait
+  nonisolated override public func textureDidDownloaded(url: Foundation.URL) async throws
+  #endif
+  @_Concurrency.MainActor(unsafe) override public func destroy()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PlayAnimAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ChangeOpacityByAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
+open class DijkstraVertex : Swift.Hashable, Swift.Equatable {
+  open var identifier: Swift.String
+  open var neighbors: [(LiGPlayerKit.DijkstraVertex, Swift.Double)]
+  open var pathLengthFromStart: Swift.Double
+  open var pathVerticesFromStart: [LiGPlayerKit.DijkstraVertex]
+  public init(identifier: Swift.String)
+  open func clearCache()
+  open func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: LiGPlayerKit.DijkstraVertex, rhs: LiGPlayerKit.DijkstraVertex) -> Swift.Bool
+  @objc deinit
+  open var hashValue: Swift.Int {
+    get
+  }
+}
+extension LiGPlayerKit.ArModelTypeEnum : Swift.Equatable {}
+extension LiGPlayerKit.ArModelTypeEnum : Swift.Hashable {}
+extension LiGPlayerKit.ArModelTypeEnum : Swift.RawRepresentable {}
+extension LiGPlayerKit.ArEventEnum : Swift.Equatable {}
+extension LiGPlayerKit.ArEventEnum : Swift.Hashable {}
+extension LiGPlayerKit.ArEventEnum : Swift.RawRepresentable {}
+extension LiGPlayerKit.ImpactFeedback : Swift.Equatable {}
+extension LiGPlayerKit.ImpactFeedback : Swift.Hashable {}
+extension LiGPlayerKit.ImpactFeedback : Swift.RawRepresentable {}
+extension LiGPlayerKit.AsyncDownloader.ErrorState : Swift.Equatable {}
+extension LiGPlayerKit.AsyncDownloader.ErrorState : Swift.Hashable {}
+extension LiGPlayerKit.LiGScene.LiGSceneError : Swift.Equatable {}
+extension LiGPlayerKit.LiGScene.LiGSceneError : Swift.Hashable {}
+extension LiGPlayerKit.GameType : Swift.Equatable {}
+extension LiGPlayerKit.GameType : Swift.Hashable {}
+extension LiGPlayerKit.GameType : Swift.RawRepresentable {}
+extension LiGPlayerKit.GameDataConditionCode : Swift.Equatable {}
+extension LiGPlayerKit.GameDataConditionCode : Swift.Hashable {}
+extension LiGPlayerKit.GameDataConditionCode : Swift.RawRepresentable {}
+extension LiGPlayerKit.GameResponseStatus : Swift.Equatable {}
+extension LiGPlayerKit.GameResponseStatus : Swift.Hashable {}
+extension LiGPlayerKit.GameActionType : Swift.Equatable {}
+extension LiGPlayerKit.GameActionType : Swift.Hashable {}
+extension LiGPlayerKit.GameActionType : Swift.RawRepresentable {}
+extension LiGPlayerKit.DashboardDirection : Swift.Equatable {}
+extension LiGPlayerKit.DashboardDirection : Swift.Hashable {}
+extension LiGPlayerKit.DashboardDirection : Swift.RawRepresentable {}
+extension LiGPlayerKit.LiGBaseNode.NodeError : Swift.Equatable {}
+extension LiGPlayerKit.LiGBaseNode.NodeError : Swift.Hashable {}
+extension LiGPlayerKit.SceneKitContext.ContextError : Swift.Equatable {}
+extension LiGPlayerKit.SceneKitContext.ContextError : Swift.Hashable {}
