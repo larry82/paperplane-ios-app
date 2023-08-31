@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930643D02AA0723F005A4851 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930643CF2AA0723F005A4851 /* GuideView.swift */; };
+		930643D22AA072CD005A4851 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930643D12AA072CD005A4851 /* Color.swift */; };
 		93B2FC4629E157D8007C9792 /* LiGScannerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93B2FC4529E157D8007C9792 /* LiGScannerKit */; };
 		93B2FC9429E2CB6F007C9792 /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93B2FC9329E2CB6F007C9792 /* GLTFSceneKit */; };
 		93CA5FC02A39A929006F8797 /* ThemeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA5FBF2A39A929006F8797 /* ThemeScanViewController.swift */; };
@@ -51,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		930643CF2AA0723F005A4851 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		930643D12AA072CD005A4851 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		93CA5FBF2A39A929006F8797 /* ThemeScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeScanViewController.swift; sourceTree = "<group>"; };
 		93CA5FC12A39AE35006F8797 /* DefaultTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTargetView.swift; sourceTree = "<group>"; };
 		93CA5FC32A39AFBF006F8797 /* ImageTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTargetView.swift; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 				B0B60BA4291E31A0005928CA /* Assets.xcassets */,
 				B0B60BA6291E31A0005928CA /* LaunchScreen.storyboard */,
 				B0B60BA9291E31A0005928CA /* Info.plist */,
+				930643D12AA072CD005A4851 /* Color.swift */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 				93CA5FC32A39AFBF006F8797 /* ImageTargetView.swift */,
 				93CA5FC52A39B59E006F8797 /* DefaultScannerView.swift */,
 				93CA5FC72A39BBD0006F8797 /* ThemeScannerView.swift */,
+				930643CF2AA0723F005A4851 /* GuideView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -290,11 +296,13 @@
 				B0ECCBF2292B7EAF00CD03F2 /* RecordView.swift in Sources */,
 				93CA5FC42A39AFBF006F8797 /* ImageTargetView.swift in Sources */,
 				93CA5FC22A39AE35006F8797 /* DefaultTargetView.swift in Sources */,
+				930643D22AA072CD005A4851 /* Color.swift in Sources */,
 				93CA5FC02A39A929006F8797 /* ThemeScanViewController.swift in Sources */,
 				B0B42551292380E100BDFB26 /* ARViewController.swift in Sources */,
 				93CA5FCA2A39BF2B006F8797 /* DefaultScanViewController.swift in Sources */,
 				B0B4254F292234D000BDFB26 /* TargetView.swift in Sources */,
 				B090B2BF292E0A9B00AC7931 /* StopRecordingView.swift in Sources */,
+				930643D02AA0723F005A4851 /* GuideView.swift in Sources */,
 				B0F4DE4E292F472C00208DE7 /* ARViewController+Replay.swift in Sources */,
 				B0B60BB72921F02B005928CA /* ScannerView.swift in Sources */,
 			);

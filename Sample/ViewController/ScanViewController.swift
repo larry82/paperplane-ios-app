@@ -74,5 +74,19 @@ class ScanViewController: UIViewController {
 }
 
 //MARK: - LiGScanner delegate
+enum ScanHintType: Int {
+    case prepare = 0, detected, success
+}
 
-
+extension ScanHintType {
+    var description: String {
+        switch self {
+        case .prepare:
+            return "將鏡頭瞄準Light Code機器\n並移動手機，使畫面出現感應盤"
+        case .detected:
+            return "發現感應盤!! 移動手機\n將感應盤放入圓環中"
+        case .success:
+            return "掃描成功!!\nAR讀取中...請保持不動"
+        }
+    }
+}

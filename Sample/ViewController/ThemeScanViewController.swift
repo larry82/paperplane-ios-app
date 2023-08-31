@@ -3,7 +3,9 @@ import LiGScannerKit
 
 class ThemeScanViewController: ScanViewController {
     @IBOutlet weak var scannerView: ThemeScannerView!
-    
+
+    var guideView: GuideView?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -12,6 +14,22 @@ class ThemeScanViewController: ScanViewController {
         }
         
         delegate = self
+        
+        guideViewSetup()
+    }
+    
+    func guideViewSetup() {
+        let guideView = GuideView()
+        view.addSubview(guideView)
+        guideView.translatesAutoresizingMaskIntoConstraints = false
+        guideView.widthAnchor.constraint(equalToConstant: 322.0).isActive = true
+        guideView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        guideView.topAnchor.constraint(equalToSystemSpacingBelow: scannerView!.bottomAnchor, multiplier: 1).isActive = true
+        guideView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -78.0).isActive = true
+
+        guideView.setContent(status: .prepare)
+        
+        self.guideView = guideView
     }
     
     override func getScannerDelegate() -> LiGScannerDelegate? {
@@ -34,10 +52,12 @@ extension ThemeScanViewController: LiGScannerDelegate {
         if (count > 0) {
             let lightId = ids[0]
             scannerView.update(device: lightId)
-            
-            // go to AR scene
-            if lightId.isReady {
-                DispatchQueue.main.asyncAfter(deadline: .now()) {
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                let type: ScanHintType = (lightId.isReady) ? .success : .detected
+                self.guideView?.setContent(status: type)
+
+                // go to AR scene
+                if lightId.isReady {
                     self.stopScan()
 
                     // stop scan and enter a AR page
@@ -48,6 +68,10 @@ extension ThemeScanViewController: LiGScannerDelegate {
                         self.present(vc, animated: true)
                     }
                 }
+            }
+        } else {
+            DispatchQueue.main.async {
+                self.guideView?.setContent(status: .prepare)
             }
         }
     }
