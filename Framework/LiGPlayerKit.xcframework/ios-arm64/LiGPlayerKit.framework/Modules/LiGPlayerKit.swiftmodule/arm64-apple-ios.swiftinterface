@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name LiGPlayerKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -51,6 +51,9 @@ public enum ArEventEnum : Swift.Int, Swift.CaseIterable, Swift.Codable {
   case lookAt
   case repeatForever
   case period
+  case sceneStart
+  case proximityEnter
+  case proxymityLeave
   case periodTrigger
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [LiGPlayerKit.ArEventEnum]
@@ -431,8 +434,9 @@ public struct EventValue : Swift.Codable {
   public var lookAtTime: Foundation.TimeInterval?
   public var activatePeriod: Swift.String?
   public var periods: Swift.String?
+  public var proximityDistance: Swift.Double?
   public init()
-  public init(activateDistance: Swift.Double?, lookAtTime: Swift.Double?, activatePeriod: Swift.String?, periods: Swift.String?)
+  public init(activateDistance: Swift.Double?, lookAtTime: Swift.Double?, activatePeriod: Swift.String?, periods: Swift.String?, proximityDistance: Swift.Double?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -841,6 +845,7 @@ public struct ApiLocation : Swift.Codable {
   @_Concurrency.MainActor(unsafe) public class func buildFromAsync(arObject: LiGPlayerKit.ArObject) async throws -> LiGPlayerKit.LiGBaseNode
   #endif
   @_Concurrency.MainActor(unsafe) open func distanceWithPhoneChanged(distance: Swift.Double)
+  @_Concurrency.MainActor(unsafe) open func proximityFunctionDetected(prevDistance: Swift.Double, distance: Swift.Double)
   @_Concurrency.MainActor(unsafe) open func wasCloseEnough(distance: Swift.Double)
   @_Concurrency.MainActor(unsafe) open func wasStaredAt()
   @_Concurrency.MainActor(unsafe) open func syncTransformState(with object: LiGPlayerKit.ArObject? = nil)
@@ -895,6 +900,9 @@ public protocol SceneKitContextGestureDelegate {
   @_Concurrency.MainActor public func findLiGNode(id: Swift.Int) -> LiGPlayerKit.LiGBaseNode?
   #if compiler(>=5.3) && $AsyncAwait
   @_Concurrency.MainActor public func removeNode(node: LiGPlayerKit.LiGBaseNode) async
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func revealNode(node: LiGPlayerKit.LiGBaseNode) async
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func loadScenes(lightId: Swift.Int, accessToken: Swift.String, session: Foundation.URLSession? = nil) async throws -> (scnObjc: [LiGPlayerKit.SceneObject], coorInfo: (map: Swift.String?, info: Swift.String?))?
