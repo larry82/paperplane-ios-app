@@ -234,6 +234,9 @@ public actor LiGScene {
   public var hasPeriodEvents: Swift.Bool
   public enum LiGSceneError : Swift.Error {
     case apiError
+    case authInvalidUrl
+    case authBadBodyParams
+    case authInvalidResponse
     public static func == (a: LiGPlayerKit.LiGScene.LiGSceneError, b: LiGPlayerKit.LiGScene.LiGSceneError) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -241,6 +244,7 @@ public actor LiGScene {
     }
   }
   public init(arObjects: [LiGPlayerKit.ArObject])
+  public init(scene: LiGPlayerKit.SceneObject)
   public static func readFromCloud(lightId: Swift.Int, accessToken: Swift.String, success done: @escaping ((LiGPlayerKit.LiGScene?) -> Swift.Void), failure onError: (((any Swift.Error)?) -> Swift.Void)? = nil)
   public func forEach(doWork: (LiGPlayerKit.ArObject) -> Swift.Void)
   public func arObjectsAsync() -> _Concurrency.AsyncStream<LiGPlayerKit.ArObject>
@@ -328,8 +332,10 @@ public struct SceneObject : Swift.Codable {
   public var coordinateSystemsIDS: [LiGPlayerKit.CoordinateSystemsID]?
   public var activityID: Swift.Int?
   public var gameReset: Swift.Bool
+  public var actions: [Swift.String : [LiGPlayerKit.Action]]?
+  public var credentials: [Swift.String : LiGPlayerKit.Credential?]?
   public init()
-  public init(sceneID: Swift.Int?, name: Swift.String?, thumbnail: Swift.String?, arObjects: [LiGPlayerKit.ArObject]?, activityID: Swift.Int?, gameReset: Swift.Bool?)
+  public init(sceneID: Swift.Int?, name: Swift.String?, thumbnail: Swift.String?, arObjects: [LiGPlayerKit.ArObject]?, activityID: Swift.Int?, gameReset: Swift.Bool?, actions: [Swift.String : [LiGPlayerKit.Action]]?, credentials: [Swift.String : LiGPlayerKit.Credential?]?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -555,9 +561,10 @@ public struct ModelFields : Swift.Codable {
   public var dashboardRefreshInterval: Swift.Double?
   public var dashboardDirection: LiGPlayerKit.DashboardDirection?
   public var dashboardFarmlandID: Swift.String?
+  public var cred: Swift.String?
   public var name: Swift.String?
   public init()
-  public init(width: CoreFoundation.CGFloat?, height: CoreFoundation.CGFloat?, radius: CoreFoundation.CGFloat?, floorHeight: CoreFoundation.CGFloat?, floorGap: CoreFoundation.CGFloat?, faceWidth: CoreFoundation.CGFloat?, faceGap: CoreFoundation.CGFloat?, floorCount: Swift.Int?, faceCount: Swift.Int?, rotateSpeed: Foundation.TimeInterval?, hueAngle: Swift.Float?, hueRange: Swift.Float?, saturation: Swift.Float?, faceMe: Swift.Bool?, lightIntensity: CoreFoundation.CGFloat?, color: [CoreFoundation.CGFloat]?, isIgnore: Swift.Bool?, visibleDistance: Swift.Float?, isPlay: Swift.Bool?, isHidden: Swift.Bool?, videoPlayDistance: Swift.Float?, isLoopPlay: Swift.Bool?, iconURL: Swift.String?, isDoubleSided: Swift.Bool?, twName: Swift.String?, enName: Swift.String?, koName: Swift.String?, jaName: Swift.String?, thName: Swift.String?, isSizeScaleLock: Swift.Bool?, previewUrl: Swift.String?, animationSpeed: CoreFoundation.CGFloat?, startFrame: CoreFoundation.CGFloat?, endFrame: CoreFoundation.CGFloat?, fps: Swift.Double?, multiplyNumber: Swift.Int?, multiplyRadius: CoreFoundation.CGFloat?, multiplyRange: CoreFoundation.CGFloat?, isOcclusion: Swift.Bool?, floorAngles: [CoreFoundation.CGFloat]?, faceGapList: [CoreFoundation.CGFloat]?, particleBirthRate: CoreFoundation.CGFloat?, particleBirthRateVariation: CoreFoundation.CGFloat?, particleLifeSpan: CoreFoundation.CGFloat?, particleLifeSpanVariation: CoreFoundation.CGFloat?, particleVelocity: CoreFoundation.CGFloat?, particleVelocityVariation: CoreFoundation.CGFloat?, bloomIntensity: CoreFoundation.CGFloat?, bloomRadius: CoreFoundation.CGFloat?, dashboardResourceUrl: Swift.String?, dashboardRefreshInterval: Swift.Double?, dashboardDirection: Swift.Int?, dashboardFarmlandID: Swift.String?, name: Swift.String?)
+  public init(width: CoreFoundation.CGFloat?, height: CoreFoundation.CGFloat?, radius: CoreFoundation.CGFloat?, floorHeight: CoreFoundation.CGFloat?, floorGap: CoreFoundation.CGFloat?, faceWidth: CoreFoundation.CGFloat?, faceGap: CoreFoundation.CGFloat?, floorCount: Swift.Int?, faceCount: Swift.Int?, rotateSpeed: Foundation.TimeInterval?, hueAngle: Swift.Float?, hueRange: Swift.Float?, saturation: Swift.Float?, faceMe: Swift.Bool?, lightIntensity: CoreFoundation.CGFloat?, color: [CoreFoundation.CGFloat]?, isIgnore: Swift.Bool?, visibleDistance: Swift.Float?, isPlay: Swift.Bool?, isHidden: Swift.Bool?, videoPlayDistance: Swift.Float?, isLoopPlay: Swift.Bool?, iconURL: Swift.String?, isDoubleSided: Swift.Bool?, twName: Swift.String?, enName: Swift.String?, koName: Swift.String?, jaName: Swift.String?, thName: Swift.String?, isSizeScaleLock: Swift.Bool?, previewUrl: Swift.String?, animationSpeed: CoreFoundation.CGFloat?, startFrame: CoreFoundation.CGFloat?, endFrame: CoreFoundation.CGFloat?, fps: Swift.Double?, multiplyNumber: Swift.Int?, multiplyRadius: CoreFoundation.CGFloat?, multiplyRange: CoreFoundation.CGFloat?, isOcclusion: Swift.Bool?, floorAngles: [CoreFoundation.CGFloat]?, faceGapList: [CoreFoundation.CGFloat]?, particleBirthRate: CoreFoundation.CGFloat?, particleBirthRateVariation: CoreFoundation.CGFloat?, particleLifeSpan: CoreFoundation.CGFloat?, particleLifeSpanVariation: CoreFoundation.CGFloat?, particleVelocity: CoreFoundation.CGFloat?, particleVelocityVariation: CoreFoundation.CGFloat?, bloomIntensity: CoreFoundation.CGFloat?, bloomRadius: CoreFoundation.CGFloat?, dashboardResourceUrl: Swift.String?, dashboardRefreshInterval: Swift.Double?, dashboardDirection: Swift.Int?, dashboardFarmlandID: Swift.String?, name: Swift.String?, cred: Swift.String?)
   public func clone() -> LiGPlayerKit.ModelFields
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -744,6 +751,10 @@ public enum DashboardDirection : Swift.Int, Swift.Codable {
     get
   }
 }
+public struct Credential : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RotateByAction : LiGPlayerKit.LiGBaseAction {
   override public func build(model: LiGPlayerKit.ActionValues)
   @objc deinit
@@ -905,7 +916,11 @@ public protocol SceneKitContextGestureDelegate {
   @_Concurrency.MainActor public func revealNode(node: LiGPlayerKit.LiGBaseNode) async
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, renamed: "loadCoordinateSystemFrom")
   public func loadScenes(lightId: Swift.Int, accessToken: Swift.String, session: Foundation.URLSession? = nil) async throws -> (scnObjc: [LiGPlayerKit.SceneObject], coorInfo: (map: Swift.String?, info: Swift.String?))?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func loadCoordinateSystemFrom(lightId: Swift.Int, accessToken: Swift.String, session: Foundation.URLSession? = nil) async throws -> LiGPlayerKit.CoordinateSystem?
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func registerUser(userID: Swift.String, accessToken: Swift.String) async throws

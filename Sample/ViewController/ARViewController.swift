@@ -105,16 +105,14 @@ class ARViewController: UIViewController {
             Task.detached {
                 do {
                     // Load scene information from LiG Cloud
-                    let payload = try await context.loadScenes(lightId: self.lightId, accessToken: token)
+                    let coordinateSystem = try await context.loadCoordinateSystemFrom(lightId: self.lightId, accessToken: token)
                     // We could configure more than one scenes to a specific LigTag (lightId)
                     // Within `context.loadScenes()` call, context.ligScene will be set to first of scenes if not empty
-                    if let payload = payload, payload.scnObjc.count > 0 {
-                        if let arObjects = payload.scnObjc.first?.arObjects {
-                            // Put arObjects into LiGScene object
-                            context.ligScene = LiGScene(arObjects: arObjects)
-                            // Context will try to load AR objects in `context.ligScene`
-                            context.load()
-                        }
+                    if let cs = coordinateSystem, let scenes = cs.scenes, let scene = scenes.first {
+                        // Put `scene` as `context.ligScene`
+                        context.ligScene = LiGScene(scene: scene)
+                        // Context will try to load AR objects in `context.ligScene`
+                        context.load()
                     }
 
                     // Regisiter your user with primary key (ex. "Plain002") in Lig Cloud, user token will be saved in `context` object
