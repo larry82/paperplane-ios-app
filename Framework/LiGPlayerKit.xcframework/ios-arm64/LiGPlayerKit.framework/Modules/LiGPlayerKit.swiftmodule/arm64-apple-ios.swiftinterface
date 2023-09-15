@@ -694,6 +694,7 @@ public struct GameData : Swift.Codable {
   public let actionName: Swift.String?
   public let voucherTypeId: Swift.Int?
   public let poolId: Swift.Int?
+  public let nextDestination: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -733,6 +734,7 @@ public enum GameActionType : Swift.Int, Swift.Codable {
   case FWVoucherAction
   case FWLotteryAction
   case FWPoolAction
+  case poolAction
   case error
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
