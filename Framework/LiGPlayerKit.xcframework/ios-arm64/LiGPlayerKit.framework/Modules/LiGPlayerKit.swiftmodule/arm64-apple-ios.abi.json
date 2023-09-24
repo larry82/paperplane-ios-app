@@ -12417,6 +12417,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -23847,21 +23854,34 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "LiGPlayerKit.EventValue?",
+                "printedName": "[Swift.String : Any]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "EventValue",
-                    "printedName": "LiGPlayerKit.EventValue",
-                    "usr": "s:12LiGPlayerKit10EventValueV"
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12LiGPlayerKit5EventV6valuesAA0D5ValueVSgvp",
-            "mangledName": "$s12LiGPlayerKit5EventV6valuesAA0D5ValueVSgvp",
+            "usr": "s:12LiGPlayerKit5EventV6valuesSDySSypGSgvp",
+            "mangledName": "$s12LiGPlayerKit5EventV6valuesSDySSypGSgvp",
             "moduleName": "LiGPlayerKit",
             "declAttributes": [
               "HasInitialValue",
@@ -23879,21 +23899,34 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "LiGPlayerKit.EventValue?",
+                    "printedName": "[Swift.String : Any]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "EventValue",
-                        "printedName": "LiGPlayerKit.EventValue",
-                        "usr": "s:12LiGPlayerKit10EventValueV"
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit5EventV6valuesAA0D5ValueVSgvg",
-                "mangledName": "$s12LiGPlayerKit5EventV6valuesAA0D5ValueVSgvg",
+                "usr": "s:12LiGPlayerKit5EventV6valuesSDySSypGSgvg",
+                "mangledName": "$s12LiGPlayerKit5EventV6valuesSDySSypGSgvg",
                 "moduleName": "LiGPlayerKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -23911,21 +23944,34 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "LiGPlayerKit.EventValue?",
+                    "printedName": "[Swift.String : Any]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "EventValue",
-                        "printedName": "LiGPlayerKit.EventValue",
-                        "usr": "s:12LiGPlayerKit10EventValueV"
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit5EventV6valuesAA0D5ValueVSgvs",
-                "mangledName": "$s12LiGPlayerKit5EventV6valuesAA0D5ValueVSgvs",
+                "usr": "s:12LiGPlayerKit5EventV6valuesSDySSypGSgvs",
+                "mangledName": "$s12LiGPlayerKit5EventV6valuesSDySSypGSgvs",
                 "moduleName": "LiGPlayerKit",
                 "implicit": true,
                 "accessorKind": "set"
@@ -23942,8 +23988,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit5EventV6valuesAA0D5ValueVSgvM",
-                "mangledName": "$s12LiGPlayerKit5EventV6valuesAA0D5ValueVSgvM",
+                "usr": "s:12LiGPlayerKit5EventV6valuesSDySSypGSgvM",
+                "mangledName": "$s12LiGPlayerKit5EventV6valuesSDySSypGSgvM",
                 "moduleName": "LiGPlayerKit",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -24559,13 +24605,26 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "LiGPlayerKit.EventValue?",
+                "printedName": "[Swift.String : Any]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "EventValue",
-                    "printedName": "LiGPlayerKit.EventValue",
-                    "usr": "s:12LiGPlayerKit10EventValueV"
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
                   }
                 ],
                 "usr": "s:Sq"
@@ -24594,97 +24653,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12LiGPlayerKit5EventV2id6values7actionsACSiSg_AA0D5ValueVSgSayAA6ActionVGSgtcfc",
-            "mangledName": "$s12LiGPlayerKit5EventV2id6values7actionsACSiSg_AA0D5ValueVSgSayAA6ActionVGSgtcfc",
+            "usr": "s:12LiGPlayerKit5EventV2id6values7actionsACSiSg_SDySSypGSgSayAA6ActionVGSgtcfc",
+            "mangledName": "$s12LiGPlayerKit5EventV2id6values7actionsACSiSg_SDySSypGSgSayAA6ActionVGSgtcfc",
             "moduleName": "LiGPlayerKit",
             "declAttributes": [
               "AccessControl"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "lookAt",
-            "printedName": "lookAt()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12LiGPlayerKit5EventV6lookAtSdyF",
-            "mangledName": "$s12LiGPlayerKit5EventV6lookAtSdyF",
-            "moduleName": "LiGPlayerKit",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "activateDistance",
-            "printedName": "activateDistance()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12LiGPlayerKit5EventV16activateDistanceSdyF",
-            "mangledName": "$s12LiGPlayerKit5EventV16activateDistanceSdyF",
-            "moduleName": "LiGPlayerKit",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "activatperiode",
-            "printedName": "activatperiode()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12LiGPlayerKit5EventV14activatperiodeSSyF",
-            "mangledName": "$s12LiGPlayerKit5EventV14activatperiodeSSyF",
-            "moduleName": "LiGPlayerKit",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "periods",
-            "printedName": "periods()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12LiGPlayerKit5EventV7periodsSSyF",
-            "mangledName": "$s12LiGPlayerKit5EventV7periodsSSyF",
-            "moduleName": "LiGPlayerKit",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -24708,7 +24683,9 @@
             "usr": "s:12LiGPlayerKit5EventV4fromACs7Decoder_p_tKcfc",
             "mangledName": "$s12LiGPlayerKit5EventV4fromACs7Decoder_p_tKcfc",
             "moduleName": "LiGPlayerKit",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
             "init_kind": "Designated"
           },
@@ -24733,7 +24710,9 @@
             "usr": "s:12LiGPlayerKit5EventV6encode2toys7Encoder_p_tKF",
             "mangledName": "$s12LiGPlayerKit5EventV6encode2toys7Encoder_p_tKF",
             "moduleName": "LiGPlayerKit",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
           }
@@ -24745,1255 +24724,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "EventValue",
-        "printedName": "EventValue",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "activateDistance",
-            "printedName": "activateDistance",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Double?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12LiGPlayerKit10EventValueV16activateDistanceSdSgvp",
-            "mangledName": "$s12LiGPlayerKit10EventValueV16activateDistanceSdSgvp",
-            "moduleName": "LiGPlayerKit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Double?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV16activateDistanceSdSgvg",
-                "mangledName": "$s12LiGPlayerKit10EventValueV16activateDistanceSdSgvg",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Double?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV16activateDistanceSdSgvs",
-                "mangledName": "$s12LiGPlayerKit10EventValueV16activateDistanceSdSgvs",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV16activateDistanceSdSgvM",
-                "mangledName": "$s12LiGPlayerKit10EventValueV16activateDistanceSdSgvM",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "lookAtTime",
-            "printedName": "lookAtTime",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Double?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12LiGPlayerKit10EventValueV10lookAtTimeSdSgvp",
-            "mangledName": "$s12LiGPlayerKit10EventValueV10lookAtTimeSdSgvp",
-            "moduleName": "LiGPlayerKit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Double?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV10lookAtTimeSdSgvg",
-                "mangledName": "$s12LiGPlayerKit10EventValueV10lookAtTimeSdSgvg",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Double?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV10lookAtTimeSdSgvs",
-                "mangledName": "$s12LiGPlayerKit10EventValueV10lookAtTimeSdSgvs",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV10lookAtTimeSdSgvM",
-                "mangledName": "$s12LiGPlayerKit10EventValueV10lookAtTimeSdSgvM",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "activatePeriod",
-            "printedName": "activatePeriod",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12LiGPlayerKit10EventValueV14activatePeriodSSSgvp",
-            "mangledName": "$s12LiGPlayerKit10EventValueV14activatePeriodSSSgvp",
-            "moduleName": "LiGPlayerKit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV14activatePeriodSSSgvg",
-                "mangledName": "$s12LiGPlayerKit10EventValueV14activatePeriodSSSgvg",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV14activatePeriodSSSgvs",
-                "mangledName": "$s12LiGPlayerKit10EventValueV14activatePeriodSSSgvs",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV14activatePeriodSSSgvM",
-                "mangledName": "$s12LiGPlayerKit10EventValueV14activatePeriodSSSgvM",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "periods",
-            "printedName": "periods",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12LiGPlayerKit10EventValueV7periodsSSSgvp",
-            "mangledName": "$s12LiGPlayerKit10EventValueV7periodsSSSgvp",
-            "moduleName": "LiGPlayerKit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV7periodsSSSgvg",
-                "mangledName": "$s12LiGPlayerKit10EventValueV7periodsSSSgvg",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV7periodsSSSgvs",
-                "mangledName": "$s12LiGPlayerKit10EventValueV7periodsSSSgvs",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV7periodsSSSgvM",
-                "mangledName": "$s12LiGPlayerKit10EventValueV7periodsSSSgvM",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "proximityDistance",
-            "printedName": "proximityDistance",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Double?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12LiGPlayerKit10EventValueV17proximityDistanceSdSgvp",
-            "mangledName": "$s12LiGPlayerKit10EventValueV17proximityDistanceSdSgvp",
-            "moduleName": "LiGPlayerKit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Double?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV17proximityDistanceSdSgvg",
-                "mangledName": "$s12LiGPlayerKit10EventValueV17proximityDistanceSdSgvg",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Double?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV17proximityDistanceSdSgvs",
-                "mangledName": "$s12LiGPlayerKit10EventValueV17proximityDistanceSdSgvs",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12LiGPlayerKit10EventValueV17proximityDistanceSdSgvM",
-                "mangledName": "$s12LiGPlayerKit10EventValueV17proximityDistanceSdSgvM",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "CodingKeys",
-            "printedName": "CodingKeys",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "activateDistance",
-                "printedName": "activateDistance",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(LiGPlayerKit.EventValue.CodingKeys.Type) -> LiGPlayerKit.EventValue.CodingKeys",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LiGPlayerKit.EventValue.CodingKeys",
-                        "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "LiGPlayerKit.EventValue.CodingKeys.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CodingKeys",
-                            "printedName": "LiGPlayerKit.EventValue.CodingKeys",
-                            "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO16activateDistanceyA2EmF",
-                "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO16activateDistanceyA2EmF",
-                "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 0
-              },
-              {
-                "kind": "Var",
-                "name": "lookAtTime",
-                "printedName": "lookAtTime",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(LiGPlayerKit.EventValue.CodingKeys.Type) -> LiGPlayerKit.EventValue.CodingKeys",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LiGPlayerKit.EventValue.CodingKeys",
-                        "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "LiGPlayerKit.EventValue.CodingKeys.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CodingKeys",
-                            "printedName": "LiGPlayerKit.EventValue.CodingKeys",
-                            "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO10lookAtTimeyA2EmF",
-                "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO10lookAtTimeyA2EmF",
-                "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 1
-              },
-              {
-                "kind": "Var",
-                "name": "activatePeriod",
-                "printedName": "activatePeriod",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(LiGPlayerKit.EventValue.CodingKeys.Type) -> LiGPlayerKit.EventValue.CodingKeys",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LiGPlayerKit.EventValue.CodingKeys",
-                        "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "LiGPlayerKit.EventValue.CodingKeys.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CodingKeys",
-                            "printedName": "LiGPlayerKit.EventValue.CodingKeys",
-                            "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO14activatePeriodyA2EmF",
-                "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO14activatePeriodyA2EmF",
-                "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 2
-              },
-              {
-                "kind": "Var",
-                "name": "periods",
-                "printedName": "periods",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(LiGPlayerKit.EventValue.CodingKeys.Type) -> LiGPlayerKit.EventValue.CodingKeys",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LiGPlayerKit.EventValue.CodingKeys",
-                        "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "LiGPlayerKit.EventValue.CodingKeys.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CodingKeys",
-                            "printedName": "LiGPlayerKit.EventValue.CodingKeys",
-                            "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO7periodsyA2EmF",
-                "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO7periodsyA2EmF",
-                "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 3
-              },
-              {
-                "kind": "Var",
-                "name": "proximityDistance",
-                "printedName": "proximityDistance",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(LiGPlayerKit.EventValue.CodingKeys.Type) -> LiGPlayerKit.EventValue.CodingKeys",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LiGPlayerKit.EventValue.CodingKeys",
-                        "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "LiGPlayerKit.EventValue.CodingKeys.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CodingKeys",
-                            "printedName": "LiGPlayerKit.EventValue.CodingKeys",
-                            "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO17proximityDistanceyA2EmF",
-                "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO17proximityDistanceyA2EmF",
-                "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 4
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "LiGPlayerKit.EventValue.CodingKeys?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LiGPlayerKit.EventValue.CodingKeys",
-                        "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO03rawE0AESgSS_tcfc",
-                "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO03rawE0AESgSS_tcfc",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO03rawE0SSvp",
-                "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO03rawE0SSvp",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO03rawE0SSvg",
-                    "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO03rawE0SSvg",
-                    "moduleName": "LiGPlayerKit",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "stringValue",
-                "printedName": "stringValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO06stringE0SSvp",
-                "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO06stringE0SSvp",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO06stringE0SSvg",
-                    "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO06stringE0SSvg",
-                    "moduleName": "LiGPlayerKit",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(stringValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "LiGPlayerKit.EventValue.CodingKeys?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LiGPlayerKit.EventValue.CodingKeys",
-                        "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO06stringE0AESgSS_tcfc",
-                "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO06stringE0AESgSS_tcfc",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Var",
-                "name": "intValue",
-                "printedName": "intValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO03intE0SiSgvp",
-                "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO03intE0SiSgvp",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.Int?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO03intE0SiSgvg",
-                    "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO03intE0SiSgvg",
-                    "moduleName": "LiGPlayerKit",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(intValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "LiGPlayerKit.EventValue.CodingKeys?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CodingKeys",
-                        "printedName": "LiGPlayerKit.EventValue.CodingKeys",
-                        "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO03intE0AESgSi_tcfc",
-                "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO03intE0AESgSi_tcfc",
-                "moduleName": "LiGPlayerKit",
-                "implicit": true,
-                "init_kind": "Designated"
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:12LiGPlayerKit10EventValueV10CodingKeysO",
-            "mangledName": "$s12LiGPlayerKit10EventValueV10CodingKeysO",
-            "moduleName": "LiGPlayerKit",
-            "enumRawTypeName": "String",
-            "isEnumExhaustive": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CodingKey",
-                "printedName": "CodingKey",
-                "usr": "s:s9CodingKeyP",
-                "mangledName": "$ss9CodingKeyP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomDebugStringConvertible",
-                "printedName": "CustomDebugStringConvertible",
-                "usr": "s:s28CustomDebugStringConvertibleP",
-                "mangledName": "$ss28CustomDebugStringConvertibleP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomStringConvertible",
-                "printedName": "CustomStringConvertible",
-                "usr": "s:s23CustomStringConvertibleP",
-                "mangledName": "$ss23CustomStringConvertibleP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Sendable",
-                "printedName": "Sendable",
-                "usr": "s:s8SendableP",
-                "mangledName": "$ss8SendableP"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "EventValue",
-                "printedName": "LiGPlayerKit.EventValue",
-                "usr": "s:12LiGPlayerKit10EventValueV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:12LiGPlayerKit10EventValueVACycfc",
-            "mangledName": "$s12LiGPlayerKit10EventValueVACycfc",
-            "moduleName": "LiGPlayerKit",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(activateDistance:lookAtTime:activatePeriod:periods:proximityDistance:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "EventValue",
-                "printedName": "LiGPlayerKit.EventValue",
-                "usr": "s:12LiGPlayerKit10EventValueV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Double?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Double?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Double?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:12LiGPlayerKit10EventValueV16activateDistance10lookAtTime0F6Period7periods09proximityG0ACSdSg_AISSSgAjItcfc",
-            "mangledName": "$s12LiGPlayerKit10EventValueV16activateDistance10lookAtTime0F6Period7periods09proximityG0ACSdSg_AISSSgAjItcfc",
-            "moduleName": "LiGPlayerKit",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "EventValue",
-                "printedName": "LiGPlayerKit.EventValue",
-                "usr": "s:12LiGPlayerKit10EventValueV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:12LiGPlayerKit10EventValueV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s12LiGPlayerKit10EventValueV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "LiGPlayerKit",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12LiGPlayerKit10EventValueV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s12LiGPlayerKit10EventValueV6encode2toys7Encoder_p_tKF",
-            "moduleName": "LiGPlayerKit",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:12LiGPlayerKit10EventValueV",
-        "mangledName": "$s12LiGPlayerKit10EventValueV",
-        "moduleName": "LiGPlayerKit",
-        "declAttributes": [
-          "AccessControl"
         ],
         "conformances": [
           {
@@ -49999,6 +48729,66 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "nextDestination",
+            "printedName": "nextDestination",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12LiGPlayerKit8GameDataV15nextDestinationSSSgvp",
+            "mangledName": "$s12LiGPlayerKit8GameDataV15nextDestinationSSSgvp",
+            "moduleName": "LiGPlayerKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit8GameDataV15nextDestinationSSSgvg",
+                "mangledName": "$s12LiGPlayerKit8GameDataV15nextDestinationSSSgvg",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "TypeDecl",
             "name": "CodingKeys",
             "printedName": "CodingKeys",
@@ -50306,6 +49096,44 @@
                 "mangledName": "$s12LiGPlayerKit8GameDataV10CodingKeysO6poolIdyA2EmF",
                 "moduleName": "LiGPlayerKit",
                 "fixedbinaryorder": 7
+              },
+              {
+                "kind": "Var",
+                "name": "nextDestination",
+                "printedName": "nextDestination",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LiGPlayerKit.GameData.CodingKeys.Type) -> LiGPlayerKit.GameData.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "LiGPlayerKit.GameData.CodingKeys",
+                        "usr": "s:12LiGPlayerKit8GameDataV10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LiGPlayerKit.GameData.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "LiGPlayerKit.GameData.CodingKeys",
+                            "usr": "s:12LiGPlayerKit8GameDataV10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:12LiGPlayerKit8GameDataV10CodingKeysO15nextDestinationyA2EmF",
+                "mangledName": "$s12LiGPlayerKit8GameDataV10CodingKeysO15nextDestinationyA2EmF",
+                "moduleName": "LiGPlayerKit",
+                "fixedbinaryorder": 8
               },
               {
                 "kind": "Constructor",
@@ -50616,7 +49444,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(count:total:collected:coin_quantity:code:actionName:voucherTypeId:poolId:)",
+            "printedName": "init(count:total:collected:coin_quantity:code:actionName:voucherTypeId:poolId:nextDestination:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -50735,11 +49563,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12LiGPlayerKit8GameDataV5count5total9collected13coin_quantity4code10actionName13voucherTypeId04poolP0ACSiSg_A3lA0dE13ConditionCodeOSgSSSgA2Ltcfc",
-            "mangledName": "$s12LiGPlayerKit8GameDataV5count5total9collected13coin_quantity4code10actionName13voucherTypeId04poolP0ACSiSg_A3lA0dE13ConditionCodeOSgSSSgA2Ltcfc",
+            "usr": "s:12LiGPlayerKit8GameDataV5count5total9collected13coin_quantity4code10actionName13voucherTypeId04poolP015nextDestinationACSiSg_A3mA0dE13ConditionCodeOSgSSSgA2mQtcfc",
+            "mangledName": "$s12LiGPlayerKit8GameDataV5count5total9collected13coin_quantity4code10actionName13voucherTypeId04poolP015nextDestinationACSiSg_A3mA0dE13ConditionCodeOSgSSSgA2mQtcfc",
             "moduleName": "LiGPlayerKit",
             "implicit": true,
             "init_kind": "Designated"
@@ -51841,6 +50683,43 @@
             "declKind": "EnumElement",
             "usr": "s:12LiGPlayerKit14GameActionTypeO06FWPoolE0yA2CmF",
             "mangledName": "$s12LiGPlayerKit14GameActionTypeO06FWPoolE0yA2CmF",
+            "moduleName": "LiGPlayerKit"
+          },
+          {
+            "kind": "Var",
+            "name": "poolAction",
+            "printedName": "poolAction",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LiGPlayerKit.GameActionType.Type) -> LiGPlayerKit.GameActionType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GameActionType",
+                    "printedName": "LiGPlayerKit.GameActionType",
+                    "usr": "s:12LiGPlayerKit14GameActionTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LiGPlayerKit.GameActionType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GameActionType",
+                        "printedName": "LiGPlayerKit.GameActionType",
+                        "usr": "s:12LiGPlayerKit14GameActionTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12LiGPlayerKit14GameActionTypeO04poolE0yA2CmF",
+            "mangledName": "$s12LiGPlayerKit14GameActionTypeO04poolE0yA2CmF",
             "moduleName": "LiGPlayerKit"
           },
           {
@@ -53413,6 +52292,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -60184,34 +59070,6 @@
             "declKind": "Func",
             "usr": "s:12LiGPlayerKit0A9GBaseNodeC25proximityFunctionDetected12prevDistance8distanceySd_SdtF",
             "mangledName": "$s12LiGPlayerKit0A9GBaseNodeC25proximityFunctionDetected12prevDistance8distanceySd_SdtF",
-            "moduleName": "LiGPlayerKit",
-            "isOpen": true,
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "wasCloseEnough",
-            "printedName": "wasCloseEnough(distance:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12LiGPlayerKit0A9GBaseNodeC14wasCloseEnough8distanceySd_tF",
-            "mangledName": "$s12LiGPlayerKit0A9GBaseNodeC14wasCloseEnough8distanceySd_tF",
             "moduleName": "LiGPlayerKit",
             "isOpen": true,
             "declAttributes": [
@@ -68437,6 +67295,57 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VectorArithmetic",
+            "printedName": "VectorArithmetic",
+            "usr": "s:7SwiftUI16VectorArithmeticP",
+            "mangledName": "$s7SwiftUI16VectorArithmeticP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Animatable",
+            "printedName": "Animatable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AnimatableData",
+                "printedName": "AnimatableData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI10AnimatableP",
+            "mangledName": "$s7SwiftUI10AnimatableP"
           }
         ]
       },
@@ -69012,6 +67921,41 @@
             "printedName": "CVarArg",
             "usr": "s:s7CVarArgP",
             "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Sendable",
+                        "printedName": "Swift.Sendable",
+                        "usr": "s:s8SendableP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           }
         ]
       },
@@ -71153,6 +70097,57 @@
           },
           {
             "kind": "Conformance",
+            "name": "VectorArithmetic",
+            "printedName": "VectorArithmetic",
+            "usr": "s:7SwiftUI16VectorArithmeticP",
+            "mangledName": "$s7SwiftUI16VectorArithmeticP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Animatable",
+            "printedName": "Animatable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AnimatableData",
+                "printedName": "AnimatableData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI10AnimatableP",
+            "mangledName": "$s7SwiftUI10AnimatableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "MLShapedArrayScalar",
             "printedName": "MLShapedArrayScalar",
             "usr": "s:6CoreML19MLShapedArrayScalarP",
@@ -71684,6 +70679,35 @@
           },
           {
             "kind": "Conformance",
+            "name": "VectorArithmetic",
+            "printedName": "VectorArithmetic",
+            "usr": "s:7SwiftUI16VectorArithmeticP",
+            "mangledName": "$s7SwiftUI16VectorArithmeticP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "MLShapedArrayScalar",
             "printedName": "MLShapedArrayScalar",
             "usr": "s:6CoreML19MLShapedArrayScalarP",
@@ -71807,7 +70831,9 @@
         "objc_name": "NSBundle",
         "declAttributes": [
           "ObjC",
+          "SynthesizedProtocol",
           "NonSendable",
+          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -71817,6 +70843,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -71967,6 +71000,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -73356,1862 +72396,1827 @@
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 12883,
-      "length": 19,
-      "value": "\"activate_distance\""
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
-      "kind": "StringLiteral",
-      "offset": 12929,
-      "length": 14,
-      "value": "\"look_at_time\""
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
-      "kind": "StringLiteral",
-      "offset": 12974,
-      "length": 17,
-      "value": "\"activate_period\""
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
-      "kind": "StringLiteral",
-      "offset": 13015,
-      "length": 9,
-      "value": "\"periods\""
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
-      "kind": "StringLiteral",
-      "offset": 13058,
-      "length": 10,
-      "value": "\"distance\""
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
-      "kind": "StringLiteral",
-      "offset": 12883,
-      "length": 19,
-      "value": "\"activate_distance\""
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
-      "kind": "StringLiteral",
-      "offset": 12929,
-      "length": 14,
-      "value": "\"look_at_time\""
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
-      "kind": "StringLiteral",
-      "offset": 12974,
-      "length": 17,
-      "value": "\"activate_period\""
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
-      "kind": "StringLiteral",
-      "offset": 13015,
-      "length": 9,
-      "value": "\"periods\""
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
-      "kind": "StringLiteral",
-      "offset": 13058,
-      "length": 10,
-      "value": "\"distance\""
-    },
-    {
-      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
-      "kind": "StringLiteral",
-      "offset": 15855,
+      "offset": 15051,
       "length": 8,
       "value": "\"obj_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15890,
+      "offset": 15086,
       "length": 13,
       "value": "\"direction_x\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15930,
+      "offset": 15126,
       "length": 13,
       "value": "\"direction_y\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15970,
+      "offset": 15166,
       "length": 13,
       "value": "\"direction_z\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16014,
+      "offset": 15210,
       "length": 17,
       "value": "\"animation_speed\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16058,
+      "offset": 15254,
       "length": 13,
       "value": "\"start_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16096,
+      "offset": 15292,
       "length": 11,
       "value": "\"end_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16135,
+      "offset": 15331,
       "length": 14,
       "value": "\"repeat_count\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16180,
+      "offset": 15376,
       "length": 18,
       "value": "\"move_action_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16231,
+      "offset": 15427,
       "length": 20,
       "value": "\"rotate_action_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16278,
+      "offset": 15474,
       "length": 13,
       "value": "\"start_angle\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16316,
+      "offset": 15512,
       "length": 11,
       "value": "\"end_angle\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16359,
+      "offset": 15555,
       "length": 18,
       "value": "\"face_translating\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16406,
+      "offset": 15602,
       "length": 16,
       "value": "\"face_is_return\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16451,
+      "offset": 15647,
       "length": 16,
       "value": "\"face_wait_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16498,
+      "offset": 15694,
       "length": 19,
       "value": "\"face_rotate_to_me\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16543,
+      "offset": 15739,
       "length": 12,
       "value": "\"delay_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16582,
+      "offset": 15778,
       "length": 13,
       "value": "\"curve_scale\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16631,
+      "offset": 15827,
       "length": 23,
       "value": "\"impact_feedback_style\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16676,
+      "offset": 15872,
       "length": 12,
       "value": "\"sub_obj_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16713,
+      "offset": 15909,
       "length": 11,
       "value": "\"game_type\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16755,
+      "offset": 15951,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16787,
+      "offset": 15983,
       "length": 12,
       "value": "\"play_count\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15855,
+      "offset": 15051,
       "length": 8,
       "value": "\"obj_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15890,
+      "offset": 15086,
       "length": 13,
       "value": "\"direction_x\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15930,
+      "offset": 15126,
       "length": 13,
       "value": "\"direction_y\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 15970,
+      "offset": 15166,
       "length": 13,
       "value": "\"direction_z\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16014,
+      "offset": 15210,
       "length": 17,
       "value": "\"animation_speed\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16058,
+      "offset": 15254,
       "length": 13,
       "value": "\"start_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16096,
+      "offset": 15292,
       "length": 11,
       "value": "\"end_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16135,
+      "offset": 15331,
       "length": 14,
       "value": "\"repeat_count\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16180,
+      "offset": 15376,
       "length": 18,
       "value": "\"move_action_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16231,
+      "offset": 15427,
       "length": 20,
       "value": "\"rotate_action_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16278,
+      "offset": 15474,
       "length": 13,
       "value": "\"start_angle\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16316,
+      "offset": 15512,
       "length": 11,
       "value": "\"end_angle\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16359,
+      "offset": 15555,
       "length": 18,
       "value": "\"face_translating\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16406,
+      "offset": 15602,
       "length": 16,
       "value": "\"face_is_return\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16451,
+      "offset": 15647,
       "length": 16,
       "value": "\"face_wait_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16498,
+      "offset": 15694,
       "length": 19,
       "value": "\"face_rotate_to_me\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16543,
+      "offset": 15739,
       "length": 12,
       "value": "\"delay_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16582,
+      "offset": 15778,
       "length": 13,
       "value": "\"curve_scale\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16631,
+      "offset": 15827,
       "length": 23,
       "value": "\"impact_feedback_style\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16676,
+      "offset": 15872,
       "length": 12,
       "value": "\"sub_obj_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16713,
+      "offset": 15909,
       "length": 11,
       "value": "\"game_type\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16755,
+      "offset": 15951,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16787,
+      "offset": 15983,
       "length": 12,
       "value": "\"play_count\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 19987,
+      "offset": 19183,
       "length": 13,
       "value": "\"ios_texture\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 20031,
+      "offset": 19227,
       "length": 17,
       "value": "\"android_texture\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 19987,
+      "offset": 19183,
       "length": 13,
       "value": "\"ios_texture\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 20031,
+      "offset": 19227,
       "length": 17,
       "value": "\"android_texture\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24870,
+      "offset": 24066,
       "length": 13,
       "value": "\"floor_count\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24911,
+      "offset": 24107,
       "length": 14,
       "value": "\"floor_height\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24950,
+      "offset": 24146,
       "length": 11,
       "value": "\"floor_gap\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24987,
+      "offset": 24183,
       "length": 12,
       "value": "\"face_count\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25023,
+      "offset": 24219,
       "length": 10,
       "value": "\"face_gap\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25059,
+      "offset": 24255,
       "length": 12,
       "value": "\"face_width\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25099,
+      "offset": 24295,
       "length": 7,
       "value": "\"speed\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25131,
+      "offset": 24327,
       "length": 11,
       "value": "\"hue_angle\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25167,
+      "offset": 24363,
       "length": 11,
       "value": "\"hue_range\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25205,
+      "offset": 24401,
       "length": 12,
       "value": "\"saturation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25248,
+      "offset": 24444,
       "length": 17,
       "value": "\"light_intensity\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25288,
+      "offset": 24484,
       "length": 9,
       "value": "\"face_me\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25322,
+      "offset": 24518,
       "length": 11,
       "value": "\"is_ignore\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25365,
+      "offset": 24561,
       "length": 18,
       "value": "\"visible_distance\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25406,
+      "offset": 24602,
       "length": 9,
       "value": "\"is_play\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25440,
+      "offset": 24636,
       "length": 11,
       "value": "\"is_hidden\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25485,
+      "offset": 24681,
       "length": 21,
       "value": "\"video_play_distance\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25533,
+      "offset": 24729,
       "length": 14,
       "value": "\"is_loop_play\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25571,
+      "offset": 24767,
       "length": 10,
       "value": "\"icon_url\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25611,
+      "offset": 24807,
       "length": 17,
       "value": "\"is_double_sided\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25651,
+      "offset": 24847,
       "length": 9,
       "value": "\"tw_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25683,
+      "offset": 24879,
       "length": 9,
       "value": "\"en_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25715,
+      "offset": 24911,
       "length": 9,
       "value": "\"ko_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25747,
+      "offset": 24943,
       "length": 9,
       "value": "\"ja_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25779,
+      "offset": 24975,
       "length": 9,
       "value": "\"th_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25820,
+      "offset": 25016,
       "length": 20,
       "value": "\"is_size_scale_lock\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25867,
+      "offset": 25063,
       "length": 13,
       "value": "\"preview_url\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25911,
+      "offset": 25107,
       "length": 17,
       "value": "\"animation_speed\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25955,
+      "offset": 25151,
       "length": 13,
       "value": "\"start_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25993,
+      "offset": 25189,
       "length": 11,
       "value": "\"end_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26035,
+      "offset": 25231,
       "length": 17,
       "value": "\"multiply_number\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26083,
+      "offset": 25279,
       "length": 17,
       "value": "\"multiply_radius\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26130,
+      "offset": 25326,
       "length": 16,
       "value": "\"multiply_range\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26174,
+      "offset": 25370,
       "length": 14,
       "value": "\"is_occlusion\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26220,
+      "offset": 25416,
       "length": 20,
       "value": "\"multiply_is_zero_y\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26268,
+      "offset": 25464,
       "length": 14,
       "value": "\"floor_angles\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26310,
+      "offset": 25506,
       "length": 15,
       "value": "\"face_gap_list\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26359,
+      "offset": 25555,
       "length": 21,
       "value": "\"particle_birth_rate\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26423,
+      "offset": 25619,
       "length": 31,
       "value": "\"particle_birth_rate_variation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26487,
+      "offset": 25683,
       "length": 20,
       "value": "\"particle_life_span\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26549,
+      "offset": 25745,
       "length": 30,
       "value": "\"particle_life_span_variation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26612,
+      "offset": 25808,
       "length": 19,
       "value": "\"particle_velocity\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26673,
+      "offset": 25869,
       "length": 29,
       "value": "\"particle_velocity_variation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26733,
+      "offset": 25929,
       "length": 17,
       "value": "\"bloom_intensity\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26778,
+      "offset": 25974,
       "length": 14,
       "value": "\"bloom_radius\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26829,
+      "offset": 26025,
       "length": 14,
       "value": "\"resource_url\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26884,
+      "offset": 26080,
       "length": 10,
       "value": "\"interval\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26929,
+      "offset": 26125,
       "length": 11,
       "value": "\"direction\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26976,
+      "offset": 26172,
       "length": 13,
       "value": "\"farmland_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24870,
+      "offset": 24066,
       "length": 13,
       "value": "\"floor_count\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24911,
+      "offset": 24107,
       "length": 14,
       "value": "\"floor_height\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24950,
+      "offset": 24146,
       "length": 11,
       "value": "\"floor_gap\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 24987,
+      "offset": 24183,
       "length": 12,
       "value": "\"face_count\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25023,
+      "offset": 24219,
       "length": 10,
       "value": "\"face_gap\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25059,
+      "offset": 24255,
       "length": 12,
       "value": "\"face_width\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25099,
+      "offset": 24295,
       "length": 7,
       "value": "\"speed\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25131,
+      "offset": 24327,
       "length": 11,
       "value": "\"hue_angle\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25167,
+      "offset": 24363,
       "length": 11,
       "value": "\"hue_range\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25205,
+      "offset": 24401,
       "length": 12,
       "value": "\"saturation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25248,
+      "offset": 24444,
       "length": 17,
       "value": "\"light_intensity\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25288,
+      "offset": 24484,
       "length": 9,
       "value": "\"face_me\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25322,
+      "offset": 24518,
       "length": 11,
       "value": "\"is_ignore\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25365,
+      "offset": 24561,
       "length": 18,
       "value": "\"visible_distance\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25406,
+      "offset": 24602,
       "length": 9,
       "value": "\"is_play\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25440,
+      "offset": 24636,
       "length": 11,
       "value": "\"is_hidden\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25485,
+      "offset": 24681,
       "length": 21,
       "value": "\"video_play_distance\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25533,
+      "offset": 24729,
       "length": 14,
       "value": "\"is_loop_play\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25571,
+      "offset": 24767,
       "length": 10,
       "value": "\"icon_url\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25611,
+      "offset": 24807,
       "length": 17,
       "value": "\"is_double_sided\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25651,
+      "offset": 24847,
       "length": 9,
       "value": "\"tw_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25683,
+      "offset": 24879,
       "length": 9,
       "value": "\"en_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25715,
+      "offset": 24911,
       "length": 9,
       "value": "\"ko_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25747,
+      "offset": 24943,
       "length": 9,
       "value": "\"ja_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25779,
+      "offset": 24975,
       "length": 9,
       "value": "\"th_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25820,
+      "offset": 25016,
       "length": 20,
       "value": "\"is_size_scale_lock\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25867,
+      "offset": 25063,
       "length": 13,
       "value": "\"preview_url\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25911,
+      "offset": 25107,
       "length": 17,
       "value": "\"animation_speed\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25955,
+      "offset": 25151,
       "length": 13,
       "value": "\"start_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 25993,
+      "offset": 25189,
       "length": 11,
       "value": "\"end_frame\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26035,
+      "offset": 25231,
       "length": 17,
       "value": "\"multiply_number\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26083,
+      "offset": 25279,
       "length": 17,
       "value": "\"multiply_radius\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26130,
+      "offset": 25326,
       "length": 16,
       "value": "\"multiply_range\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26174,
+      "offset": 25370,
       "length": 14,
       "value": "\"is_occlusion\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26220,
+      "offset": 25416,
       "length": 20,
       "value": "\"multiply_is_zero_y\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26268,
+      "offset": 25464,
       "length": 14,
       "value": "\"floor_angles\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26310,
+      "offset": 25506,
       "length": 15,
       "value": "\"face_gap_list\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26359,
+      "offset": 25555,
       "length": 21,
       "value": "\"particle_birth_rate\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26423,
+      "offset": 25619,
       "length": 31,
       "value": "\"particle_birth_rate_variation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26487,
+      "offset": 25683,
       "length": 20,
       "value": "\"particle_life_span\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26549,
+      "offset": 25745,
       "length": 30,
       "value": "\"particle_life_span_variation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26612,
+      "offset": 25808,
       "length": 19,
       "value": "\"particle_velocity\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26673,
+      "offset": 25869,
       "length": 29,
       "value": "\"particle_velocity_variation\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26733,
+      "offset": 25929,
       "length": 17,
       "value": "\"bloom_intensity\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26778,
+      "offset": 25974,
       "length": 14,
       "value": "\"bloom_radius\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26829,
+      "offset": 26025,
       "length": 14,
       "value": "\"resource_url\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26884,
+      "offset": 26080,
       "length": 10,
       "value": "\"interval\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26929,
+      "offset": 26125,
       "length": 11,
       "value": "\"direction\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26976,
+      "offset": 26172,
       "length": 13,
       "value": "\"farmland_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35033,
+      "offset": 34229,
       "length": 9,
       "value": "\"zh-Hant\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35062,
+      "offset": 34258,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35087,
+      "offset": 34283,
       "length": 4,
       "value": "\"ja\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35110,
+      "offset": 34306,
       "length": 4,
       "value": "\"ko\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35131,
+      "offset": 34327,
       "length": 4,
       "value": "\"th\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35033,
+      "offset": 34229,
       "length": 9,
       "value": "\"zh-Hant\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35062,
+      "offset": 34258,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35087,
+      "offset": 34283,
       "length": 4,
       "value": "\"ja\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35110,
+      "offset": 34306,
       "length": 4,
       "value": "\"ko\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35131,
+      "offset": 34327,
       "length": 4,
       "value": "\"th\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35715,
+      "offset": 34911,
       "length": 22,
       "value": "\"coordinate_system_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35764,
+      "offset": 34960,
       "length": 13,
       "value": "\"light_poses\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35715,
+      "offset": 34911,
       "length": 22,
       "value": "\"coordinate_system_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35764,
+      "offset": 34960,
       "length": 13,
       "value": "\"light_poses\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35977,
+      "offset": 35173,
       "length": 10,
       "value": "\"light_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 35977,
+      "offset": 35173,
       "length": 10,
       "value": "\"light_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36582,
+      "offset": 35778,
       "length": 17,
       "value": "\"profile_picture\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36582,
+      "offset": 35778,
       "length": 17,
       "value": "\"profile_picture\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "BooleanLiteral",
-      "offset": 36765,
+      "offset": 35961,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37043,
+      "offset": 36239,
       "length": 19,
       "value": "\"exchange_end_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37085,
+      "offset": 36281,
       "length": 9,
       "value": "\"is_used\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37124,
+      "offset": 36320,
       "length": 17,
       "value": "\"voucher_type_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37167,
+      "offset": 36363,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37205,
+      "offset": 36401,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37242,
+      "offset": 36438,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37282,
+      "offset": 36478,
       "length": 16,
       "value": "\"user_code_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37043,
+      "offset": 36239,
       "length": 19,
       "value": "\"exchange_end_time\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37085,
+      "offset": 36281,
       "length": 9,
       "value": "\"is_used\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37124,
+      "offset": 36320,
       "length": 17,
       "value": "\"voucher_type_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37167,
+      "offset": 36363,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37205,
+      "offset": 36401,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37242,
+      "offset": 36438,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37282,
+      "offset": 36478,
       "length": 16,
       "value": "\"user_code_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37388,
+      "offset": 36584,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37418,
+      "offset": 36614,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37440,
+      "offset": 36636,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37465,
+      "offset": 36661,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37485,
+      "offset": 36681,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37504,
+      "offset": 36700,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37388,
+      "offset": 36584,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37418,
+      "offset": 36614,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37440,
+      "offset": 36636,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37465,
+      "offset": 36661,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37485,
+      "offset": 36681,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37504,
+      "offset": 36700,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37388,
+      "offset": 36584,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37418,
+      "offset": 36614,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37440,
+      "offset": 36636,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37465,
+      "offset": 36661,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37485,
+      "offset": 36681,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 37504,
+      "offset": 36700,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37854,
+      "offset": 37050,
       "length": 11,
       "value": "\"game_type\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37888,
+      "offset": 37084,
       "length": 9,
       "value": "\"game_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37922,
+      "offset": 37118,
       "length": 11,
       "value": "\"game_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37854,
+      "offset": 37050,
       "length": 11,
       "value": "\"game_type\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37888,
+      "offset": 37084,
       "length": 9,
       "value": "\"game_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37922,
+      "offset": 37118,
       "length": 11,
       "value": "\"game_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38430,
+      "offset": 37666,
       "length": 13,
       "value": "\"action_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38473,
+      "offset": 37709,
       "length": 17,
       "value": "\"voucher_type_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38513,
+      "offset": 37749,
       "length": 9,
       "value": "\"pool_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38430,
+      "offset": 37790,
+      "length": 18,
+      "value": "\"next_destination\""
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
+      "kind": "StringLiteral",
+      "offset": 37666,
       "length": 13,
       "value": "\"action_name\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38473,
+      "offset": 37709,
       "length": 17,
       "value": "\"voucher_type_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38513,
+      "offset": 37749,
       "length": 9,
       "value": "\"pool_id\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
+      "kind": "StringLiteral",
+      "offset": 37790,
+      "length": 18,
+      "value": "\"next_destination\""
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38612,
+      "offset": 37898,
       "length": 16,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38638,
+      "offset": 37924,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38664,
+      "offset": 37950,
       "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38689,
+      "offset": 37975,
       "length": 9,
       "value": "4"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38708,
+      "offset": 37994,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38612,
+      "offset": 37898,
       "length": 16,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38638,
+      "offset": 37924,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38664,
+      "offset": 37950,
       "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38689,
+      "offset": 37975,
       "length": 9,
       "value": "4"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38708,
+      "offset": 37994,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38612,
+      "offset": 37898,
       "length": 16,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38638,
+      "offset": 37924,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38664,
+      "offset": 37950,
       "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38689,
+      "offset": 37975,
       "length": 9,
       "value": "4"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 38708,
+      "offset": 37994,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40680,
+      "offset": 39966,
       "length": 12,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40702,
+      "offset": 39988,
       "length": 13,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40725,
+      "offset": 40011,
       "length": 10,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40745,
+      "offset": 40031,
       "length": 12,
       "value": "4"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40767,
+      "offset": 40053,
       "length": 15,
       "value": "5"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40792,
+      "offset": 40078,
       "length": 15,
       "value": "6"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40817,
+      "offset": 40103,
       "length": 12,
       "value": "7"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40839,
-      "length": 5,
+      "offset": 40125,
+      "length": 10,
       "value": "8"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40680,
+      "offset": 40145,
+      "length": 5,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
+      "kind": "IntegerLiteral",
+      "offset": 39966,
       "length": 12,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40702,
+      "offset": 39988,
       "length": 13,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40725,
+      "offset": 40011,
       "length": 10,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40745,
+      "offset": 40031,
       "length": 12,
       "value": "4"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40767,
+      "offset": 40053,
       "length": 15,
       "value": "5"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40792,
+      "offset": 40078,
       "length": 15,
       "value": "6"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40817,
+      "offset": 40103,
       "length": 12,
       "value": "7"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40839,
-      "length": 5,
+      "offset": 40125,
+      "length": 10,
       "value": "8"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40680,
+      "offset": 40145,
+      "length": 5,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
+      "kind": "IntegerLiteral",
+      "offset": 39966,
       "length": 12,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40702,
+      "offset": 39988,
       "length": 13,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40725,
+      "offset": 40011,
       "length": 10,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40745,
+      "offset": 40031,
       "length": 12,
       "value": "4"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40767,
+      "offset": 40053,
       "length": 15,
       "value": "5"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40792,
+      "offset": 40078,
       "length": 15,
       "value": "6"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40817,
+      "offset": 40103,
       "length": 12,
       "value": "7"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40839,
-      "length": 5,
+      "offset": 40125,
+      "length": 10,
       "value": "8"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42181,
+      "offset": 40145,
+      "length": 5,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
+      "kind": "IntegerLiteral",
+      "offset": 41584,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42200,
+      "offset": 41603,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42181,
+      "offset": 41584,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42200,
+      "offset": 41603,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42181,
+      "offset": 41584,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42200,
+      "offset": 41603,
       "length": 1,
       "value": "2"
     },

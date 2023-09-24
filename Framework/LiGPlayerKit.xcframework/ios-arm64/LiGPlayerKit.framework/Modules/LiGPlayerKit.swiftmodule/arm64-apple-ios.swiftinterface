@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name LiGPlayerKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -16,6 +16,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 import simd
 public enum ArModelTypeEnum : Swift.Int, Swift.CaseIterable, Swift.Codable {
   case plane
@@ -424,27 +425,12 @@ public struct Location : Swift.Codable {
 }
 public struct Event : Swift.Codable {
   public var id: Swift.Int?
-  public var values: LiGPlayerKit.EventValue?
+  public var values: [Swift.String : Any]?
   public var actions: [LiGPlayerKit.Action]?
   public init()
-  public init(id: Swift.Int?, values: LiGPlayerKit.EventValue?, actions: [LiGPlayerKit.Action]?)
-  public func lookAt() -> Foundation.TimeInterval
-  public func activateDistance() -> Swift.Double
-  public func activatperiode() -> Swift.String
-  public func periods() -> Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
+  public init(id: Swift.Int?, values: [Swift.String : Any]?, actions: [LiGPlayerKit.Action]?)
   public init(from decoder: any Swift.Decoder) throws
-}
-public struct EventValue : Swift.Codable {
-  public var activateDistance: Swift.Double?
-  public var lookAtTime: Foundation.TimeInterval?
-  public var activatePeriod: Swift.String?
-  public var periods: Swift.String?
-  public var proximityDistance: Swift.Double?
-  public init()
-  public init(activateDistance: Swift.Double?, lookAtTime: Swift.Double?, activatePeriod: Swift.String?, periods: Swift.String?, proximityDistance: Swift.Double?)
   public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct Action : Swift.Codable {
   public var id: Swift.Int?
@@ -694,6 +680,7 @@ public struct GameData : Swift.Codable {
   public let actionName: Swift.String?
   public let voucherTypeId: Swift.Int?
   public let poolId: Swift.Int?
+  public let nextDestination: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -733,6 +720,7 @@ public enum GameActionType : Swift.Int, Swift.Codable {
   case FWVoucherAction
   case FWLotteryAction
   case FWPoolAction
+  case poolAction
   case error
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
@@ -857,7 +845,6 @@ public struct ApiLocation : Swift.Codable {
   #endif
   @_Concurrency.MainActor(unsafe) open func distanceWithPhoneChanged(distance: Swift.Double)
   @_Concurrency.MainActor(unsafe) open func proximityFunctionDetected(prevDistance: Swift.Double, distance: Swift.Double)
-  @_Concurrency.MainActor(unsafe) open func wasCloseEnough(distance: Swift.Double)
   @_Concurrency.MainActor(unsafe) open func wasStaredAt()
   @_Concurrency.MainActor(unsafe) open func syncTransformState(with object: LiGPlayerKit.ArObject? = nil)
   @objc deinit
