@@ -103,6 +103,7 @@ public struct ArActionEnum : Swift.RawRepresentable, Swift.Hashable {
   public static let disableNode: LiGPlayerKit.ArActionEnum
   public static let enableNode: LiGPlayerKit.ArActionEnum
   public static let executeServerAction: LiGPlayerKit.ArActionEnum
+  public static let panoramaAction: LiGPlayerKit.ArActionEnum
 }
 public enum ImpactFeedback : Swift.Int {
   case system
