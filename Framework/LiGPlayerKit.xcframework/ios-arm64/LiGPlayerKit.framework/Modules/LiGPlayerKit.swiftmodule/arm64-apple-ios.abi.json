@@ -66973,6 +66973,212 @@
       },
       {
         "kind": "Import",
+        "name": "SceneKit",
+        "printedName": "SceneKit",
+        "declKind": "Import",
+        "moduleName": "LiGPlayerKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PanoramaAction",
+        "printedName": "PanoramaAction",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "model",
+            "printedName": "model",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Action",
+                "printedName": "LiGPlayerKit.Action",
+                "usr": "s:12LiGPlayerKit6ActionV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12LiGPlayerKit14PanoramaActionC5modelAA0E0Vvp",
+            "mangledName": "$s12LiGPlayerKit14PanoramaActionC5modelAA0E0Vvp",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Action",
+                    "printedName": "LiGPlayerKit.Action",
+                    "usr": "s:12LiGPlayerKit6ActionV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit14PanoramaActionC5modelAA0E0Vvg",
+                "mangledName": "$s12LiGPlayerKit14PanoramaActionC5modelAA0E0Vvg",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Action",
+                    "printedName": "LiGPlayerKit.Action",
+                    "usr": "s:12LiGPlayerKit6ActionV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit14PanoramaActionC5modelAA0E0Vvs",
+                "mangledName": "$s12LiGPlayerKit14PanoramaActionC5modelAA0E0Vvs",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit14PanoramaActionC5modelAA0E0VvM",
+                "mangledName": "$s12LiGPlayerKit14PanoramaActionC5modelAA0E0VvM",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(model:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PanoramaAction",
+                "printedName": "LiGPlayerKit.PanoramaAction",
+                "usr": "s:12LiGPlayerKit14PanoramaActionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Action",
+                "printedName": "LiGPlayerKit.Action",
+                "usr": "s:12LiGPlayerKit6ActionV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12LiGPlayerKit14PanoramaActionC5modelAcA0E0V_tcfc",
+            "mangledName": "$s12LiGPlayerKit14PanoramaActionC5modelAcA0E0V_tcfc",
+            "moduleName": "LiGPlayerKit",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "build",
+            "printedName": "build(model:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ActionValues",
+                "printedName": "LiGPlayerKit.ActionValues",
+                "usr": "s:12LiGPlayerKit12ActionValuesV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit14PanoramaActionC5build5modelyAA0E6ValuesV_tF",
+            "mangledName": "$s12LiGPlayerKit14PanoramaActionC5build5modelyAA0E6ValuesV_tF",
+            "moduleName": "LiGPlayerKit",
+            "overriding": true,
+            "isOpen": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PanoramaAction",
+                "printedName": "LiGPlayerKit.PanoramaAction",
+                "usr": "s:12LiGPlayerKit14PanoramaActionC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12LiGPlayerKit14PanoramaActionCACycfc",
+            "mangledName": "$s12LiGPlayerKit14PanoramaActionCACycfc",
+            "moduleName": "LiGPlayerKit",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12LiGPlayerKit14PanoramaActionC",
+        "mangledName": "$s12LiGPlayerKit14PanoramaActionC",
+        "moduleName": "LiGPlayerKit",
+        "isOpen": true,
+        "superclassUsr": "s:12LiGPlayerKit0A11GBaseActionC",
+        "superclassNames": [
+          "LiGPlayerKit.LiGBaseAction"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LiGPlayerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -74750,6 +74956,13 @@
       "offset": 243,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Action\/PanoramaAction.swift",
+      "kind": "StringLiteral",
+      "offset": 119,
+      "length": 14,
+      "value": "\"LiGPlayerKit.PanoramaAction\""
     }
   ]
 }
