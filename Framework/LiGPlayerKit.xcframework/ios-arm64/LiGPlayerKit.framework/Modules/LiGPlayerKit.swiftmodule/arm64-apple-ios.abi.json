@@ -3163,6 +3163,54 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "panoramaAction",
+            "printedName": "panoramaAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ArActionEnum",
+                "printedName": "LiGPlayerKit.ArActionEnum",
+                "usr": "s:12LiGPlayerKit12ArActionEnumV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12LiGPlayerKit12ArActionEnumV08panoramaE0ACvpZ",
+            "mangledName": "$s12LiGPlayerKit12ArActionEnumV08panoramaE0ACvpZ",
+            "moduleName": "LiGPlayerKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArActionEnum",
+                    "printedName": "LiGPlayerKit.ArActionEnum",
+                    "usr": "s:12LiGPlayerKit12ArActionEnumV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit12ArActionEnumV08panoramaE0ACvgZ",
+                "mangledName": "$s12LiGPlayerKit12ArActionEnumV08panoramaE0ACvgZ",
+                "moduleName": "LiGPlayerKit",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -36959,6 +37007,23 @@
       },
       {
         "kind": "Import",
+        "name": "SceneKit",
+        "printedName": "SceneKit",
+        "declKind": "Import",
+        "moduleName": "LiGPlayerKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LiGPlayerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -40834,63 +40899,70 @@
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5191,
+      "offset": 5213,
+      "length": 2,
+      "value": "37"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5279,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5206,
+      "offset": 5294,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5221,
+      "offset": 5309,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5191,
+      "offset": 5279,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5206,
+      "offset": 5294,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5221,
+      "offset": 5309,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5191,
+      "offset": 5279,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5206,
+      "offset": 5294,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5221,
+      "offset": 5309,
       "length": 5,
       "value": "3"
     },
@@ -46896,7 +46968,7 @@
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/LiGPlayerKit+BundleFinder.swift",
       "kind": "StringLiteral",
-      "offset": 484,
+      "offset": 247,
       "length": 27,
       "value": "\"LiGPlayerKit_LiGPlayerKit\""
     },
@@ -47218,35 +47290,35 @@
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Action\/LiGBaseAction.swift",
       "kind": "IntegerLiteral",
-      "offset": 2709,
+      "offset": 2790,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Action\/LiGBaseAction.swift",
       "kind": "IntegerLiteral",
-      "offset": 2895,
+      "offset": 2976,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Action\/LiGBaseAction.swift",
       "kind": "IntegerLiteral",
-      "offset": 2961,
+      "offset": 3042,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Action\/LiGBaseAction.swift",
       "kind": "IntegerLiteral",
-      "offset": 3422,
+      "offset": 3503,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Action\/LiGBaseAction.swift",
       "kind": "IntegerLiteral",
-      "offset": 3529,
+      "offset": 3610,
       "length": 1,
       "value": "1"
     },
@@ -49622,6 +49694,41 @@
       "offset": 436,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Action\/PanoramaAction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 338,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Action\/PanoramaAction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 398,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Action\/PanoramaAction.swift",
+      "kind": "StringLiteral",
+      "offset": 510,
+      "length": 4,
+      "value": "\"-1\""
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Action\/PanoramaAction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 519,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Action\/PanoramaAction.swift",
+      "kind": "StringLiteral",
+      "offset": 119,
+      "length": 14,
+      "value": "\"LiGPlayerKit.PanoramaAction\""
     },
     {
       "filePath": "\/Users\/plainwu\/Projects\/ios\/ios-player-sdk\/Sources\/LiGPlayerKit\/Extension\/UIImage.swift",
