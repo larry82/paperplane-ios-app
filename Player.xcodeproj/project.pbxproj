@@ -553,7 +553,7 @@
 			repositoryURL = "https://gitlab.com/lig-corp/ios-scanner-sdk-sample";
 			requirement = {
 				kind = exactVersion;
-				version = 3.2.0;
+				version = 3.3.0;
 			};
 		};
 		93B2FC9229E2CB6F007C9792 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */ = {
