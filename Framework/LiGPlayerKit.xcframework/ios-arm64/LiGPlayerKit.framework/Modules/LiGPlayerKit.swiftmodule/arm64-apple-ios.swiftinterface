@@ -737,6 +737,10 @@ public enum GameActionType : Swift.Int, Swift.Codable {
     get
   }
 }
+public struct AIResponseContent : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public enum DashboardDirection : Swift.Int, Swift.Codable {
   case left
   case right
