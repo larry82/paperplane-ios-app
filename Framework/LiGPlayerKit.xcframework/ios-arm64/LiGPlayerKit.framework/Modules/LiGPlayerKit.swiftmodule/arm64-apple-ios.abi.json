@@ -3259,6 +3259,54 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "callAI",
+            "printedName": "callAI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ArActionEnum",
+                "printedName": "LiGPlayerKit.ArActionEnum",
+                "usr": "s:12LiGPlayerKit12ArActionEnumV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12LiGPlayerKit12ArActionEnumV6callAIACvpZ",
+            "mangledName": "$s12LiGPlayerKit12ArActionEnumV6callAIACvpZ",
+            "moduleName": "LiGPlayerKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArActionEnum",
+                    "printedName": "LiGPlayerKit.ArActionEnum",
+                    "usr": "s:12LiGPlayerKit12ArActionEnumV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit12ArActionEnumV6callAIACvgZ",
+                "mangledName": "$s12LiGPlayerKit12ArActionEnumV6callAIACvgZ",
+                "moduleName": "LiGPlayerKit",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -7593,6 +7641,531 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "LiGPlayerKit.LiGBaseAction"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LiGPlayerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "LiGPlayerKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AIAudioRecorder",
+        "printedName": "AIAudioRecorder",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "audioRecorder",
+            "printedName": "audioRecorder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFAudio.AVAudioRecorder?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVAudioRecorder",
+                    "printedName": "AVFAudio.AVAudioRecorder",
+                    "usr": "c:objc(cs)AVAudioRecorder"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12LiGPlayerKit15AIAudioRecorderC05audioE0So07AVAudioE0CSgvp",
+            "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC05audioE0So07AVAudioE0CSgvp",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFAudio.AVAudioRecorder?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVAudioRecorder",
+                        "printedName": "AVFAudio.AVAudioRecorder",
+                        "usr": "c:objc(cs)AVAudioRecorder"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit15AIAudioRecorderC05audioE0So07AVAudioE0CSgvg",
+                "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC05audioE0So07AVAudioE0CSgvg",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFAudio.AVAudioRecorder?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVAudioRecorder",
+                        "printedName": "AVFAudio.AVAudioRecorder",
+                        "usr": "c:objc(cs)AVAudioRecorder"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit15AIAudioRecorderC05audioE0So07AVAudioE0CSgvs",
+                "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC05audioE0So07AVAudioE0CSgvs",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit15AIAudioRecorderC05audioE0So07AVAudioE0CSgvM",
+                "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC05audioE0So07AVAudioE0CSgvM",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "file",
+            "printedName": "file",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12LiGPlayerKit15AIAudioRecorderC4file10Foundation3URLVSgvp",
+            "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC4file10Foundation3URLVSgvp",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit15AIAudioRecorderC4file10Foundation3URLVSgvg",
+                "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC4file10Foundation3URLVSgvg",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit15AIAudioRecorderC4file10Foundation3URLVSgvs",
+                "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC4file10Foundation3URLVSgvs",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit15AIAudioRecorderC4file10Foundation3URLVSgvM",
+                "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC4file10Foundation3URLVSgvM",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fileName",
+            "printedName": "fileName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12LiGPlayerKit15AIAudioRecorderC8fileNameSSvp",
+            "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC8fileNameSSvp",
+            "moduleName": "LiGPlayerKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit15AIAudioRecorderC8fileNameSSvg",
+                "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC8fileNameSSvg",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setupAudioSession",
+            "printedName": "setupAudioSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit15AIAudioRecorderC17setupAudioSessionyyF",
+            "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC17setupAudioSessionyyF",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startRecording",
+            "printedName": "startRecording()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit15AIAudioRecorderC14startRecordingyyF",
+            "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC14startRecordingyyF",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopRecording",
+            "printedName": "stopRecording()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit15AIAudioRecorderC13stopRecordingyyF",
+            "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC13stopRecordingyyF",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AIAudioRecorder",
+                "printedName": "LiGPlayerKit.AIAudioRecorder",
+                "usr": "c:@M@LiGPlayerKit@objc(cs)AIAudioRecorder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@LiGPlayerKit@objc(cs)AIAudioRecorder(im)init",
+            "mangledName": "$s12LiGPlayerKit15AIAudioRecorderCACycfc",
+            "moduleName": "LiGPlayerKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "audioRecorderDidFinishRecording",
+            "printedName": "audioRecorderDidFinishRecording(_:successfully:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVAudioRecorder",
+                "printedName": "AVFAudio.AVAudioRecorder",
+                "usr": "c:objc(cs)AVAudioRecorder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@LiGPlayerKit@objc(cs)AIAudioRecorder(im)audioRecorderDidFinishRecording:successfully:",
+            "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC05audioE18DidFinishRecording_12successfullyySo07AVAudioE0C_SbtF",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "objc_name": "audioRecorderDidFinishRecording:successfully:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "audioRecorderEncodeErrorDidOccur",
+            "printedName": "audioRecorderEncodeErrorDidOccur(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVAudioRecorder",
+                "printedName": "AVFAudio.AVAudioRecorder",
+                "usr": "c:objc(cs)AVAudioRecorder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@LiGPlayerKit@objc(cs)AIAudioRecorder(im)audioRecorderEncodeErrorDidOccur:error:",
+            "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC05audioE19EncodeErrorDidOccur_5errorySo07AVAudioE0C_s0H0_pSgtF",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "objc_name": "audioRecorderEncodeErrorDidOccur:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@LiGPlayerKit@objc(cs)AIAudioRecorder",
+        "mangledName": "$s12LiGPlayerKit15AIAudioRecorderC",
+        "moduleName": "LiGPlayerKit",
+        "isOpen": true,
+        "declAttributes": [
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -12525,6 +13098,96 @@
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LiGPlayerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SceneKit",
+        "printedName": "SceneKit",
+        "declKind": "Import",
+        "moduleName": "LiGPlayerKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CallAIAction",
+        "printedName": "CallAIAction",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "build",
+            "printedName": "build(model:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ActionValues",
+                "printedName": "LiGPlayerKit.ActionValues",
+                "usr": "s:12LiGPlayerKit12ActionValuesV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit12CallAIActionC5build5modelyAA12ActionValuesV_tF",
+            "mangledName": "$s12LiGPlayerKit12CallAIActionC5build5modelyAA12ActionValuesV_tF",
+            "moduleName": "LiGPlayerKit",
+            "overriding": true,
+            "isOpen": true,
+            "declAttributes": [
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CallAIAction",
+                "printedName": "LiGPlayerKit.CallAIAction",
+                "usr": "s:12LiGPlayerKit12CallAIActionC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12LiGPlayerKit12CallAIActionCACycfc",
+            "mangledName": "$s12LiGPlayerKit12CallAIActionCACycfc",
+            "moduleName": "LiGPlayerKit",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12LiGPlayerKit12CallAIActionC",
+        "mangledName": "$s12LiGPlayerKit12CallAIActionC",
+        "moduleName": "LiGPlayerKit",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "superclassUsr": "s:12LiGPlayerKit0A11GBaseActionC",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "LiGPlayerKit.LiGBaseAction"
         ]
       },
       {
@@ -61782,6 +62445,25 @@
           },
           {
             "kind": "Function",
+            "name": "postAIApi",
+            "printedName": "postAIApi()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit05SceneC7ContextC9postAIApiyyYaKF",
+            "mangledName": "$s12LiGPlayerKit05SceneC7ContextC9postAIApiyyYaKF",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "frameUpdated",
             "printedName": "frameUpdated(_:didUpdate:)",
             "children": [
@@ -64523,6 +65205,16 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "LiGPlayerKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LiGPlayerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -71408,6 +72100,438 @@
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NSMutableData",
+        "printedName": "NSMutableData",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "append",
+            "printedName": "append(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So13NSMutableDataC12LiGPlayerKitE6appendyySSF",
+            "mangledName": "$sSo13NSMutableDataC12LiGPlayerKitE6appendyySSF",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSMutableData",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "objc_name": "NSMutableData",
+        "declAttributes": [
+          "ObjC",
+          "NonSendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSData",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "Foundation.NSData",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Regions",
+                "printedName": "Regions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.Data]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RandomAccessCollection",
+            "printedName": "RandomAccessCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Slice",
+                    "printedName": "Swift.Slice<Foundation.NSData>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSData",
+                        "printedName": "Foundation.NSData",
+                        "usr": "c:objc(cs)NSData"
+                      }
+                    ],
+                    "usr": "s:s5SliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sk",
+            "mangledName": "$sSk"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidirectionalCollection",
+            "printedName": "BidirectionalCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Slice",
+                    "printedName": "Swift.Slice<Foundation.NSData>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSData",
+                        "printedName": "Foundation.NSData",
+                        "usr": "c:objc(cs)NSData"
+                      }
+                    ],
+                    "usr": "s:s5SliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SK",
+            "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexingIterator",
+                    "printedName": "Swift.IndexingIterator<Foundation.NSData>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSData",
+                        "printedName": "Foundation.NSData",
+                        "usr": "c:objc(cs)NSData"
+                      }
+                    ],
+                    "usr": "s:s16IndexingIteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Slice",
+                    "printedName": "Swift.Slice<Foundation.NSData>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSData",
+                        "printedName": "Foundation.NSData",
+                        "usr": "c:objc(cs)NSData"
+                      }
+                    ],
+                    "usr": "s:s5SliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexingIterator",
+                    "printedName": "Swift.IndexingIterator<Foundation.NSData>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSData",
+                        "printedName": "Foundation.NSData",
+                        "usr": "c:objc(cs)NSData"
+                      }
+                    ],
+                    "usr": "s:s16IndexingIteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -72207,63 +73331,70 @@
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5368,
+      "offset": 5387,
+      "length": 2,
+      "value": "39"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5453,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5383,
+      "offset": 5468,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5398,
+      "offset": 5483,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5368,
+      "offset": 5453,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5383,
+      "offset": 5468,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5398,
+      "offset": 5483,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5368,
+      "offset": 5453,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5383,
+      "offset": 5468,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5398,
+      "offset": 5483,
       "length": 5,
       "value": "3"
     },
@@ -72322,6 +73453,13 @@
       "offset": 959,
       "length": 1,
       "value": "8"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/AIAudioRecorder.swift",
+      "kind": "StringLiteral",
+      "offset": 249,
+      "length": 14,
+      "value": "\"AISample.m4a\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/Network\/LiGAPIRequest.swift",

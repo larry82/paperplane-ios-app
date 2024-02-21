@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name LiGPlayerKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -105,6 +105,7 @@ public struct ArActionEnum : Swift.RawRepresentable, Swift.Hashable {
   public static let executeServerAction: LiGPlayerKit.ArActionEnum
   public static let panoramaAction: LiGPlayerKit.ArActionEnum
   public static let removeAction: LiGPlayerKit.ArActionEnum
+  public static let callAI: LiGPlayerKit.ArActionEnum
 }
 public enum ImpactFeedback : Swift.Int {
   case system
@@ -268,6 +269,10 @@ public actor LiGScene {
   #if compiler(>=5.3) && $AsyncAwait
   public static func buildTransformForCoordinateSystem(for ligTagID: Swift.Int, with phone2LigTagTransform: simd.matrix_float4x4) async -> simd.matrix_float4x4
   #endif
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CallAIAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ShowNodeAction : LiGPlayerKit.LiGBaseAction {
