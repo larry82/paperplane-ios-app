@@ -10,6 +10,7 @@ import Foundation
 import GLTFSceneKit
 import ImageIO
 import SceneKit
+import Speech
 import SpriteKit
 import Swift
 import UIKit
@@ -106,6 +107,7 @@ public struct ArActionEnum : Swift.RawRepresentable, Swift.Hashable {
   public static let panoramaAction: LiGPlayerKit.ArActionEnum
   public static let removeAction: LiGPlayerKit.ArActionEnum
   public static let callAI: LiGPlayerKit.ArActionEnum
+  public static let backToFormerScene: LiGPlayerKit.ArActionEnum
 }
 public enum ImpactFeedback : Swift.Int {
   case system
@@ -187,6 +189,10 @@ public struct DashboardRes : Swift.Codable {
   override public func build(model: LiGPlayerKit.ActionValues)
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BackToFormerSceneAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SleepAction : LiGPlayerKit.LiGBaseAction {
   override public func build(model: LiGPlayerKit.ActionValues)
   @objc deinit
@@ -220,6 +226,10 @@ public class AsyncDownloader {
 @_hasMissingDesignatedInitializers public class LiGPlayer {
   final public let version: Swift.String
   public static let sharedContext: LiGPlayerKit.SceneKitContext
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SwitchSceneAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SetScaleAction : LiGPlayerKit.LiGBaseAction {
@@ -483,7 +493,9 @@ public struct ActionValues : Swift.Codable {
   public let offset: Swift.Float?
   public let playCount: Swift.Int?
   public let duration: CoreFoundation.CGFloat?
-  public init(url: Swift.String?, time: Foundation.TimeInterval?, translating: Swift.Double?, objectId: Swift.Int?, directionX: CoreFoundation.CGFloat?, directionY: CoreFoundation.CGFloat?, directionZ: CoreFoundation.CGFloat?, group: Swift.Int?, animationSpeed: CoreFoundation.CGFloat?, startFrame: CoreFoundation.CGFloat?, endFrame: CoreFoundation.CGFloat?, fps: Swift.Double?, repeatCount: CoreFoundation.CGFloat?, scale: CoreFoundation.CGFloat?, transparency: CoreFoundation.CGFloat?, width: CoreFoundation.CGFloat?, height: CoreFoundation.CGFloat?, moveActionTime: Foundation.TimeInterval?, rotateActionTime: Foundation.TimeInterval?, clockwise: Swift.Bool?, radius: CoreFoundation.CGFloat?, startAngle: CoreFoundation.CGFloat?, endAngle: CoreFoundation.CGFloat?, faceTranslating: Swift.Double?, faceIsReturn: Swift.Bool?, faceWaitTime: Foundation.TimeInterval?, faceRotateToMe: Swift.Bool?, delayTime: Foundation.TimeInterval?, curveScale: CoreFoundation.CGFloat?, impactFeedbackStyle: Swift.Int?, subID: Swift.Int?, gameType: Swift.Int?, uiInteractName: Swift.String?, target: Swift.Int?, offset: Swift.Float?, playCount: Swift.Int?, duration: CoreFoundation.CGFloat?)
+  public let sceneId: Swift.String?
+  public let repositionToCamera: Swift.Bool?
+  public init(url: Swift.String?, time: Foundation.TimeInterval?, translating: Swift.Double?, objectId: Swift.Int?, directionX: CoreFoundation.CGFloat?, directionY: CoreFoundation.CGFloat?, directionZ: CoreFoundation.CGFloat?, group: Swift.Int?, animationSpeed: CoreFoundation.CGFloat?, startFrame: CoreFoundation.CGFloat?, endFrame: CoreFoundation.CGFloat?, fps: Swift.Double?, repeatCount: CoreFoundation.CGFloat?, scale: CoreFoundation.CGFloat?, transparency: CoreFoundation.CGFloat?, width: CoreFoundation.CGFloat?, height: CoreFoundation.CGFloat?, moveActionTime: Foundation.TimeInterval?, rotateActionTime: Foundation.TimeInterval?, clockwise: Swift.Bool?, radius: CoreFoundation.CGFloat?, startAngle: CoreFoundation.CGFloat?, endAngle: CoreFoundation.CGFloat?, faceTranslating: Swift.Double?, faceIsReturn: Swift.Bool?, faceWaitTime: Foundation.TimeInterval?, faceRotateToMe: Swift.Bool?, delayTime: Foundation.TimeInterval?, curveScale: CoreFoundation.CGFloat?, impactFeedbackStyle: Swift.Int?, subID: Swift.Int?, gameType: Swift.Int?, uiInteractName: Swift.String?, target: Swift.Int?, offset: Swift.Float?, playCount: Swift.Int?, duration: CoreFoundation.CGFloat?, sceneId: Swift.String?, repositionToCamera: Swift.Bool?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -737,6 +749,10 @@ public enum GameActionType : Swift.Int, Swift.Codable {
     get
   }
 }
+public struct AIResponseText : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct AIResponseContent : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -900,6 +916,8 @@ public protocol SceneKitContextGestureDelegate {
   public var delegate: (any LiGPlayerKit.SceneKitContextDelegate)?
   public var gestureDelegate: (any LiGPlayerKit.SceneKitContextGestureDelegate)?
   public var frameUpdateDefaultActionEnabled: Swift.Bool
+  public var savedSceneId: Swift.String?
+  public var originTransform: simd.simd_float4x4?
   @objc override dynamic public init()
   public func run()
   public func rest()

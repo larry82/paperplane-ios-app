@@ -302,6 +302,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+
 @class NSCoder;
 
 SWIFT_CLASS("_TtC12LiGPlayerKit11LiGBaseNode")
@@ -360,6 +361,7 @@ SWIFT_CLASS("_TtC12LiGPlayerKit9PlaneNode")
 SWIFT_CLASS("_TtC12LiGPlayerKit11PolygonNode")
 @interface PolygonNode : LiGBaseNode
 @end
+
 
 
 

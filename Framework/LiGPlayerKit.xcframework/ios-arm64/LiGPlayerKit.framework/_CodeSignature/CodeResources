@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/LiGPlayerKit-Swift.h</key>
 		<data>
-		SRWEUnuBVlXpL12pwD9ui/XYvU4=
+		DA3vYMWaq4Q0BzvrdE0Cc7ihrQs=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		aR2sJXnPreB6NfEWQnQmCud0dG4=
+		nb/yLXu10AIUzaOLNBNegWHT134=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		AlJbEfWxLdEfs6rW8It5xxh7I+Q=
+		1A6W9xFgJBdZ286Nm/BbVO0gepQ=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		a7u+nEC0/le+3u6AoIKTVT0n8bg=
+		wigk91vprMJP2C5pnuYBm855gUc=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		dmR/MtFlYktV/91DKRVzz3ZaUYM=
+		hVzm7PlsuylsRm+Sx0pCb38QCls=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		a7u+nEC0/le+3u6AoIKTVT0n8bg=
+		wigk91vprMJP2C5pnuYBm855gUc=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		b6d52ZIUKhAGi6o3/srl0v/gLvM=
+		vgU4TJ70VwhXv4/WYwNbS9A+L14=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -87,49 +87,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kjp32Aw83sdWHL356NhX5SozEVoi9RWyf09mgUycqi0=
+			wHTG5gfXUeNSYuxvPmkmummyyFknj52wWQaCpQy0e5k=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1IssyPhwVM01qlECiHbQ7vHYyEJYvuedcQFcaoE0JvA=
+			iyVlZoti60sH/pfOJsgn9ftusQwDz5M6E4PibgYVXeg=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AeO5qchME6kUYi8sKq8qixMR5PV1a/ivf6lEkzPffmM=
+			tcu9MdFw1XMQGv0rGROVinZCljLPh3gYWdm5h4LUFD8=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ugi4Hhl21ia9hWIhmq1ivaJ2lFdV6rUfVqWBYX1XLh4=
+			stUhdOXHzIHOkNq/6vnZtCSugEdtLhUYgAQDRVgan8g=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Z0KqQiaRIq/OdHDAjAe7WqEt2J7Bja480Dnt0oEYzE=
+			vEbR+qkmKQS1peVLR2CaGZ97Qsny4+m7B+8GUZ+s8Qo=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ugi4Hhl21ia9hWIhmq1ivaJ2lFdV6rUfVqWBYX1XLh4=
+			stUhdOXHzIHOkNq/6vnZtCSugEdtLhUYgAQDRVgan8g=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			imaC1BEoRQr6S08E05uJ/3dQt4+OBvQRUTkvYzjccxQ=
+			LP36VBjANNIYSIi15Vcql32aalGhQBfTUC9C0bOKWfk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
