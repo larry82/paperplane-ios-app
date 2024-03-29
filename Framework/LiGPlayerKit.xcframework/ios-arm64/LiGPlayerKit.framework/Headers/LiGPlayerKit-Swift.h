@@ -329,8 +329,19 @@ SWIFT_CLASS("_TtC12LiGPlayerKit20DirectionalLightNode")
 @end
 
 
+SWIFT_CLASS("_TtC12LiGPlayerKit20DiversityPolygonNode")
+@interface DiversityPolygonNode : LiGBaseNode
+@end
+
+
 SWIFT_CLASS("_TtC12LiGPlayerKit9FloorNode")
 @interface FloorNode : LiGBaseNode
+@end
+
+
+
+SWIFT_CLASS("_TtC12LiGPlayerKit14LiveStreamNode")
+@interface LiveStreamNode : LiGBaseNode
 @end
 
 
@@ -360,6 +371,11 @@ SWIFT_CLASS("_TtC12LiGPlayerKit9PlaneNode")
 
 SWIFT_CLASS("_TtC12LiGPlayerKit11PolygonNode")
 @interface PolygonNode : LiGBaseNode
+@end
+
+
+SWIFT_CLASS("_TtC12LiGPlayerKit23RecommendationModelNode")
+@interface RecommendationModelNode : LiGBaseNode
 @end
 
 

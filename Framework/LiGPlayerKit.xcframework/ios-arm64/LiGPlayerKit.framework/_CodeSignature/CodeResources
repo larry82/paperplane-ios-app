@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/LiGPlayerKit-Swift.h</key>
 		<data>
-		DA3vYMWaq4Q0BzvrdE0Cc7ihrQs=
+		JCT6MbRRShpFK7JohuJl9cWpjQs=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		nb/yLXu10AIUzaOLNBNegWHT134=
+		NlvTG4FylXxgcBxpK1nxjM0PnrM=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		1A6W9xFgJBdZ286Nm/BbVO0gepQ=
+		E1Lus6Wk9MooyRp0HFlCb89Su4I=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		wigk91vprMJP2C5pnuYBm855gUc=
+		KUQL+9VnD71QizzFv+1QmZhd6eQ=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		hVzm7PlsuylsRm+Sx0pCb38QCls=
+		oHeZG0oOCKEC5KwanVNzmit4fF4=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		wigk91vprMJP2C5pnuYBm855gUc=
+		KUQL+9VnD71QizzFv+1QmZhd6eQ=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		vgU4TJ70VwhXv4/WYwNbS9A+L14=
+		KLG/Uvrtn22CokxShva2YLyktek=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -52,9 +52,25 @@
 		<data>
 		8r/hF7UNZdBPasCbOZ22aDry23I=
 		</data>
+		<key>UniAR_ChangeScene.json</key>
+		<data>
+		HNe7ZpDQ5EOmTR4l2c2+UDlfoHY=
+		</data>
 		<key>default.metallib</key>
 		<data>
 		eJB924QR2dXDOqN9XZBNdOYz9uU=
+		</data>
+		<key>infoBoard_default-live.png</key>
+		<data>
+		QDsFv0LmcAQDxkp2SUaAaf0rWoo=
+		</data>
+		<key>infoBoard_default-nav.png</key>
+		<data>
+		Ngy4dgadskO89SmCSrwk2e6zToE=
+		</data>
+		<key>infoBoard_default-web.png</key>
+		<data>
+		oLQplT9v10a3es0G0k5LYohCF+A=
 		</data>
 		<key>norky_infoBlock_left_PAR.png</key>
 		<data>
@@ -80,6 +96,10 @@
 		<data>
 		sREehuiX4HZpq2Ns9DLnWVh12os=
 		</data>
+		<key>recommendationModel.glb</key>
+		<data>
+		rHAREHk6YNVhIzSuGNx/1EQ3xb8=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -87,49 +107,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wHTG5gfXUeNSYuxvPmkmummyyFknj52wWQaCpQy0e5k=
+			HXbwru7C6O/H80fNv9LUY/CDLkUb85NIVOLjbjKz+1E=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iyVlZoti60sH/pfOJsgn9ftusQwDz5M6E4PibgYVXeg=
+			5gUopQRXSwIIVozkZnBnFWOJiaDG4bxvm/2JadQ5+38=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tcu9MdFw1XMQGv0rGROVinZCljLPh3gYWdm5h4LUFD8=
+			dRfwjAO5Ia3bCYcFRw2JSzUwtyU2CUMVLXPVK22ImK0=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			stUhdOXHzIHOkNq/6vnZtCSugEdtLhUYgAQDRVgan8g=
+			O0BSyAZAyFCfPSmaytRz+wEZg5iQ9kUnhFY7w9p7grs=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vEbR+qkmKQS1peVLR2CaGZ97Qsny4+m7B+8GUZ+s8Qo=
+			L3BtVKooStQL5GV2SM+/03d8QT5lV4nrTtqj5sKn1FA=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			stUhdOXHzIHOkNq/6vnZtCSugEdtLhUYgAQDRVgan8g=
+			O0BSyAZAyFCfPSmaytRz+wEZg5iQ9kUnhFY7w9p7grs=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LP36VBjANNIYSIi15Vcql32aalGhQBfTUC9C0bOKWfk=
+			iMpmcItvoEzGWTX+UK1jOI8d7nrwQ8O4Y6mFX7f7nyQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -160,11 +180,39 @@
 			Oia7QEwChTdJ5lPZWqjsR4WTM3DxMHk9K3MfSdxdGlE=
 			</data>
 		</dict>
+		<key>UniAR_ChangeScene.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			K4qIONJizZUaNjdR/VOSZkWjqiEZWyTQ4W5YOiN4VL4=
+			</data>
+		</dict>
 		<key>default.metallib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			bs8lG7NBbi0NG1yBD+AVoCj228bWUlN5ZhEVNllnrvI=
+			</data>
+		</dict>
+		<key>infoBoard_default-live.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			t6i29+kZo3MzRKDBXsYjQHvdUIML3N5QeaZ/jmo7h68=
+			</data>
+		</dict>
+		<key>infoBoard_default-nav.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k2RZC9vPA5Lk8O0M4HM0paNuWodQZvNl+yiSShn+42Y=
+			</data>
+		</dict>
+		<key>infoBoard_default-web.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UKeqnaZGPidWmM5xpH05qT8oQeO+8bfJsdwmnVxMDwA=
 			</data>
 		</dict>
 		<key>norky_infoBlock_left_PAR.png</key>
@@ -207,6 +255,13 @@
 			<key>hash2</key>
 			<data>
 			GpePkciB0HSQUYVZgV6aujcXIiZPvYTcMod4Nec5lus=
+			</data>
+		</dict>
+		<key>recommendationModel.glb</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4it93y3vRpILphVQJIa6N1PsRwXBly88Lo/nphihC7s=
 			</data>
 		</dict>
 	</dict>
