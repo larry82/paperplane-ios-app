@@ -388,6 +388,7 @@ SWIFT_CLASS("_TtC12LiGPlayerKit15SceneKitContext")
 @end
 
 
+
 SWIFT_CLASS("_TtC12LiGPlayerKit8SnowNode")
 @interface SnowNode : LiGBaseNode
 @end

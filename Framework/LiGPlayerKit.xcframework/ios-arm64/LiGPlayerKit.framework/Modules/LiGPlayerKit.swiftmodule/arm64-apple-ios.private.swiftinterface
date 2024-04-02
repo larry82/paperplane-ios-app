@@ -9,7 +9,9 @@ import CoreGraphics
 import Foundation
 import GLTFSceneKit
 import ImageIO
+import RealityKit
 import SceneKit
+import SocketIO
 import Speech
 import SpriteKit
 import Swift
@@ -161,6 +163,102 @@ extension Swift.KeyedEncodingContainer {
   override public func build(model: LiGPlayerKit.ActionValues)
   @objc deinit
 }
+public protocol StagingControllerClientDelegate {
+  func clientDidConnect(_ client: LiGPlayerKit.StagingControllerClient)
+  func clientDidDisconnect(_ client: LiGPlayerKit.StagingControllerClient)
+  func clientDidHostRoom(_ client: LiGPlayerKit.StagingControllerClient, room: LiGPlayerKit.StagingControllerClient.Room)
+  func clientDidCloseRoom(_ client: LiGPlayerKit.StagingControllerClient, roomId: Swift.Int)
+  func clientDidJoin(_ client: LiGPlayerKit.StagingControllerClient, participant: LiGPlayerKit.StagingControllerClient.Room.Participant)
+  func clientDidLeave(_ client: LiGPlayerKit.StagingControllerClient, participantId: Swift.Int)
+  func clientParticipantDidUpdate(_ client: LiGPlayerKit.StagingControllerClient, participant: LiGPlayerKit.StagingControllerClient.Room.Participant)
+  func clientDidStart(_ client: LiGPlayerKit.StagingControllerClient)
+  func clientDidStop(_ client: LiGPlayerKit.StagingControllerClient)
+  func serverDidSend(_ client: LiGPlayerKit.StagingControllerClient, message: LiGPlayerKit.StagingControllerClient.GameMessage)
+  func gameServiceGameState(_ client: LiGPlayerKit.StagingControllerClient, game: LiGPlayerKit.StagingControllerClient, userCount: Swift.Int, state: [LiGPlayerKit.StagingControllerClient.UserState])
+}
+@_hasMissingDesignatedInitializers public class StagingControllerClient {
+  public enum ResultError : Foundation.LocalizedError {
+    case connectTimeout
+    case connectError
+    case invalidResponseData
+    case invalidRequestData(_: Swift.Int, _: Swift.String)
+    case internalServerError(_: Swift.Int, _: Swift.String)
+    case unknownError(_: Swift.Int, _: Swift.String)
+    public var errorDescription: Swift.String? {
+      get
+    }
+  }
+  public struct UploadExtenedState {
+    public struct Message {
+    }
+  }
+  public struct Room {
+    public struct Game {
+    }
+    public struct Participant {
+      public enum Role : Swift.String {
+        case owner
+        case player
+        case guest
+        public init?(rawValue: Swift.String)
+        public typealias RawValue = Swift.String
+        public var rawValue: Swift.String {
+          get
+        }
+      }
+    }
+    public var id: Swift.UInt
+    public var name: Swift.String
+    public var maxUserCount: Swift.UInt
+    public var currentUserCount: Swift.UInt
+    public var isFull: Swift.Bool
+    public var game: LiGPlayerKit.StagingControllerClient.Room.Game
+    public var participants: [LiGPlayerKit.StagingControllerClient.Room.Participant]
+  }
+  public struct UserState {
+  }
+  public static let shared: LiGPlayerKit.StagingControllerClient
+  public enum GameStatus {
+    case initial
+    case start
+    case stop
+    case over
+    public static func == (a: LiGPlayerKit.StagingControllerClient.GameStatus, b: LiGPlayerKit.StagingControllerClient.GameStatus) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public func isConnected() -> Swift.Bool
+  #if compiler(>=5.3) && $AsyncAwait
+  public func version() async -> Swift.Result<Swift.String, LiGPlayerKit.StagingControllerClient.ResultError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func listRoom() async -> Swift.Result<[LiGPlayerKit.StagingControllerClient.Room], LiGPlayerKit.StagingControllerClient.ResultError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func hostRoom(_ roomName: Swift.String, _ gameId: Swift.UInt, _ maxUserCount: Swift.UInt) async -> Swift.Result<(Swift.Int, Swift.Int), LiGPlayerKit.StagingControllerClient.ResultError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func joinRoom(_ roomId: Swift.UInt, _ participantRole: LiGPlayerKit.StagingControllerClient.Room.Participant.Role = .player) async -> Swift.Result<Swift.Int, LiGPlayerKit.StagingControllerClient.ResultError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func leaveRoom() async -> Swift.Result<Swift.Void, LiGPlayerKit.StagingControllerClient.ResultError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func closeRoom() async -> Swift.Result<Swift.Void, LiGPlayerKit.StagingControllerClient.ResultError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func roomInformation() async -> Swift.Result<LiGPlayerKit.StagingControllerClient.Room, LiGPlayerKit.StagingControllerClient.ResultError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func gameStart() async -> Swift.Result<Swift.Void, LiGPlayerKit.StagingControllerClient.ResultError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func gameStop() async -> Swift.Result<Swift.Void, LiGPlayerKit.StagingControllerClient.ResultError>
+  #endif
+  @objc deinit
+}
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class FloorNode : LiGPlayerKit.LiGBaseNode {
   @objc deinit
 }
@@ -180,6 +278,19 @@ public struct DashboardRes : Swift.Codable {
   override public func build(model: LiGPlayerKit.ActionValues)
   @objc deinit
 }
+extension LiGPlayerKit.SceneKitContext : LiGPlayerKit.StagingControllerClientDelegate {
+  public func clientDidConnect(_ client: LiGPlayerKit.StagingControllerClient)
+  public func clientDidDisconnect(_ client: LiGPlayerKit.StagingControllerClient)
+  public func clientDidHostRoom(_ client: LiGPlayerKit.StagingControllerClient, room: LiGPlayerKit.StagingControllerClient.Room)
+  public func clientDidCloseRoom(_ client: LiGPlayerKit.StagingControllerClient, roomId: Swift.Int)
+  public func clientDidJoin(_ client: LiGPlayerKit.StagingControllerClient, participant: LiGPlayerKit.StagingControllerClient.Room.Participant)
+  public func clientDidLeave(_ client: LiGPlayerKit.StagingControllerClient, participantId: Swift.Int)
+  public func clientParticipantDidUpdate(_ client: LiGPlayerKit.StagingControllerClient, participant: LiGPlayerKit.StagingControllerClient.Room.Participant)
+  public func clientDidStart(_ client: LiGPlayerKit.StagingControllerClient)
+  public func clientDidStop(_ client: LiGPlayerKit.StagingControllerClient)
+  public func serverDidSend(_ client: LiGPlayerKit.StagingControllerClient, message: LiGPlayerKit.StagingControllerClient.GameMessage)
+  public func gameServiceGameState(_ client: LiGPlayerKit.StagingControllerClient, game: LiGPlayerKit.StagingControllerClient, userCount: Swift.Int, state: [LiGPlayerKit.StagingControllerClient.UserState])
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SnowNode : LiGPlayerKit.LiGBaseNode {
   #if compiler(>=5.3) && $AsyncAwait
   nonisolated override public func textureDidDownloaded(url: Foundation.URL) async throws
@@ -189,6 +300,24 @@ public struct DashboardRes : Swift.Codable {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CurveMoveAction : LiGPlayerKit.LiGBaseAction {
   override public func build(model: LiGPlayerKit.ActionValues)
   @objc deinit
+}
+public struct Navigation : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Mark : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PlaceContent {
+}
+public struct NaviLocation : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Path : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public protocol ParametersType : Swift.Decodable, Swift.Encodable {
 }
@@ -208,6 +337,17 @@ extension LiGPlayerKit.ParametersType {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SleepAction : LiGPlayerKit.LiGBaseAction {
   override public func build(model: LiGPlayerKit.ActionValues)
   @objc deinit
+}
+extension LiGPlayerKit.StagingControllerClient {
+  public struct GameMessage {
+    public static func build(data: [Swift.String : Any]) -> LiGPlayerKit.StagingControllerClient.GameMessage
+    public var action: Swift.String? {
+      get
+    }
+    public subscript(index: Swift.String) -> Swift.String? {
+      get
+    }
+  }
 }
 extension UIKit.UIImage {
   public class func gifImageWithData(_ data: Foundation.Data) -> UIKit.UIImage?
@@ -269,6 +409,7 @@ public actor LiGScene {
       get
     }
   }
+  @available(*, deprecated, message: "Use init(scene:) instead.")
   public init(arObjects: [LiGPlayerKit.ArObject])
   public init(scene: LiGPlayerKit.SceneObject)
   public static func readFromCloud(lightId: Swift.Int, accessToken: Swift.String, success done: @escaping ((LiGPlayerKit.LiGScene?) -> Swift.Void), failure onError: (((any Swift.Error)?) -> Swift.Void)? = nil)
@@ -364,8 +505,11 @@ public struct SceneObject : Swift.Codable {
   public var gameReset: Swift.Bool
   public var actions: [Swift.String : [LiGPlayerKit.Action]]?
   public var credentials: [Swift.String : LiGPlayerKit.Credential?]?
+  public var scEnabled: Swift.Bool?
+  public var scRoomName: Swift.String?
+  public var scGameId: Swift.Int?
   public init()
-  public init(sceneID: Swift.Int?, name: Swift.String?, thumbnail: Swift.String?, arObjects: [LiGPlayerKit.ArObject]?, activityID: Swift.Int?, gameReset: Swift.Bool?, actions: [Swift.String : [LiGPlayerKit.Action]]?, credentials: [Swift.String : LiGPlayerKit.Credential?]?)
+  public init(sceneID: Swift.Int?, name: Swift.String?, thumbnail: Swift.String?, arObjects: [LiGPlayerKit.ArObject]?, activityID: Swift.Int?, gameReset: Swift.Bool?, actions: [Swift.String : [LiGPlayerKit.Action]]?, credentials: [Swift.String : LiGPlayerKit.Credential?]?, scEnabled: Swift.Bool?, scRoomName: Swift.String?, scGameId: Swift.Int?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -373,6 +517,7 @@ public struct CoordinateSystem : Swift.Codable {
   public var scenes: [LiGPlayerKit.SceneObject]?
   public var mapUrl: Swift.String?
   public var infoUrl: Swift.String?
+  public var navigation: LiGPlayerKit.Navigation?
   public init()
   public init(map: Swift.String?, info: Swift.String?, scenes: [LiGPlayerKit.SceneObject]?)
   public func encode(to encoder: any Swift.Encoder) throws
@@ -836,6 +981,10 @@ public struct Credential : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+extension Foundation.NSNotification.Name {
+  public static let StreamDidStartedNotification: Foundation.Notification.Name
+  public static let StreamDidEndedNotification: Foundation.Notification.Name
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RotateByAction : LiGPlayerKit.LiGBaseAction {
   override public func build(model: LiGPlayerKit.ActionValues)
   @objc deinit
@@ -965,6 +1114,10 @@ public protocol SceneKitContextGestureDelegate {
   func sceneViewDidTapped(gesture: UIKit.UITapGestureRecognizer) -> Swift.Bool
   func nodeDidTap(node: LiGPlayerKit.LiGBaseNode) -> Swift.Bool
 }
+public protocol SceneKitNavigationDelegate {
+  func nextTargetShowed(distance: Swift.Double)
+  func targetArrived()
+}
 @objc @_inheritsConvenienceInitializers public class SceneKitContext : ObjectiveC.NSObject {
   public static let shared: LiGPlayerKit.SceneKitContext
   public enum ContextError : Swift.Error {
@@ -987,6 +1140,8 @@ public protocol SceneKitContextGestureDelegate {
   public var coordinateSystem: LiGPlayerKit.CoordinateSystem?
   public var delegate: (any LiGPlayerKit.SceneKitContextDelegate)?
   public var gestureDelegate: (any LiGPlayerKit.SceneKitContextGestureDelegate)?
+  public var stagingControllerClientDelegate: (any LiGPlayerKit.StagingControllerClientDelegate)?
+  public var navigationDelegate: (any LiGPlayerKit.SceneKitNavigationDelegate)?
   public var frameUpdateDefaultActionEnabled: Swift.Bool
   public var savedSceneId: Swift.String?
   public var originTransform: simd.simd_float4x4?
@@ -1025,6 +1180,7 @@ public protocol SceneKitContextGestureDelegate {
   public func userProfile() async throws -> LiGPlayerKit.LightenARUser
   #endif
   public func frameUpdated(_ session: ARKit.ARSession, didUpdate frame: ARKit.ARFrame)
+  public func stopNavModule()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class FadeOutAction : LiGPlayerKit.LiGBaseAction {
@@ -1112,6 +1268,11 @@ extension LiGPlayerKit.ArEventEnum : Swift.RawRepresentable {}
 extension LiGPlayerKit.ImpactFeedback : Swift.Equatable {}
 extension LiGPlayerKit.ImpactFeedback : Swift.Hashable {}
 extension LiGPlayerKit.ImpactFeedback : Swift.RawRepresentable {}
+extension LiGPlayerKit.StagingControllerClient.Room.Participant.Role : Swift.Equatable {}
+extension LiGPlayerKit.StagingControllerClient.Room.Participant.Role : Swift.Hashable {}
+extension LiGPlayerKit.StagingControllerClient.Room.Participant.Role : Swift.RawRepresentable {}
+extension LiGPlayerKit.StagingControllerClient.GameStatus : Swift.Equatable {}
+extension LiGPlayerKit.StagingControllerClient.GameStatus : Swift.Hashable {}
 extension LiGPlayerKit.AsyncDownloader.ErrorState : Swift.Equatable {}
 extension LiGPlayerKit.AsyncDownloader.ErrorState : Swift.Hashable {}
 extension LiGPlayerKit.LiGScene.LiGSceneError : Swift.Equatable {}
