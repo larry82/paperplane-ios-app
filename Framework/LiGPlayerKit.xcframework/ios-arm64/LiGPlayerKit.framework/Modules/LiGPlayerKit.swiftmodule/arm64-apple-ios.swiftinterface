@@ -257,6 +257,9 @@ public protocol StagingControllerClientDelegate {
   #if compiler(>=5.3) && $AsyncAwait
   public func gameStop() async -> Swift.Result<Swift.Void, LiGPlayerKit.StagingControllerClient.ResultError>
   #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func sendUpdate(id: Swift.Int, url: Swift.String?) async -> Swift.Result<Swift.Int, LiGPlayerKit.StagingControllerClient.ResultError>
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class FloorNode : LiGPlayerKit.LiGBaseNode {
@@ -290,6 +293,12 @@ extension LiGPlayerKit.SceneKitContext : LiGPlayerKit.StagingControllerClientDel
   public func clientDidStop(_ client: LiGPlayerKit.StagingControllerClient)
   public func serverDidSend(_ client: LiGPlayerKit.StagingControllerClient, message: LiGPlayerKit.StagingControllerClient.GameMessage)
   public func gameServiceGameState(_ client: LiGPlayerKit.StagingControllerClient, game: LiGPlayerKit.StagingControllerClient, userCount: Swift.Int, state: [LiGPlayerKit.StagingControllerClient.UserState])
+  #if compiler(>=5.3) && $AsyncAwait
+  public func hostRoom() async
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func updateStagingData(id: Swift.Int, url: Swift.String?) async
+  #endif
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SnowNode : LiGPlayerKit.LiGBaseNode {
   #if compiler(>=5.3) && $AsyncAwait
@@ -679,7 +688,8 @@ public struct ActionValues : Swift.Codable {
   public let repositionToCamera: Swift.Bool?
   public let promptId: Swift.Int?
   public let recommendationId: Swift.Int?
-  public init(url: Swift.String?, time: Foundation.TimeInterval?, translating: Swift.Double?, objectId: Swift.Int?, directionX: CoreFoundation.CGFloat?, directionY: CoreFoundation.CGFloat?, directionZ: CoreFoundation.CGFloat?, group: Swift.Int?, animationSpeed: CoreFoundation.CGFloat?, startFrame: CoreFoundation.CGFloat?, endFrame: CoreFoundation.CGFloat?, fps: Swift.Double?, repeatCount: CoreFoundation.CGFloat?, scale: CoreFoundation.CGFloat?, transparency: CoreFoundation.CGFloat?, width: CoreFoundation.CGFloat?, height: CoreFoundation.CGFloat?, moveActionTime: Foundation.TimeInterval?, rotateActionTime: Foundation.TimeInterval?, clockwise: Swift.Bool?, radius: CoreFoundation.CGFloat?, startAngle: CoreFoundation.CGFloat?, endAngle: CoreFoundation.CGFloat?, faceTranslating: Swift.Double?, faceIsReturn: Swift.Bool?, faceWaitTime: Foundation.TimeInterval?, faceRotateToMe: Swift.Bool?, delayTime: Foundation.TimeInterval?, curveScale: CoreFoundation.CGFloat?, impactFeedbackStyle: Swift.Int?, subID: Swift.Int?, gameType: Swift.Int?, uiInteractName: Swift.String?, target: Swift.Int?, offset: Swift.Float?, playCount: Swift.Int?, duration: CoreFoundation.CGFloat?, sceneId: Swift.String?, repositionToCamera: Swift.Bool?, promptId: Swift.Int?, recommendationId: Swift.Int?)
+  public let auth: Swift.Bool?
+  public init(url: Swift.String?, time: Foundation.TimeInterval?, translating: Swift.Double?, objectId: Swift.Int?, directionX: CoreFoundation.CGFloat?, directionY: CoreFoundation.CGFloat?, directionZ: CoreFoundation.CGFloat?, group: Swift.Int?, animationSpeed: CoreFoundation.CGFloat?, startFrame: CoreFoundation.CGFloat?, endFrame: CoreFoundation.CGFloat?, fps: Swift.Double?, repeatCount: CoreFoundation.CGFloat?, scale: CoreFoundation.CGFloat?, transparency: CoreFoundation.CGFloat?, width: CoreFoundation.CGFloat?, height: CoreFoundation.CGFloat?, moveActionTime: Foundation.TimeInterval?, rotateActionTime: Foundation.TimeInterval?, clockwise: Swift.Bool?, radius: CoreFoundation.CGFloat?, startAngle: CoreFoundation.CGFloat?, endAngle: CoreFoundation.CGFloat?, faceTranslating: Swift.Double?, faceIsReturn: Swift.Bool?, faceWaitTime: Foundation.TimeInterval?, faceRotateToMe: Swift.Bool?, delayTime: Foundation.TimeInterval?, curveScale: CoreFoundation.CGFloat?, impactFeedbackStyle: Swift.Int?, subID: Swift.Int?, gameType: Swift.Int?, uiInteractName: Swift.String?, target: Swift.Int?, offset: Swift.Float?, playCount: Swift.Int?, duration: CoreFoundation.CGFloat?, sceneId: Swift.String?, repositionToCamera: Swift.Bool?, promptId: Swift.Int?, recommendationId: Swift.Int?, auth: Swift.Bool?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -981,18 +991,15 @@ public struct Credential : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-extension Foundation.NSNotification.Name {
-  public static let StreamDidStartedNotification: Foundation.Notification.Name
-  public static let StreamDidEndedNotification: Foundation.Notification.Name
-}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RotateByAction : LiGPlayerKit.LiGBaseAction {
   override public func build(model: LiGPlayerKit.ActionValues)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NetworkView : UIKit.UIView {
+@objc @_Concurrency.MainActor(unsafe) public class NetworkView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) final public let isAuthNeeded: Swift.Bool
   @_Concurrency.MainActor(unsafe) public var urlString: Swift.String?
   @_Concurrency.MainActor(unsafe) public var didClickCloseButton: (() -> Swift.Void)?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public init(isAuth: Swift.Bool, frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) public func load()
   @objc deinit
@@ -1173,6 +1180,8 @@ public protocol SceneKitNavigationDelegate {
   #if compiler(>=5.3) && $AsyncAwait
   public func loadCoordinateSystemFrom(lightId: Swift.Int, accessToken: Swift.String, session: Foundation.URLSession? = nil) async throws -> LiGPlayerKit.CoordinateSystem?
   #endif
+  @_Concurrency.MainActor public func streamDidStart(ids: [Swift.Int])
+  @_Concurrency.MainActor public func streamEnded(ids: [Swift.Int])
   #if compiler(>=5.3) && $AsyncAwait
   public func registerUser(userID: Swift.String, accessToken: Swift.String) async throws
   #endif
