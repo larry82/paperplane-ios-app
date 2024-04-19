@@ -299,6 +299,12 @@ extension LiGPlayerKit.SceneKitContext : LiGPlayerKit.StagingControllerClientDel
   #if compiler(>=5.3) && $AsyncAwait
   public func updateStagingData(id: Swift.Int, url: Swift.String?) async
   #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func closeRoom() async
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func leaveRoom() async
+  #endif
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SnowNode : LiGPlayerKit.LiGBaseNode {
   #if compiler(>=5.3) && $AsyncAwait
@@ -429,6 +435,9 @@ public actor LiGScene {
   public func clear()
   public func getObject(id: Swift.Int) -> LiGPlayerKit.ArObject?
   public func updateObject(_ object: LiGPlayerKit.ArObject)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getNodeGeometry(for node: SceneKit.SCNNode) async -> SceneKit.SCNGeometry
+  #endif
   @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
@@ -764,8 +773,9 @@ public struct ModelFields : Swift.Codable {
   public var name: Swift.String?
   public var streamPreviewUrl: Swift.String?
   public var liveStreamSource: Swift.String?
+  public var thumbnail: Swift.String?
   public init()
-  public init(width: CoreFoundation.CGFloat?, height: CoreFoundation.CGFloat?, radius: CoreFoundation.CGFloat?, floorHeight: CoreFoundation.CGFloat?, floorGap: CoreFoundation.CGFloat?, faceWidth: CoreFoundation.CGFloat?, faceGap: CoreFoundation.CGFloat?, floorCount: Swift.Int?, faceCount: Swift.Int?, rotateSpeed: Foundation.TimeInterval?, hueAngle: Swift.Float?, hueRange: Swift.Float?, saturation: Swift.Float?, faceMe: Swift.Bool?, lightIntensity: CoreFoundation.CGFloat?, color: [CoreFoundation.CGFloat]?, isIgnore: Swift.Bool?, visibleDistance: Swift.Float?, isPlay: Swift.Bool?, isHidden: Swift.Bool?, videoPlayDistance: Swift.Float?, isLoopPlay: Swift.Bool?, iconURL: Swift.String?, isDoubleSided: Swift.Bool?, twName: Swift.String?, enName: Swift.String?, koName: Swift.String?, jaName: Swift.String?, thName: Swift.String?, isSizeScaleLock: Swift.Bool?, previewUrl: Swift.String?, animationSpeed: CoreFoundation.CGFloat?, startFrame: CoreFoundation.CGFloat?, endFrame: CoreFoundation.CGFloat?, fps: Swift.Double?, multiplyNumber: Swift.Int?, multiplyRadius: CoreFoundation.CGFloat?, multiplyRange: CoreFoundation.CGFloat?, isOcclusion: Swift.Bool?, floorAngles: [CoreFoundation.CGFloat]?, faceGapList: [CoreFoundation.CGFloat]?, particleBirthRate: CoreFoundation.CGFloat?, particleBirthRateVariation: CoreFoundation.CGFloat?, particleLifeSpan: CoreFoundation.CGFloat?, particleLifeSpanVariation: CoreFoundation.CGFloat?, particleVelocity: CoreFoundation.CGFloat?, particleVelocityVariation: CoreFoundation.CGFloat?, bloomIntensity: CoreFoundation.CGFloat?, bloomRadius: CoreFoundation.CGFloat?, dashboardResourceUrl: Swift.String?, dashboardRefreshInterval: Swift.Double?, dashboardDirection: Swift.Int?, dashboardFarmlandID: Swift.String?, name: Swift.String?, cred: Swift.String?, liveStreamSource: Swift.String?)
+  public init(width: CoreFoundation.CGFloat?, height: CoreFoundation.CGFloat?, radius: CoreFoundation.CGFloat?, floorHeight: CoreFoundation.CGFloat?, floorGap: CoreFoundation.CGFloat?, faceWidth: CoreFoundation.CGFloat?, faceGap: CoreFoundation.CGFloat?, floorCount: Swift.Int?, faceCount: Swift.Int?, rotateSpeed: Foundation.TimeInterval?, hueAngle: Swift.Float?, hueRange: Swift.Float?, saturation: Swift.Float?, faceMe: Swift.Bool?, lightIntensity: CoreFoundation.CGFloat?, color: [CoreFoundation.CGFloat]?, isIgnore: Swift.Bool?, visibleDistance: Swift.Float?, isPlay: Swift.Bool?, isHidden: Swift.Bool?, videoPlayDistance: Swift.Float?, isLoopPlay: Swift.Bool?, iconURL: Swift.String?, isDoubleSided: Swift.Bool?, twName: Swift.String?, enName: Swift.String?, koName: Swift.String?, jaName: Swift.String?, thName: Swift.String?, isSizeScaleLock: Swift.Bool?, previewUrl: Swift.String?, animationSpeed: CoreFoundation.CGFloat?, startFrame: CoreFoundation.CGFloat?, endFrame: CoreFoundation.CGFloat?, fps: Swift.Double?, multiplyNumber: Swift.Int?, multiplyRadius: CoreFoundation.CGFloat?, multiplyRange: CoreFoundation.CGFloat?, isOcclusion: Swift.Bool?, floorAngles: [CoreFoundation.CGFloat]?, faceGapList: [CoreFoundation.CGFloat]?, particleBirthRate: CoreFoundation.CGFloat?, particleBirthRateVariation: CoreFoundation.CGFloat?, particleLifeSpan: CoreFoundation.CGFloat?, particleLifeSpanVariation: CoreFoundation.CGFloat?, particleVelocity: CoreFoundation.CGFloat?, particleVelocityVariation: CoreFoundation.CGFloat?, bloomIntensity: CoreFoundation.CGFloat?, bloomRadius: CoreFoundation.CGFloat?, dashboardResourceUrl: Swift.String?, dashboardRefreshInterval: Swift.Double?, dashboardDirection: Swift.Int?, dashboardFarmlandID: Swift.String?, name: Swift.String?, cred: Swift.String?, liveStreamSource: Swift.String?, thumbnail: Swift.String?)
   public func clone() -> LiGPlayerKit.ModelFields
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws

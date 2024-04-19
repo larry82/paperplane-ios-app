@@ -19895,6 +19895,33 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "getNodeGeometry",
+            "printedName": "getNodeGeometry(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SCNGeometry",
+                "printedName": "SceneKit.SCNGeometry",
+                "usr": "c:objc(cs)SCNGeometry"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SCNNode",
+                "printedName": "SceneKit.SCNNode",
+                "usr": "c:objc(cs)SCNNode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit0A6GSceneC15getNodeGeometry3forSo11SCNGeometryCSo7SCNNodeC_tYaF",
+            "mangledName": "$s12LiGPlayerKit0A6GSceneC15getNodeGeometry3forSo11SCNGeometryCSo7SCNNodeC_tYaF",
+            "moduleName": "LiGPlayerKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Var",
             "name": "unownedExecutor",
             "printedName": "unownedExecutor",
@@ -48634,6 +48661,117 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "thumbnail",
+            "printedName": "thumbnail",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12LiGPlayerKit11ModelFieldsV9thumbnailSSSgvp",
+            "mangledName": "$s12LiGPlayerKit11ModelFieldsV9thumbnailSSSgvp",
+            "moduleName": "LiGPlayerKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit11ModelFieldsV9thumbnailSSSgvg",
+                "mangledName": "$s12LiGPlayerKit11ModelFieldsV9thumbnailSSSgvg",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit11ModelFieldsV9thumbnailSSSgvs",
+                "mangledName": "$s12LiGPlayerKit11ModelFieldsV9thumbnailSSSgvs",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit11ModelFieldsV9thumbnailSSSgvM",
+                "mangledName": "$s12LiGPlayerKit11ModelFieldsV9thumbnailSSSgvM",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "TypeDecl",
             "name": "CodingKeys",
             "printedName": "CodingKeys",
@@ -48906,6 +49044,44 @@
               },
               {
                 "kind": "Var",
+                "name": "thumbnail",
+                "printedName": "thumbnail",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LiGPlayerKit.ModelFields.CodingKeys.Type) -> LiGPlayerKit.ModelFields.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "LiGPlayerKit.ModelFields.CodingKeys",
+                        "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LiGPlayerKit.ModelFields.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "LiGPlayerKit.ModelFields.CodingKeys",
+                            "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO9thumbnailyA2EmF",
+                "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO9thumbnailyA2EmF",
+                "moduleName": "LiGPlayerKit",
+                "fixedbinaryorder": 7
+              },
+              {
+                "kind": "Var",
                 "name": "floorCount",
                 "printedName": "floorCount",
                 "children": [
@@ -48940,7 +49116,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO10floorCountyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO10floorCountyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 7
+                "fixedbinaryorder": 8
               },
               {
                 "kind": "Var",
@@ -48978,7 +49154,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO11floorHeightyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO11floorHeightyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 8
+                "fixedbinaryorder": 9
               },
               {
                 "kind": "Var",
@@ -49016,7 +49192,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO8floorGapyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO8floorGapyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 9
+                "fixedbinaryorder": 10
               },
               {
                 "kind": "Var",
@@ -49054,7 +49230,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO9faceCountyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO9faceCountyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 10
+                "fixedbinaryorder": 11
               },
               {
                 "kind": "Var",
@@ -49092,7 +49268,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO7faceGapyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO7faceGapyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 11
+                "fixedbinaryorder": 12
               },
               {
                 "kind": "Var",
@@ -49130,7 +49306,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO9faceWidthyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO9faceWidthyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 12
+                "fixedbinaryorder": 13
               },
               {
                 "kind": "Var",
@@ -49168,7 +49344,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO11rotateSpeedyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO11rotateSpeedyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 13
+                "fixedbinaryorder": 14
               },
               {
                 "kind": "Var",
@@ -49206,7 +49382,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO8hueAngleyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO8hueAngleyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 14
+                "fixedbinaryorder": 15
               },
               {
                 "kind": "Var",
@@ -49244,7 +49420,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO8hueRangeyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO8hueRangeyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 15
+                "fixedbinaryorder": 16
               },
               {
                 "kind": "Var",
@@ -49282,7 +49458,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO10saturationyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO10saturationyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 16
+                "fixedbinaryorder": 17
               },
               {
                 "kind": "Var",
@@ -49320,7 +49496,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO14lightIntensityyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO14lightIntensityyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 17
+                "fixedbinaryorder": 18
               },
               {
                 "kind": "Var",
@@ -49358,7 +49534,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO6faceMeyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO6faceMeyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 18
+                "fixedbinaryorder": 19
               },
               {
                 "kind": "Var",
@@ -49396,7 +49572,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO8isIgnoreyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO8isIgnoreyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 19
+                "fixedbinaryorder": 20
               },
               {
                 "kind": "Var",
@@ -49434,7 +49610,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO15visibleDistanceyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO15visibleDistanceyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 20
+                "fixedbinaryorder": 21
               },
               {
                 "kind": "Var",
@@ -49472,7 +49648,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO6isPlayyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO6isPlayyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 21
+                "fixedbinaryorder": 22
               },
               {
                 "kind": "Var",
@@ -49510,7 +49686,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO8isHiddenyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO8isHiddenyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 22
+                "fixedbinaryorder": 23
               },
               {
                 "kind": "Var",
@@ -49548,7 +49724,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO17videoPlayDistanceyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO17videoPlayDistanceyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 23
+                "fixedbinaryorder": 24
               },
               {
                 "kind": "Var",
@@ -49586,7 +49762,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO10isLoopPlayyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO10isLoopPlayyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 24
+                "fixedbinaryorder": 25
               },
               {
                 "kind": "Var",
@@ -49624,7 +49800,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO7iconURLyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO7iconURLyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 25
+                "fixedbinaryorder": 26
               },
               {
                 "kind": "Var",
@@ -49662,7 +49838,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO13isDoubleSidedyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO13isDoubleSidedyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 26
+                "fixedbinaryorder": 27
               },
               {
                 "kind": "Var",
@@ -49700,7 +49876,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO6twNameyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO6twNameyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 27
+                "fixedbinaryorder": 28
               },
               {
                 "kind": "Var",
@@ -49738,7 +49914,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO6enNameyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO6enNameyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 28
+                "fixedbinaryorder": 29
               },
               {
                 "kind": "Var",
@@ -49776,7 +49952,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO6koNameyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO6koNameyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 29
+                "fixedbinaryorder": 30
               },
               {
                 "kind": "Var",
@@ -49814,7 +49990,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO6jaNameyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO6jaNameyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 30
+                "fixedbinaryorder": 31
               },
               {
                 "kind": "Var",
@@ -49852,7 +50028,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO6thNameyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO6thNameyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 31
+                "fixedbinaryorder": 32
               },
               {
                 "kind": "Var",
@@ -49890,7 +50066,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO15isSizeScaleLockyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO15isSizeScaleLockyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 32
+                "fixedbinaryorder": 33
               },
               {
                 "kind": "Var",
@@ -49928,7 +50104,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO10previewUrlyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO10previewUrlyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 33
+                "fixedbinaryorder": 34
               },
               {
                 "kind": "Var",
@@ -49966,7 +50142,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO14animationSpeedyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO14animationSpeedyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 34
+                "fixedbinaryorder": 35
               },
               {
                 "kind": "Var",
@@ -50004,7 +50180,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO10startFrameyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO10startFrameyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 35
+                "fixedbinaryorder": 36
               },
               {
                 "kind": "Var",
@@ -50042,7 +50218,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO8endFrameyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO8endFrameyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 36
+                "fixedbinaryorder": 37
               },
               {
                 "kind": "Var",
@@ -50080,7 +50256,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO14multiplyNumberyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO14multiplyNumberyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 37
+                "fixedbinaryorder": 38
               },
               {
                 "kind": "Var",
@@ -50118,7 +50294,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO14multiplyRadiusyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO14multiplyRadiusyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 38
+                "fixedbinaryorder": 39
               },
               {
                 "kind": "Var",
@@ -50156,7 +50332,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO13multiplyRangeyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO13multiplyRangeyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 39
+                "fixedbinaryorder": 40
               },
               {
                 "kind": "Var",
@@ -50194,7 +50370,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO11isOcclusionyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO11isOcclusionyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 40
+                "fixedbinaryorder": 41
               },
               {
                 "kind": "Var",
@@ -50232,7 +50408,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO15multiplyIsZeroYyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO15multiplyIsZeroYyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 41
+                "fixedbinaryorder": 42
               },
               {
                 "kind": "Var",
@@ -50270,7 +50446,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO11floorAnglesyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO11floorAnglesyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 42
+                "fixedbinaryorder": 43
               },
               {
                 "kind": "Var",
@@ -50308,7 +50484,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO11faceGapListyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO11faceGapListyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 43
+                "fixedbinaryorder": 44
               },
               {
                 "kind": "Var",
@@ -50346,7 +50522,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO17particleBirthRateyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO17particleBirthRateyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 44
+                "fixedbinaryorder": 45
               },
               {
                 "kind": "Var",
@@ -50384,7 +50560,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO26particleBirthRateVariationyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO26particleBirthRateVariationyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 45
+                "fixedbinaryorder": 46
               },
               {
                 "kind": "Var",
@@ -50422,7 +50598,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO16particleLifeSpanyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO16particleLifeSpanyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 46
+                "fixedbinaryorder": 47
               },
               {
                 "kind": "Var",
@@ -50460,7 +50636,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO25particleLifeSpanVariationyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO25particleLifeSpanVariationyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 47
+                "fixedbinaryorder": 48
               },
               {
                 "kind": "Var",
@@ -50498,7 +50674,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO16particleVelocityyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO16particleVelocityyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 48
+                "fixedbinaryorder": 49
               },
               {
                 "kind": "Var",
@@ -50536,7 +50712,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO25particleVelocityVariationyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO25particleVelocityVariationyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 49
+                "fixedbinaryorder": 50
               },
               {
                 "kind": "Var",
@@ -50574,7 +50750,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO14bloomIntensityyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO14bloomIntensityyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 50
+                "fixedbinaryorder": 51
               },
               {
                 "kind": "Var",
@@ -50612,7 +50788,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO11bloomRadiusyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO11bloomRadiusyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 51
+                "fixedbinaryorder": 52
               },
               {
                 "kind": "Var",
@@ -50650,7 +50826,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO20dashboardResourceUrlyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO20dashboardResourceUrlyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 52
+                "fixedbinaryorder": 53
               },
               {
                 "kind": "Var",
@@ -50688,7 +50864,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO24dashboardRefreshIntervalyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO24dashboardRefreshIntervalyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 53
+                "fixedbinaryorder": 54
               },
               {
                 "kind": "Var",
@@ -50726,7 +50902,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO18dashboardDirectionyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO18dashboardDirectionyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 54
+                "fixedbinaryorder": 55
               },
               {
                 "kind": "Var",
@@ -50764,7 +50940,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO19dashboardFarmlandIDyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO19dashboardFarmlandIDyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 55
+                "fixedbinaryorder": 56
               },
               {
                 "kind": "Var",
@@ -50802,7 +50978,7 @@
                 "usr": "s:12LiGPlayerKit11ModelFieldsV10CodingKeysO16liveStreamSourceyA2EmF",
                 "mangledName": "$s12LiGPlayerKit11ModelFieldsV10CodingKeysO16liveStreamSourceyA2EmF",
                 "moduleName": "LiGPlayerKit",
-                "fixedbinaryorder": 56
+                "fixedbinaryorder": 57
               },
               {
                 "kind": "Constructor",
@@ -51134,7 +51310,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(width:height:radius:floorHeight:floorGap:faceWidth:faceGap:floorCount:faceCount:rotateSpeed:hueAngle:hueRange:saturation:faceMe:lightIntensity:color:isIgnore:visibleDistance:isPlay:isHidden:videoPlayDistance:isLoopPlay:iconURL:isDoubleSided:twName:enName:koName:jaName:thName:isSizeScaleLock:previewUrl:animationSpeed:startFrame:endFrame:fps:multiplyNumber:multiplyRadius:multiplyRange:isOcclusion:floorAngles:faceGapList:particleBirthRate:particleBirthRateVariation:particleLifeSpan:particleLifeSpanVariation:particleVelocity:particleVelocityVariation:bloomIntensity:bloomRadius:dashboardResourceUrl:dashboardRefreshInterval:dashboardDirection:dashboardFarmlandID:name:cred:liveStreamSource:)",
+            "printedName": "init(width:height:radius:floorHeight:floorGap:faceWidth:faceGap:floorCount:faceCount:rotateSpeed:hueAngle:hueRange:saturation:faceMe:lightIntensity:color:isIgnore:visibleDistance:isPlay:isHidden:videoPlayDistance:isLoopPlay:iconURL:isDoubleSided:twName:enName:koName:jaName:thName:isSizeScaleLock:previewUrl:animationSpeed:startFrame:endFrame:fps:multiplyNumber:multiplyRadius:multiplyRange:isOcclusion:floorAngles:faceGapList:particleBirthRate:particleBirthRateVariation:particleLifeSpan:particleLifeSpanVariation:particleVelocity:particleVelocityVariation:bloomIntensity:bloomRadius:dashboardResourceUrl:dashboardRefreshInterval:dashboardDirection:dashboardFarmlandID:name:cred:liveStreamSource:thumbnail:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -51949,11 +52125,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12LiGPlayerKit11ModelFieldsV5width6height6radius11floorHeight0I3Gap9faceWidth0lK00I5Count0lN011rotateSpeed8hueAngle0Q5Range10saturation0L2Me14lightIntensity5color8isIgnore15visibleDistance0Y4Play0Y6Hidden17videoPlayDistance0Y8LoopPlay7iconURL0Y11DoubleSided6twName6enName6koName6jaName6thName0Y13SizeScaleLock10previewUrl09animationP010startFrame8endFrame3fps14multiplyNumber14multiplyRadius08multiplyS00Y9Occlusion0I6Angles0lK4List17particleBirthRate26particleBirthRateVariation16particleLifeSpan25particleLifeSpanVariation16particleVelocity25particleVelocityVariation05bloomW011bloomRadius20dashboardResourceUrl24dashboardRefreshInterval18dashboardDirection19dashboardFarmlandID4name4cred16liveStreamSourceAC14CoreFoundation7CGFloatVSg_A35_A35_A35_A35_A35_A35_SiSgA36_SdSgSfSgA38_A38_SbSgA35_SayA34_GSgA39_A38_A39_A39_A38_A39_SSSgA39_A42_A42_A42_A42_A42_A39_A42_A35_A35_A35_A37_A36_A35_A35_A39_A41_A41_A35_A35_A35_A35_A35_A35_A35_A35_A42_A37_A36_A42_A42_A42_A42_tcfc",
-            "mangledName": "$s12LiGPlayerKit11ModelFieldsV5width6height6radius11floorHeight0I3Gap9faceWidth0lK00I5Count0lN011rotateSpeed8hueAngle0Q5Range10saturation0L2Me14lightIntensity5color8isIgnore15visibleDistance0Y4Play0Y6Hidden17videoPlayDistance0Y8LoopPlay7iconURL0Y11DoubleSided6twName6enName6koName6jaName6thName0Y13SizeScaleLock10previewUrl09animationP010startFrame8endFrame3fps14multiplyNumber14multiplyRadius08multiplyS00Y9Occlusion0I6Angles0lK4List17particleBirthRate26particleBirthRateVariation16particleLifeSpan25particleLifeSpanVariation16particleVelocity25particleVelocityVariation05bloomW011bloomRadius20dashboardResourceUrl24dashboardRefreshInterval18dashboardDirection19dashboardFarmlandID4name4cred16liveStreamSourceAC12CoreGraphics7CGFloatVSg_A35_A35_A35_A35_A35_A35_SiSgA36_SdSgSfSgA38_A38_SbSgA35_SayA34_GSgA39_A38_A39_A39_A38_A39_SSSgA39_A42_A42_A42_A42_A42_A39_A42_A35_A35_A35_A37_A36_A35_A35_A39_A41_A41_A35_A35_A35_A35_A35_A35_A35_A35_A42_A37_A36_A42_A42_A42_A42_tcfc",
+            "usr": "s:12LiGPlayerKit11ModelFieldsV5width6height6radius11floorHeight0I3Gap9faceWidth0lK00I5Count0lN011rotateSpeed8hueAngle0Q5Range10saturation0L2Me14lightIntensity5color8isIgnore15visibleDistance0Y4Play0Y6Hidden17videoPlayDistance0Y8LoopPlay7iconURL0Y11DoubleSided6twName6enName6koName6jaName6thName0Y13SizeScaleLock10previewUrl09animationP010startFrame8endFrame3fps14multiplyNumber14multiplyRadius08multiplyS00Y9Occlusion0I6Angles0lK4List17particleBirthRate26particleBirthRateVariation16particleLifeSpan25particleLifeSpanVariation16particleVelocity25particleVelocityVariation05bloomW011bloomRadius20dashboardResourceUrl24dashboardRefreshInterval18dashboardDirection19dashboardFarmlandID4name4cred16liveStreamSource9thumbnailAC14CoreFoundation7CGFloatVSg_A36_A36_A36_A36_A36_A36_SiSgA37_SdSgSfSgA39_A39_SbSgA36_SayA35_GSgA40_A39_A40_A40_A39_A40_SSSgA40_A43_A43_A43_A43_A43_A40_A43_A36_A36_A36_A38_A37_A36_A36_A40_A42_A42_A36_A36_A36_A36_A36_A36_A36_A36_A43_A38_A37_A43_A43_A43_A43_A43_tcfc",
+            "mangledName": "$s12LiGPlayerKit11ModelFieldsV5width6height6radius11floorHeight0I3Gap9faceWidth0lK00I5Count0lN011rotateSpeed8hueAngle0Q5Range10saturation0L2Me14lightIntensity5color8isIgnore15visibleDistance0Y4Play0Y6Hidden17videoPlayDistance0Y8LoopPlay7iconURL0Y11DoubleSided6twName6enName6koName6jaName6thName0Y13SizeScaleLock10previewUrl09animationP010startFrame8endFrame3fps14multiplyNumber14multiplyRadius08multiplyS00Y9Occlusion0I6Angles0lK4List17particleBirthRate26particleBirthRateVariation16particleLifeSpan25particleLifeSpanVariation16particleVelocity25particleVelocityVariation05bloomW011bloomRadius20dashboardResourceUrl24dashboardRefreshInterval18dashboardDirection19dashboardFarmlandID4name4cred16liveStreamSource9thumbnailAC12CoreGraphics7CGFloatVSg_A36_A36_A36_A36_A36_A36_SiSgA37_SdSgSfSgA39_A39_SbSgA36_SayA35_GSgA40_A39_A40_A40_A39_A40_SSSgA40_A43_A43_A43_A43_A43_A40_A43_A36_A36_A36_A38_A37_A36_A36_A40_A42_A42_A36_A36_A36_A36_A36_A36_A36_A36_A43_A38_A37_A43_A43_A43_A43_A43_tcfc",
             "moduleName": "LiGPlayerKit",
             "declAttributes": [
               "AccessControl"
@@ -81737,6 +81927,50 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "closeRoom",
+            "printedName": "closeRoom()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit05SceneC7ContextC9closeRoomyyYaF",
+            "mangledName": "$s12LiGPlayerKit05SceneC7ContextC9closeRoomyyYaF",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "leaveRoom",
+            "printedName": "leaveRoom()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit05SceneC7ContextC9leaveRoomyyYaF",
+            "mangledName": "$s12LiGPlayerKit05SceneC7ContextC9leaveRoomyyYaF",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -98736,2135 +98970,2135 @@
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 12358,
+      "offset": 12374,
       "length": 10,
       "value": "\"rotate_x\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 12392,
+      "offset": 12408,
       "length": 10,
       "value": "\"rotate_y\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 12426,
+      "offset": 12442,
       "length": 10,
       "value": "\"rotate_z\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 12358,
+      "offset": 12374,
       "length": 10,
       "value": "\"rotate_x\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 12392,
+      "offset": 12408,
       "length": 10,
       "value": "\"rotate_y\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 12426,
+      "offset": 12442,
       "length": 10,
       "value": "\"rotate_z\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16648,
+      "offset": 16664,
       "length": 8,
       "value": "\"obj_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16683,
+      "offset": 16699,
       "length": 13,
       "value": "\"direction_x\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16723,
+      "offset": 16739,
       "length": 13,
       "value": "\"direction_y\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16763,
+      "offset": 16779,
       "length": 13,
       "value": "\"direction_z\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16807,
+      "offset": 16823,
       "length": 17,
       "value": "\"animation_speed\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16851,
+      "offset": 16867,
       "length": 13,
       "value": "\"start_frame\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16889,
+      "offset": 16905,
       "length": 11,
       "value": "\"end_frame\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16928,
+      "offset": 16944,
       "length": 14,
       "value": "\"repeat_count\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16973,
+      "offset": 16989,
       "length": 18,
       "value": "\"move_action_time\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17024,
+      "offset": 17040,
       "length": 20,
       "value": "\"rotate_action_time\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17071,
+      "offset": 17087,
       "length": 13,
       "value": "\"start_angle\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17109,
+      "offset": 17125,
       "length": 11,
       "value": "\"end_angle\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17152,
+      "offset": 17168,
       "length": 18,
       "value": "\"face_translating\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17199,
+      "offset": 17215,
       "length": 16,
       "value": "\"face_is_return\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17244,
+      "offset": 17260,
       "length": 16,
       "value": "\"face_wait_time\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17291,
+      "offset": 17307,
       "length": 19,
       "value": "\"face_rotate_to_me\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17336,
+      "offset": 17352,
       "length": 12,
       "value": "\"delay_time\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17375,
+      "offset": 17391,
       "length": 13,
       "value": "\"curve_scale\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17424,
+      "offset": 17440,
       "length": 23,
       "value": "\"impact_feedback_style\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17469,
+      "offset": 17485,
       "length": 12,
       "value": "\"sub_obj_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17506,
+      "offset": 17522,
       "length": 11,
       "value": "\"game_type\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17548,
+      "offset": 17564,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17580,
+      "offset": 17596,
       "length": 12,
       "value": "\"play_count\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17616,
+      "offset": 17632,
       "length": 10,
       "value": "\"scene_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17661,
+      "offset": 17677,
       "length": 22,
       "value": "\"reposition_to_camera\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17708,
+      "offset": 17724,
       "length": 11,
       "value": "\"prompt_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17752,
+      "offset": 17768,
       "length": 23,
       "value": "\"recommendation_obj_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16648,
+      "offset": 16664,
       "length": 8,
       "value": "\"obj_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16683,
+      "offset": 16699,
       "length": 13,
       "value": "\"direction_x\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16723,
+      "offset": 16739,
       "length": 13,
       "value": "\"direction_y\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16763,
+      "offset": 16779,
       "length": 13,
       "value": "\"direction_z\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16807,
+      "offset": 16823,
       "length": 17,
       "value": "\"animation_speed\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16851,
+      "offset": 16867,
       "length": 13,
       "value": "\"start_frame\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16889,
+      "offset": 16905,
       "length": 11,
       "value": "\"end_frame\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16928,
+      "offset": 16944,
       "length": 14,
       "value": "\"repeat_count\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 16973,
+      "offset": 16989,
       "length": 18,
       "value": "\"move_action_time\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17024,
+      "offset": 17040,
       "length": 20,
       "value": "\"rotate_action_time\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17071,
+      "offset": 17087,
       "length": 13,
       "value": "\"start_angle\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17109,
+      "offset": 17125,
       "length": 11,
       "value": "\"end_angle\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17152,
+      "offset": 17168,
       "length": 18,
       "value": "\"face_translating\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17199,
+      "offset": 17215,
       "length": 16,
       "value": "\"face_is_return\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17244,
+      "offset": 17260,
       "length": 16,
       "value": "\"face_wait_time\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17291,
+      "offset": 17307,
       "length": 19,
       "value": "\"face_rotate_to_me\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17336,
+      "offset": 17352,
       "length": 12,
       "value": "\"delay_time\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17375,
+      "offset": 17391,
       "length": 13,
       "value": "\"curve_scale\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17424,
+      "offset": 17440,
       "length": 23,
       "value": "\"impact_feedback_style\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17469,
+      "offset": 17485,
       "length": 12,
       "value": "\"sub_obj_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17506,
+      "offset": 17522,
       "length": 11,
       "value": "\"game_type\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17548,
+      "offset": 17564,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17580,
+      "offset": 17596,
       "length": 12,
       "value": "\"play_count\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17616,
+      "offset": 17632,
       "length": 10,
       "value": "\"scene_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17661,
+      "offset": 17677,
       "length": 22,
       "value": "\"reposition_to_camera\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17708,
+      "offset": 17724,
       "length": 11,
       "value": "\"prompt_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 17752,
+      "offset": 17768,
       "length": 23,
       "value": "\"recommendation_obj_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 21332,
+      "offset": 21348,
       "length": 13,
       "value": "\"ios_texture\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 21376,
+      "offset": 21392,
       "length": 17,
       "value": "\"android_texture\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 21332,
+      "offset": 21348,
       "length": 13,
       "value": "\"ios_texture\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 21376,
+      "offset": 21392,
       "length": 17,
       "value": "\"android_texture\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26372,
+      "offset": 26469,
       "length": 13,
       "value": "\"floor_count\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26413,
+      "offset": 26510,
       "length": 14,
       "value": "\"floor_height\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26452,
+      "offset": 26549,
       "length": 11,
       "value": "\"floor_gap\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26489,
+      "offset": 26586,
       "length": 12,
       "value": "\"face_count\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26525,
+      "offset": 26622,
       "length": 10,
       "value": "\"face_gap\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26561,
+      "offset": 26658,
       "length": 12,
       "value": "\"face_width\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26601,
+      "offset": 26698,
       "length": 7,
       "value": "\"speed\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26633,
+      "offset": 26730,
       "length": 11,
       "value": "\"hue_angle\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26669,
+      "offset": 26766,
       "length": 11,
       "value": "\"hue_range\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26707,
+      "offset": 26804,
       "length": 12,
       "value": "\"saturation\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26750,
+      "offset": 26847,
       "length": 17,
       "value": "\"light_intensity\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26790,
+      "offset": 26887,
       "length": 9,
       "value": "\"face_me\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26824,
+      "offset": 26921,
       "length": 11,
       "value": "\"is_ignore\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26867,
+      "offset": 26964,
       "length": 18,
       "value": "\"visible_distance\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26908,
+      "offset": 27005,
       "length": 9,
       "value": "\"is_play\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26942,
+      "offset": 27039,
       "length": 11,
       "value": "\"is_hidden\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26987,
+      "offset": 27084,
       "length": 21,
       "value": "\"video_play_distance\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27035,
+      "offset": 27132,
       "length": 14,
       "value": "\"is_loop_play\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27073,
+      "offset": 27170,
       "length": 10,
       "value": "\"icon_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27113,
+      "offset": 27210,
       "length": 17,
       "value": "\"is_double_sided\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27153,
+      "offset": 27250,
       "length": 9,
       "value": "\"tw_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27185,
+      "offset": 27282,
       "length": 9,
       "value": "\"en_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27217,
+      "offset": 27314,
       "length": 9,
       "value": "\"ko_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27249,
+      "offset": 27346,
       "length": 9,
       "value": "\"ja_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27281,
+      "offset": 27378,
       "length": 9,
       "value": "\"th_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27322,
+      "offset": 27419,
       "length": 20,
       "value": "\"is_size_scale_lock\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27369,
+      "offset": 27466,
       "length": 13,
       "value": "\"preview_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27413,
+      "offset": 27510,
       "length": 17,
       "value": "\"animation_speed\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27457,
+      "offset": 27554,
       "length": 13,
       "value": "\"start_frame\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27495,
+      "offset": 27592,
       "length": 11,
       "value": "\"end_frame\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27537,
+      "offset": 27634,
       "length": 17,
       "value": "\"multiply_number\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27585,
+      "offset": 27682,
       "length": 17,
       "value": "\"multiply_radius\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27632,
+      "offset": 27729,
       "length": 16,
       "value": "\"multiply_range\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27676,
+      "offset": 27773,
       "length": 14,
       "value": "\"is_occlusion\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27722,
+      "offset": 27819,
       "length": 20,
       "value": "\"multiply_is_zero_y\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27770,
+      "offset": 27867,
       "length": 14,
       "value": "\"floor_angles\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27812,
+      "offset": 27909,
       "length": 15,
       "value": "\"face_gap_list\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27861,
+      "offset": 27958,
       "length": 21,
       "value": "\"particle_birth_rate\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27925,
+      "offset": 28022,
       "length": 31,
       "value": "\"particle_birth_rate_variation\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27989,
+      "offset": 28086,
       "length": 20,
       "value": "\"particle_life_span\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28051,
+      "offset": 28148,
       "length": 30,
       "value": "\"particle_life_span_variation\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28114,
+      "offset": 28211,
       "length": 19,
       "value": "\"particle_velocity\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28175,
+      "offset": 28272,
       "length": 29,
       "value": "\"particle_velocity_variation\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28235,
+      "offset": 28332,
       "length": 17,
       "value": "\"bloom_intensity\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28280,
+      "offset": 28377,
       "length": 14,
       "value": "\"bloom_radius\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28331,
+      "offset": 28428,
       "length": 14,
       "value": "\"resource_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28386,
+      "offset": 28483,
       "length": 10,
       "value": "\"interval\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28431,
+      "offset": 28528,
       "length": 11,
       "value": "\"direction\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28478,
+      "offset": 28575,
       "length": 13,
       "value": "\"farmland_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28524,
+      "offset": 28621,
       "length": 22,
       "value": "\"streaming_source_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26372,
+      "offset": 26469,
       "length": 13,
       "value": "\"floor_count\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26413,
+      "offset": 26510,
       "length": 14,
       "value": "\"floor_height\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26452,
+      "offset": 26549,
       "length": 11,
       "value": "\"floor_gap\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26489,
+      "offset": 26586,
       "length": 12,
       "value": "\"face_count\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26525,
+      "offset": 26622,
       "length": 10,
       "value": "\"face_gap\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26561,
+      "offset": 26658,
       "length": 12,
       "value": "\"face_width\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26601,
+      "offset": 26698,
       "length": 7,
       "value": "\"speed\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26633,
+      "offset": 26730,
       "length": 11,
       "value": "\"hue_angle\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26669,
+      "offset": 26766,
       "length": 11,
       "value": "\"hue_range\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26707,
+      "offset": 26804,
       "length": 12,
       "value": "\"saturation\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26750,
+      "offset": 26847,
       "length": 17,
       "value": "\"light_intensity\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26790,
+      "offset": 26887,
       "length": 9,
       "value": "\"face_me\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26824,
+      "offset": 26921,
       "length": 11,
       "value": "\"is_ignore\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26867,
+      "offset": 26964,
       "length": 18,
       "value": "\"visible_distance\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26908,
+      "offset": 27005,
       "length": 9,
       "value": "\"is_play\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26942,
+      "offset": 27039,
       "length": 11,
       "value": "\"is_hidden\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 26987,
+      "offset": 27084,
       "length": 21,
       "value": "\"video_play_distance\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27035,
+      "offset": 27132,
       "length": 14,
       "value": "\"is_loop_play\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27073,
+      "offset": 27170,
       "length": 10,
       "value": "\"icon_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27113,
+      "offset": 27210,
       "length": 17,
       "value": "\"is_double_sided\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27153,
+      "offset": 27250,
       "length": 9,
       "value": "\"tw_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27185,
+      "offset": 27282,
       "length": 9,
       "value": "\"en_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27217,
+      "offset": 27314,
       "length": 9,
       "value": "\"ko_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27249,
+      "offset": 27346,
       "length": 9,
       "value": "\"ja_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27281,
+      "offset": 27378,
       "length": 9,
       "value": "\"th_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27322,
+      "offset": 27419,
       "length": 20,
       "value": "\"is_size_scale_lock\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27369,
+      "offset": 27466,
       "length": 13,
       "value": "\"preview_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27413,
+      "offset": 27510,
       "length": 17,
       "value": "\"animation_speed\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27457,
+      "offset": 27554,
       "length": 13,
       "value": "\"start_frame\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27495,
+      "offset": 27592,
       "length": 11,
       "value": "\"end_frame\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27537,
+      "offset": 27634,
       "length": 17,
       "value": "\"multiply_number\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27585,
+      "offset": 27682,
       "length": 17,
       "value": "\"multiply_radius\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27632,
+      "offset": 27729,
       "length": 16,
       "value": "\"multiply_range\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27676,
+      "offset": 27773,
       "length": 14,
       "value": "\"is_occlusion\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27722,
+      "offset": 27819,
       "length": 20,
       "value": "\"multiply_is_zero_y\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27770,
+      "offset": 27867,
       "length": 14,
       "value": "\"floor_angles\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27812,
+      "offset": 27909,
       "length": 15,
       "value": "\"face_gap_list\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27861,
+      "offset": 27958,
       "length": 21,
       "value": "\"particle_birth_rate\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27925,
+      "offset": 28022,
       "length": 31,
       "value": "\"particle_birth_rate_variation\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 27989,
+      "offset": 28086,
       "length": 20,
       "value": "\"particle_life_span\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28051,
+      "offset": 28148,
       "length": 30,
       "value": "\"particle_life_span_variation\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28114,
+      "offset": 28211,
       "length": 19,
       "value": "\"particle_velocity\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28175,
+      "offset": 28272,
       "length": 29,
       "value": "\"particle_velocity_variation\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28235,
+      "offset": 28332,
       "length": 17,
       "value": "\"bloom_intensity\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28280,
+      "offset": 28377,
       "length": 14,
       "value": "\"bloom_radius\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28331,
+      "offset": 28428,
       "length": 14,
       "value": "\"resource_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28386,
+      "offset": 28483,
       "length": 10,
       "value": "\"interval\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28431,
+      "offset": 28528,
       "length": 11,
       "value": "\"direction\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28478,
+      "offset": 28575,
       "length": 13,
       "value": "\"farmland_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 28524,
+      "offset": 28621,
       "length": 22,
       "value": "\"streaming_source_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36665,
+      "offset": 36833,
       "length": 9,
       "value": "\"zh-Hant\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36694,
+      "offset": 36862,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36719,
+      "offset": 36887,
       "length": 4,
       "value": "\"ja\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36742,
+      "offset": 36910,
       "length": 4,
       "value": "\"ko\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36763,
+      "offset": 36931,
       "length": 4,
       "value": "\"th\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36665,
+      "offset": 36833,
       "length": 9,
       "value": "\"zh-Hant\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36694,
+      "offset": 36862,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36719,
+      "offset": 36887,
       "length": 4,
       "value": "\"ja\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36742,
+      "offset": 36910,
       "length": 4,
       "value": "\"ko\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 36763,
+      "offset": 36931,
       "length": 4,
       "value": "\"th\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37347,
+      "offset": 37515,
       "length": 22,
       "value": "\"coordinate_system_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37396,
+      "offset": 37564,
       "length": 13,
       "value": "\"light_poses\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37347,
+      "offset": 37515,
       "length": 22,
       "value": "\"coordinate_system_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37396,
+      "offset": 37564,
       "length": 13,
       "value": "\"light_poses\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37609,
+      "offset": 37777,
       "length": 10,
       "value": "\"light_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 37609,
+      "offset": 37777,
       "length": 10,
       "value": "\"light_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38214,
+      "offset": 38382,
       "length": 17,
       "value": "\"profile_picture\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38214,
+      "offset": 38382,
       "length": 17,
       "value": "\"profile_picture\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "BooleanLiteral",
-      "offset": 38397,
+      "offset": 38565,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38675,
+      "offset": 38843,
       "length": 19,
       "value": "\"exchange_end_time\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38717,
+      "offset": 38885,
       "length": 9,
       "value": "\"is_used\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38756,
+      "offset": 38924,
       "length": 17,
       "value": "\"voucher_type_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38799,
+      "offset": 38967,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38837,
+      "offset": 39005,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38874,
+      "offset": 39042,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38914,
+      "offset": 39082,
       "length": 16,
       "value": "\"user_code_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38675,
+      "offset": 38843,
       "length": 19,
       "value": "\"exchange_end_time\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38717,
+      "offset": 38885,
       "length": 9,
       "value": "\"is_used\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38756,
+      "offset": 38924,
       "length": 17,
       "value": "\"voucher_type_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38799,
+      "offset": 38967,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38837,
+      "offset": 39005,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38874,
+      "offset": 39042,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 38914,
+      "offset": 39082,
       "length": 16,
       "value": "\"user_code_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39020,
+      "offset": 39188,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39050,
+      "offset": 39218,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39072,
+      "offset": 39240,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39097,
+      "offset": 39265,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39117,
+      "offset": 39285,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39136,
+      "offset": 39304,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39020,
+      "offset": 39188,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39050,
+      "offset": 39218,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39072,
+      "offset": 39240,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39097,
+      "offset": 39265,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39117,
+      "offset": 39285,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39136,
+      "offset": 39304,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39020,
+      "offset": 39188,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39050,
+      "offset": 39218,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39072,
+      "offset": 39240,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39097,
+      "offset": 39265,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39117,
+      "offset": 39285,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 39136,
+      "offset": 39304,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 39486,
+      "offset": 39654,
       "length": 11,
       "value": "\"game_type\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 39520,
+      "offset": 39688,
       "length": 9,
       "value": "\"game_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 39554,
+      "offset": 39722,
       "length": 11,
       "value": "\"game_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 39486,
+      "offset": 39654,
       "length": 11,
       "value": "\"game_type\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 39520,
+      "offset": 39688,
       "length": 9,
       "value": "\"game_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 39554,
+      "offset": 39722,
       "length": 11,
       "value": "\"game_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 40102,
+      "offset": 40270,
       "length": 13,
       "value": "\"action_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 40145,
+      "offset": 40313,
       "length": 17,
       "value": "\"voucher_type_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 40185,
+      "offset": 40353,
       "length": 9,
       "value": "\"pool_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 40226,
+      "offset": 40394,
       "length": 18,
       "value": "\"next_destination\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 40102,
+      "offset": 40270,
       "length": 13,
       "value": "\"action_name\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 40145,
+      "offset": 40313,
       "length": 17,
       "value": "\"voucher_type_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 40185,
+      "offset": 40353,
       "length": 9,
       "value": "\"pool_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 40226,
+      "offset": 40394,
       "length": 18,
       "value": "\"next_destination\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40334,
+      "offset": 40502,
       "length": 16,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40360,
+      "offset": 40528,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40386,
+      "offset": 40554,
       "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40411,
+      "offset": 40579,
       "length": 9,
       "value": "4"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40430,
+      "offset": 40598,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40334,
+      "offset": 40502,
       "length": 16,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40360,
+      "offset": 40528,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40386,
+      "offset": 40554,
       "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40411,
+      "offset": 40579,
       "length": 9,
       "value": "4"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40430,
+      "offset": 40598,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40334,
+      "offset": 40502,
       "length": 16,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40360,
+      "offset": 40528,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40386,
+      "offset": 40554,
       "length": 15,
       "value": "3"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40411,
+      "offset": 40579,
       "length": 9,
       "value": "4"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 40430,
+      "offset": 40598,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42402,
+      "offset": 42570,
       "length": 12,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42424,
+      "offset": 42592,
       "length": 13,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42447,
+      "offset": 42615,
       "length": 10,
       "value": "3"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42467,
+      "offset": 42635,
       "length": 12,
       "value": "4"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42489,
+      "offset": 42657,
       "length": 15,
       "value": "5"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42514,
+      "offset": 42682,
       "length": 15,
       "value": "6"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42539,
+      "offset": 42707,
       "length": 12,
       "value": "7"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42561,
+      "offset": 42729,
       "length": 10,
       "value": "8"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42581,
+      "offset": 42749,
       "length": 5,
       "value": "9"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42402,
+      "offset": 42570,
       "length": 12,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42424,
+      "offset": 42592,
       "length": 13,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42447,
+      "offset": 42615,
       "length": 10,
       "value": "3"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42467,
+      "offset": 42635,
       "length": 12,
       "value": "4"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42489,
+      "offset": 42657,
       "length": 15,
       "value": "5"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42514,
+      "offset": 42682,
       "length": 15,
       "value": "6"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42539,
+      "offset": 42707,
       "length": 12,
       "value": "7"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42561,
+      "offset": 42729,
       "length": 10,
       "value": "8"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42581,
+      "offset": 42749,
       "length": 5,
       "value": "9"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42402,
+      "offset": 42570,
       "length": 12,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42424,
+      "offset": 42592,
       "length": 13,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42447,
+      "offset": 42615,
       "length": 10,
       "value": "3"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42467,
+      "offset": 42635,
       "length": 12,
       "value": "4"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42489,
+      "offset": 42657,
       "length": 15,
       "value": "5"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42514,
+      "offset": 42682,
       "length": 15,
       "value": "6"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42539,
+      "offset": 42707,
       "length": 12,
       "value": "7"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42561,
+      "offset": 42729,
       "length": 10,
       "value": "8"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 42581,
+      "offset": 42749,
       "length": 5,
       "value": "9"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 44480,
+      "offset": 44648,
       "length": 17,
       "value": "\"streaming_rooms\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 44526,
+      "offset": 44694,
       "length": 15,
       "value": "\"related_links\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 44480,
+      "offset": 44648,
       "length": 17,
       "value": "\"streaming_rooms\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 44526,
+      "offset": 44694,
       "length": 15,
       "value": "\"related_links\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 44909,
+      "offset": 45077,
       "length": 15,
       "value": "\"thumbnail_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 44909,
+      "offset": 45077,
       "length": 15,
       "value": "\"thumbnail_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 45210,
+      "offset": 45378,
       "length": 10,
       "value": "\"scene_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 45255,
+      "offset": 45423,
       "length": 22,
       "value": "\"reposition_to_camera\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 45306,
+      "offset": 45474,
       "length": 15,
       "value": "\"thumbnail_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 45210,
+      "offset": 45378,
       "length": 10,
       "value": "\"scene_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 45255,
+      "offset": 45423,
       "length": 22,
       "value": "\"reposition_to_camera\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 45306,
+      "offset": 45474,
       "length": 15,
       "value": "\"thumbnail_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 45587,
+      "offset": 45755,
       "length": 15,
       "value": "\"thumbnail_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 45587,
+      "offset": 45755,
       "length": 15,
       "value": "\"thumbnail_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 45928,
+      "offset": 46096,
       "length": 18,
       "value": "\"ai_response_text\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 45971,
+      "offset": 46139,
       "length": 11,
       "value": "\"prompt_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 46008,
+      "offset": 46176,
       "length": 12,
       "value": "\"session_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 45928,
+      "offset": 46096,
       "length": 18,
       "value": "\"ai_response_text\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 45971,
+      "offset": 46139,
       "length": 11,
       "value": "\"prompt_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 46008,
+      "offset": 46176,
       "length": 12,
       "value": "\"session_id\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 46263,
+      "offset": 46431,
       "length": 17,
       "value": "\"recognized_text\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 46309,
+      "offset": 46477,
       "length": 15,
       "value": "\"response_text\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 46349,
+      "offset": 46517,
       "length": 11,
       "value": "\"audio_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 46386,
+      "offset": 46554,
       "length": 12,
       "value": "\"base64_tts\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 46263,
+      "offset": 46431,
       "length": 17,
       "value": "\"recognized_text\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 46309,
+      "offset": 46477,
       "length": 15,
       "value": "\"response_text\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 46349,
+      "offset": 46517,
       "length": 11,
       "value": "\"audio_url\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "StringLiteral",
-      "offset": 46386,
+      "offset": 46554,
       "length": 12,
       "value": "\"base64_tts\""
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 46470,
+      "offset": 46638,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 46489,
+      "offset": 46657,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 46470,
+      "offset": 46638,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 46489,
+      "offset": 46657,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 46470,
+      "offset": 46638,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/NetworkStruct\/NetworkStruct-LiG.swift",
       "kind": "IntegerLiteral",
-      "offset": 46489,
+      "offset": 46657,
       "length": 1,
       "value": "2"
     },
