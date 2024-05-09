@@ -700,6 +700,46 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "panoramaVideo",
+            "printedName": "panoramaVideo",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LiGPlayerKit.ArModelTypeEnum.Type) -> LiGPlayerKit.ArModelTypeEnum",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArModelTypeEnum",
+                    "printedName": "LiGPlayerKit.ArModelTypeEnum",
+                    "usr": "s:12LiGPlayerKit15ArModelTypeEnumO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LiGPlayerKit.ArModelTypeEnum.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ArModelTypeEnum",
+                        "printedName": "LiGPlayerKit.ArModelTypeEnum",
+                        "usr": "s:12LiGPlayerKit15ArModelTypeEnumO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12LiGPlayerKit15ArModelTypeEnumO13panoramaVideoyA2CmF",
+            "mangledName": "$s12LiGPlayerKit15ArModelTypeEnumO13panoramaVideoyA2CmF",
+            "moduleName": "LiGPlayerKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -3469,6 +3509,54 @@
                 "declKind": "Accessor",
                 "usr": "s:12LiGPlayerKit12ArActionEnumV17backToFormerSceneACvgZ",
                 "mangledName": "$s12LiGPlayerKit12ArActionEnumV17backToFormerSceneACvgZ",
+                "moduleName": "LiGPlayerKit",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "gooleMap",
+            "printedName": "gooleMap",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ArActionEnum",
+                "printedName": "LiGPlayerKit.ArActionEnum",
+                "usr": "s:12LiGPlayerKit12ArActionEnumV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12LiGPlayerKit12ArActionEnumV8gooleMapACvpZ",
+            "mangledName": "$s12LiGPlayerKit12ArActionEnumV8gooleMapACvpZ",
+            "moduleName": "LiGPlayerKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArActionEnum",
+                    "printedName": "LiGPlayerKit.ArActionEnum",
+                    "usr": "s:12LiGPlayerKit12ArActionEnumV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit12ArActionEnumV8gooleMapACvgZ",
+                "mangledName": "$s12LiGPlayerKit12ArActionEnumV8gooleMapACvgZ",
                 "moduleName": "LiGPlayerKit",
                 "static": true,
                 "implicit": true,
@@ -9421,6 +9509,378 @@
           "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LiGPlayerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LiGPlayerKit"
+      },
+      {
+        "kind": "Import",
+        "name": "ARKit",
+        "printedName": "ARKit",
+        "declKind": "Import",
+        "moduleName": "LiGPlayerKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PanoramaVideoNode",
+        "printedName": "PanoramaVideoNode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ligPlayer",
+            "printedName": "ligPlayer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LiGPlayerKit.LiGAVPlayer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiGAVPlayer",
+                    "printedName": "LiGPlayerKit.LiGAVPlayer",
+                    "usr": "s:12LiGPlayerKit0A9GAVPlayerC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12LiGPlayerKit17PanoramaVideoNodeC9ligPlayerAA0A9GAVPlayerCSgvp",
+            "mangledName": "$s12LiGPlayerKit17PanoramaVideoNodeC9ligPlayerAA0A9GAVPlayerCSgvp",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LiGPlayerKit.LiGAVPlayer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LiGAVPlayer",
+                        "printedName": "LiGPlayerKit.LiGAVPlayer",
+                        "usr": "s:12LiGPlayerKit0A9GAVPlayerC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit17PanoramaVideoNodeC9ligPlayerAA0A9GAVPlayerCSgvg",
+                "mangledName": "$s12LiGPlayerKit17PanoramaVideoNodeC9ligPlayerAA0A9GAVPlayerCSgvg",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LiGPlayerKit.LiGAVPlayer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LiGAVPlayer",
+                        "printedName": "LiGPlayerKit.LiGAVPlayer",
+                        "usr": "s:12LiGPlayerKit0A9GAVPlayerC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit17PanoramaVideoNodeC9ligPlayerAA0A9GAVPlayerCSgvs",
+                "mangledName": "$s12LiGPlayerKit17PanoramaVideoNodeC9ligPlayerAA0A9GAVPlayerCSgvs",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12LiGPlayerKit17PanoramaVideoNodeC9ligPlayerAA0A9GAVPlayerCSgvM",
+                "mangledName": "$s12LiGPlayerKit17PanoramaVideoNodeC9ligPlayerAA0A9GAVPlayerCSgvM",
+                "moduleName": "LiGPlayerKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit17PanoramaVideoNodeC7destroyyyF",
+            "mangledName": "$s12LiGPlayerKit17PanoramaVideoNodeC7destroyyyF",
+            "moduleName": "LiGPlayerKit",
+            "overriding": true,
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "textureDidDownloaded",
+            "printedName": "textureDidDownloaded(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit17PanoramaVideoNodeC20textureDidDownloaded3urly10Foundation3URLV_tYaKF",
+            "mangledName": "$s12LiGPlayerKit17PanoramaVideoNodeC20textureDidDownloaded3urly10Foundation3URLV_tYaKF",
+            "moduleName": "LiGPlayerKit",
+            "overriding": true,
+            "isOpen": true,
+            "declAttributes": [
+              "Override",
+              "AccessControl",
+              "Nonisolated"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PanoramaVideoNode",
+                "printedName": "LiGPlayerKit.PanoramaVideoNode",
+                "usr": "c:@M@LiGPlayerKit@objc(cs)PanoramaVideoNode"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@LiGPlayerKit@objc(cs)PanoramaVideoNode(im)init",
+            "mangledName": "$s12LiGPlayerKit17PanoramaVideoNodeCACycfc",
+            "moduleName": "LiGPlayerKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LiGPlayerKit.PanoramaVideoNode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PanoramaVideoNode",
+                    "printedName": "LiGPlayerKit.PanoramaVideoNode",
+                    "usr": "c:@M@LiGPlayerKit@objc(cs)PanoramaVideoNode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@LiGPlayerKit@objc(cs)PanoramaVideoNode(im)initWithCoder:",
+            "mangledName": "$s12LiGPlayerKit17PanoramaVideoNodeC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "LiGPlayerKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "playItemDidEnd",
+            "printedName": "playItemDidEnd(player:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVPlayer",
+                "printedName": "AVFoundation.AVPlayer",
+                "usr": "c:objc(cs)AVPlayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit17PanoramaVideoNodeC14playItemDidEnd6playerySo8AVPlayerC_tF",
+            "mangledName": "$s12LiGPlayerKit17PanoramaVideoNodeC14playItemDidEnd6playerySo8AVPlayerC_tF",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@LiGPlayerKit@objc(cs)PanoramaVideoNode",
+        "mangledName": "$s12LiGPlayerKit17PanoramaVideoNodeC",
+        "moduleName": "LiGPlayerKit",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@LiGPlayerKit@objc(cs)LiGBaseNode",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "LiGPlayerKit.LiGBaseNode",
+          "SceneKit.SCNNode",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LiGAVPlayerDelegate",
+            "printedName": "LiGAVPlayerDelegate",
+            "usr": "s:12LiGPlayerKit0A17GAVPlayerDelegateP",
+            "mangledName": "$s12LiGPlayerKit0A17GAVPlayerDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -97479,812 +97939,840 @@
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 295,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 358,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 450,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 531,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 623,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 758,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 859,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 947,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1028,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1113,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1184,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1282,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1326,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1373,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1424,
-      "length": 2,
-      "value": "19"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1469,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1524,
-      "length": 2,
-      "value": "22"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 295,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 358,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 450,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 531,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 623,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 758,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 859,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 947,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1028,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1113,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1184,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1282,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1326,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1373,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1424,
-      "length": 2,
-      "value": "19"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1469,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1524,
-      "length": 2,
-      "value": "22"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1622,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1673,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1716,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1765,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1809,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1851,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1918,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1964,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2014,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2068,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2123,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2183,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1622,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1673,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1716,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1765,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1809,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1851,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1918,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1964,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2014,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2068,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2123,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2183,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1622,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1673,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1716,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1765,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1809,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1851,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1918,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1964,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2014,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2068,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2123,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2183,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2490,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2584,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2667,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2752,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2870,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2978,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3080,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3166,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3255,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3360,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3468,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3586,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3674,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3746,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3819,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3893,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3968,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4062,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4152,
-      "length": 2,
-      "value": "19"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4234,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4317,
-      "length": 2,
-      "value": "21"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4408,
-      "length": 2,
-      "value": "22"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4491,
+      "offset": 1575,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4577,
+      "offset": 295,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 358,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 450,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 531,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 623,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 758,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 859,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 947,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1028,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1113,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1184,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1282,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1326,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1373,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1424,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1469,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1524,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1575,
+      "length": 2,
+      "value": "23"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 295,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 358,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 450,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 531,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 623,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 758,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 859,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 947,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1028,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1113,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1184,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1282,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1326,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1373,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1424,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1469,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1524,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1575,
+      "length": 2,
+      "value": "23"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1673,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1724,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1767,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1816,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1860,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1902,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1969,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2015,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2065,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2119,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2174,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2234,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1673,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1724,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1767,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1816,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1860,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1902,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1969,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2015,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2065,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2119,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2174,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2234,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1673,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1724,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1767,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1816,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1860,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1902,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1969,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2015,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2065,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2119,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2174,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2234,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2541,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2635,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2718,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2803,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2921,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3029,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3131,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3217,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3306,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3411,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3519,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3637,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3725,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3797,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3870,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3944,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4019,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4113,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4203,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4285,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4368,
+      "length": 2,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4459,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4542,
+      "length": 2,
+      "value": "23"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4628,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4662,
+      "offset": 4713,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4742,
+      "offset": 4793,
       "length": 2,
       "value": "26"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4814,
+      "offset": 4865,
       "length": 2,
       "value": "27"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4873,
+      "offset": 4924,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 4929,
+      "offset": 4980,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5016,
+      "offset": 5067,
       "length": 2,
       "value": "34"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5103,
+      "offset": 5154,
       "length": 2,
       "value": "35"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5188,
+      "offset": 5239,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5275,
+      "offset": 5326,
       "length": 3,
       "value": "106"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5364,
+      "offset": 5415,
       "length": 2,
       "value": "37"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5453,
+      "offset": 5504,
       "length": 2,
       "value": "38"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5538,
+      "offset": 5589,
       "length": 2,
       "value": "39"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5638,
+      "offset": 5689,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5704,
+      "offset": 5772,
+      "length": 2,
+      "value": "41"
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5838,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5719,
+      "offset": 5853,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5734,
+      "offset": 5868,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5704,
+      "offset": 5838,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5719,
+      "offset": 5853,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5734,
+      "offset": 5868,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5704,
+      "offset": 5838,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5719,
+      "offset": 5853,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Enum\/ArModelEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 5734,
+      "offset": 5868,
       "length": 5,
       "value": "3"
     },

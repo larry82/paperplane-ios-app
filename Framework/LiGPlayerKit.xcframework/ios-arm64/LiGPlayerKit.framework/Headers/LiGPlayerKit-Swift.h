@@ -364,6 +364,12 @@ SWIFT_CLASS("_TtC12LiGPlayerKit13OmniLightNode")
 @end
 
 
+SWIFT_CLASS("_TtC12LiGPlayerKit17PanoramaVideoNode")
+@interface PanoramaVideoNode : LiGBaseNode
+@end
+
+
+
 SWIFT_CLASS("_TtC12LiGPlayerKit9PlaneNode")
 @interface PlaneNode : LiGBaseNode
 @end

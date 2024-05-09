@@ -41,6 +41,7 @@ public enum ArModelTypeEnum : Swift.Int, Swift.CaseIterable, Swift.Codable {
   case polyhedron2
   case liveStream
   case recommendation
+  case panoramaVideo
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [LiGPlayerKit.ArModelTypeEnum]
   public typealias RawValue = Swift.Int
@@ -115,6 +116,7 @@ public struct ArActionEnum : Swift.RawRepresentable, Swift.Hashable {
   public static let removeAction: LiGPlayerKit.ArActionEnum
   public static let callAI: LiGPlayerKit.ArActionEnum
   public static let backToFormerScene: LiGPlayerKit.ArActionEnum
+  public static let gooleMap: LiGPlayerKit.ArActionEnum
 }
 public enum ImpactFeedback : Swift.Int {
   case system
@@ -259,6 +261,13 @@ public protocol StagingControllerClientDelegate {
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func sendUpdate(id: Swift.Int, url: Swift.String?) async -> Swift.Result<Swift.Int, LiGPlayerKit.StagingControllerClient.ResultError>
+  #endif
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PanoramaVideoNode : LiGPlayerKit.LiGBaseNode {
+  @_Concurrency.MainActor(unsafe) override public func destroy()
+  #if compiler(>=5.3) && $AsyncAwait
+  nonisolated override public func textureDidDownloaded(url: Foundation.URL) async throws
   #endif
   @objc deinit
 }
