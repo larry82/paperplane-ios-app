@@ -70105,6 +70105,24 @@
           },
           {
             "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12LiGPlayerKit25LiveStreamPlaybackManagerC4stopyyF",
+            "mangledName": "$s12LiGPlayerKit25LiveStreamPlaybackManagerC4stopyyF",
+            "moduleName": "LiGPlayerKit",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setAssetForPlayback",
             "printedName": "setAssetForPlayback(_:)",
             "children": [
@@ -99017,15 +99035,22 @@
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/Network\/StagingControllerClient.swift",
+      "kind": "StringLiteral",
+      "offset": 7774,
+      "length": 28,
+      "value": "\"tw.com.lig.command-updates\""
+    },
+    {
+      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/Network\/StagingControllerClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 32587,
+      "offset": 32819,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/Network\/StagingControllerClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 32625,
+      "offset": 32857,
       "length": 1,
       "value": "0"
     },
@@ -101810,43 +101835,15 @@
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/LiveStream\/LiveStreamPlaybackManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2242,
-      "length": 29,
-      "value": "\"item status: \""
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/LiveStream\/LiveStreamPlaybackManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2270,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/LiveStream\/LiveStreamPlaybackManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2416,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/LiveStream\/LiveStreamPlaybackManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2697,
-      "length": 21,
-      "value": "\"Player item error: \""
-    },
-    {
-      "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/LiveStream\/LiveStreamPlaybackManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4225,
+      "offset": 4642,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/steven\/Documents\/Workspace\/Git\/arlib\/Sources\/LiGPlayerKit\/Model\/LiveStream\/LiveStreamPlaybackManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4569,
+      "offset": 4986,
       "length": 5,
       "value": "false"
     },

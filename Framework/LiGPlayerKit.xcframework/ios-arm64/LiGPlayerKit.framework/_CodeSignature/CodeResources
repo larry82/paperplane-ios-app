@@ -14,27 +14,27 @@
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		znqP2qhB4G9NOYovVT5Sc91r4eA=
+		v9lCKURA2ypHk6cDv1GqTPyxt4Y=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		TdtUXVguj+jIHalY7cGAMjL+Bq0=
+		CbIBVLDO3MaAaUyhqSjlBioeVqU=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		zxGkKIKnJs7nmtoYc+qqlBJ3tAY=
+		fz+eL49rQ2ossfbs5aOfYNA1IfY=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		yEzuk2fVwUwpmr7vR+LXxrxG5CA=
+		KwXA2SphR6CSDcj+cbsKfxAk2NE=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		zxGkKIKnJs7nmtoYc+qqlBJ3tAY=
+		fz+eL49rQ2ossfbs5aOfYNA1IfY=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		o7zQjMdTyoP2nJ8fnUIx3S3M4Co=
+		WOlDsYLq6+hFBKH4shZ3MAefWkc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -122,42 +122,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nal5LRd8w/a2g/CSrlp5diKTA3N5LRpOSHA+v/ZAz6s=
+			JfiaW+44oVpMUC2DWT8tyHKYP4ktV08mHODxTEQvShc=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			erJlLnoqOIzFzQPdNd6DoelUFVsax6ViZ3cy8qc8DlU=
+			owu8Vlc9vXD9pU5OHjz9XmXPem4MZ1X17ix4h7VrLZ0=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tEEiRws9MzjXDRMg/uVEeYAlazWRIzm3W9z+f98rcaA=
+			/kf7zFCSkiz/0kGt3DByAD0yHyiCzR0hCFgPGGuthU8=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z3SzaW4bvw021VnuJzdA6XVueYdpx9zuM7U7pJ7bC1g=
+			Y/R+ZoTT3YioVB9RjfCAAZbhgsnbes8ESA5b4u4lK1k=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tEEiRws9MzjXDRMg/uVEeYAlazWRIzm3W9z+f98rcaA=
+			/kf7zFCSkiz/0kGt3DByAD0yHyiCzR0hCFgPGGuthU8=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9pVsPJ1RhI5RG6A0vsGXtWN4Reh4GEXEzIJU2E04cfQ=
+			DpBGU+JtT04wbZztkMPz5AoQVSaCAzOUIsMkSlwp0T4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
