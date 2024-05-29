@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FJ1Lic/3gkVWT0ErnCQtvDP1FyU=
+		YX9bfAsNaKCWbv5TieIhkoFt3J8=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		v9lCKURA2ypHk6cDv1GqTPyxt4Y=
+		XmUC4kMT+r3M+XRaLwXeWzEa5pE=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		CbIBVLDO3MaAaUyhqSjlBioeVqU=
+		7hNOhH26jETc4ZWoTfpxD49WcyY=
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		WOlDsYLq6+hFBKH4shZ3MAefWkc=
+		4Psf2gDBfI7KPrvw7EkdfbWuOy8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -122,14 +122,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JfiaW+44oVpMUC2DWT8tyHKYP4ktV08mHODxTEQvShc=
+			q6JrOxpkkysutmAAsVF/sTtkOVRv5IRkV4gOMB1OIQM=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			owu8Vlc9vXD9pU5OHjz9XmXPem4MZ1X17ix4h7VrLZ0=
+			MntmWNbchiuC5S54VuUS9NCLZszvve99qncrycdETXc=
 			</data>
 		</dict>
 		<key>Modules/LiGPlayerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -157,7 +157,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DpBGU+JtT04wbZztkMPz5AoQVSaCAzOUIsMkSlwp0T4=
+			yfXjcVDA+jaHqidK90xzMjODmVnT5WTSfBNhn0lLUJs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
