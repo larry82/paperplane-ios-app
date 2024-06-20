@@ -61,8 +61,6 @@ extension DefaultScanViewController: LiGScannerDelegate{
         case .deviceNotSupported:          msg.append("Device Not Supported")
         case .configFileError:             msg.append("Config File Error")
         case .cameraRunningError:          msg.append("Camera Running Error")
-        case .sdkNotSupported:             msg.append("SDK Not Supported")
-        case .sdkUnknow:                   msg.append("SDK Support Unknown")
         case .authenticationFailed:        msg.append("Authentication Failed")
         case .authenticationTimeout:       msg.append("Authentication Timeout")
         case .authenticationInterrupted:   msg.append("Authentication Interrupted")

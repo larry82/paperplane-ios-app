@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		930643D02AA0723F005A4851 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930643CF2AA0723F005A4851 /* GuideView.swift */; };
 		930643D22AA072CD005A4851 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930643D12AA072CD005A4851 /* Color.swift */; };
+		933A63EA2C2473C50073815A /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 933A63E92C2473C50073815A /* SocketIO */; };
 		93B2FC4629E157D8007C9792 /* LiGScannerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93B2FC4529E157D8007C9792 /* LiGScannerKit */; };
 		93B2FC9429E2CB6F007C9792 /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93B2FC9329E2CB6F007C9792 /* GLTFSceneKit */; };
 		93CA5FC02A39A929006F8797 /* ThemeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CA5FBF2A39A929006F8797 /* ThemeScanViewController.swift */; };
@@ -89,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93B2FC9429E2CB6F007C9792 /* GLTFSceneKit in Frameworks */,
+				933A63EA2C2473C50073815A /* SocketIO in Frameworks */,
 				93E5E89E2A302728000C7223 /* LiGPlayerKit.xcframework in Frameworks */,
 				93B2FC4629E157D8007C9792 /* LiGScannerKit in Frameworks */,
 			);
@@ -223,6 +225,7 @@
 			packageProductDependencies = (
 				93B2FC4529E157D8007C9792 /* LiGScannerKit */,
 				93B2FC9329E2CB6F007C9792 /* GLTFSceneKit */,
+				933A63E92C2473C50073815A /* SocketIO */,
 			);
 			productName = LiGPlayerKitSample;
 			productReference = B0B60B98291E319F005928CA /* Sample.app */;
@@ -255,6 +258,7 @@
 			packageReferences = (
 				93B2FC4429E157D8007C9792 /* XCRemoteSwiftPackageReference "ios-scanner-sdk-sample" */,
 				93B2FC9229E2CB6F007C9792 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */,
+				933A63E82C2473C50073815A /* XCRemoteSwiftPackageReference "socket" */,
 			);
 			productRefGroup = B0B60B99291E319F005928CA /* Products */;
 			projectDirPath = "";
@@ -548,12 +552,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		933A63E82C2473C50073815A /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				kind = exactVersion;
+				version = 16.1.0;
+			};
+		};
 		93B2FC4429E157D8007C9792 /* XCRemoteSwiftPackageReference "ios-scanner-sdk-sample" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://gitlab.com/lig-corp/ios-scanner-sdk-sample";
 			requirement = {
 				kind = exactVersion;
-				version = 3.3.0;
+				version = 4.0.1;
 			};
 		};
 		93B2FC9229E2CB6F007C9792 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */ = {
@@ -567,6 +579,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		933A63E92C2473C50073815A /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 933A63E82C2473C50073815A /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
 		93B2FC4529E157D8007C9792 /* LiGScannerKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 93B2FC4429E157D8007C9792 /* XCRemoteSwiftPackageReference "ios-scanner-sdk-sample" */;

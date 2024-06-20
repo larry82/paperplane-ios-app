@@ -281,6 +281,14 @@ extension ARViewController: ARSCNViewDelegate, ARSessionDelegate{
 
 //MARK: - SceneKitContext delegate
 extension ARViewController: SceneKitContextDelegate{
+    func aiResponseListDidFetched(list: [LiGPlayerKit.AIResponseText]) {
+        
+    }
+    
+    func doTransition() {
+        
+    }
+    
     func nodeDidCallNonLiGAction(objectID: Int, action: LiGPlayerKit.Action) {
         // Called when non-lig action is invoked on objectID
         
