@@ -11,5 +11,6 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://gitlab.com/lig-corp/ios-player-sdk-sample.git", :branch => "main", :tag => "#{spec.version}"}
   spec.ios.deployment_target  = '15.0'
   spec.source_files  = "ios-player-sdk-sample/Framework/LiGPlayerKit.xcframework/ios-arm64/LiGPlayerKit.framework/Headers/*.h"
+  vendored_frameworks = "LiGPlayerKit.xcframework"
 
 end
