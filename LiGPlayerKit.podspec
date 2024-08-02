@@ -7,11 +7,10 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://gitlab.com/lig-corp/ios-player-sdk-sample"
   spec.license      = "Commercial"
   spec.author             = { "Steven Lin" => "steven.lin@lig.com.tw", "Plain Wu":"plain.wu@lig.com.tw" }
-  spec.platform     = :ios, "12.0"
+  spec.platform     = :ios, "15.0"
   spec.source       = { :git => "https://gitlab.com/lig-corp/ios-player-sdk-sample.git", :branch => "main", :tag => "#{spec.version.to_s}"}
-  spec.ios.deployment_target  = '12.0'
-  spec.source_files  = "Framework/LiGPlayerKit.xcframework/ios-arm64/**/Headers/*.h"
+  spec.ios.deployment_target  = '15.0'
   spec.requires_arc = true
-  vendored_frameworks = "LiGPlayerKit.xcframework"
+  spec.vendored_frameworks = "Framework/LiGPlayerKit.xcframework"
 
 end
