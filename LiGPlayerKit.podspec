@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "LiGPlayerKit"
-  spec.version      = "1.7.30"
+  spec.version      = "1.7.31"
   spec.summary      = "Basic AR service"
   spec.description  = "AR solution for iOS mobile device"
   spec.homepage     = "https://gitlab.com/lig-corp/ios-player-sdk-sample"

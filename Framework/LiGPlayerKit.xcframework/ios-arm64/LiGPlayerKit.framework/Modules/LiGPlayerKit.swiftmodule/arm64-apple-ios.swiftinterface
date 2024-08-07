@@ -117,6 +117,7 @@ public struct ArActionEnum : Swift.RawRepresentable, Swift.Hashable {
   public static let callAI: LiGPlayerKit.ArActionEnum
   public static let backToFormerScene: LiGPlayerKit.ArActionEnum
   public static let gooleMap: LiGPlayerKit.ArActionEnum
+  public static let callApi: LiGPlayerKit.ArActionEnum
 }
 public enum ImpactFeedback : Swift.Int {
   case system
@@ -707,7 +708,9 @@ public struct ActionValues : Swift.Codable {
   public let promptId: Swift.Int?
   public let recommendationId: Swift.Int?
   public let auth: Swift.Bool?
-  public init(url: Swift.String?, time: Foundation.TimeInterval?, translating: Swift.Double?, objectId: Swift.Int?, directionX: CoreFoundation.CGFloat?, directionY: CoreFoundation.CGFloat?, directionZ: CoreFoundation.CGFloat?, group: Swift.Int?, animationSpeed: CoreFoundation.CGFloat?, startFrame: CoreFoundation.CGFloat?, endFrame: CoreFoundation.CGFloat?, fps: Swift.Double?, repeatCount: CoreFoundation.CGFloat?, scale: CoreFoundation.CGFloat?, transparency: CoreFoundation.CGFloat?, width: CoreFoundation.CGFloat?, height: CoreFoundation.CGFloat?, moveActionTime: Foundation.TimeInterval?, rotateActionTime: Foundation.TimeInterval?, clockwise: Swift.Bool?, radius: CoreFoundation.CGFloat?, startAngle: CoreFoundation.CGFloat?, endAngle: CoreFoundation.CGFloat?, faceTranslating: Swift.Double?, faceIsReturn: Swift.Bool?, faceWaitTime: Foundation.TimeInterval?, faceRotateToMe: Swift.Bool?, delayTime: Foundation.TimeInterval?, curveScale: CoreFoundation.CGFloat?, impactFeedbackStyle: Swift.Int?, subID: Swift.Int?, gameType: Swift.Int?, uiInteractName: Swift.String?, target: Swift.Int?, offset: Swift.Float?, playCount: Swift.Int?, duration: CoreFoundation.CGFloat?, sceneId: Swift.String?, repositionToCamera: Swift.Bool?, promptId: Swift.Int?, recommendationId: Swift.Int?, auth: Swift.Bool?)
+  public let requestMethod: Swift.String?
+  public let requestPayload: Swift.String?
+  public init(url: Swift.String?, time: Foundation.TimeInterval?, translating: Swift.Double?, objectId: Swift.Int?, directionX: CoreFoundation.CGFloat?, directionY: CoreFoundation.CGFloat?, directionZ: CoreFoundation.CGFloat?, group: Swift.Int?, animationSpeed: CoreFoundation.CGFloat?, startFrame: CoreFoundation.CGFloat?, endFrame: CoreFoundation.CGFloat?, fps: Swift.Double?, repeatCount: CoreFoundation.CGFloat?, scale: CoreFoundation.CGFloat?, transparency: CoreFoundation.CGFloat?, width: CoreFoundation.CGFloat?, height: CoreFoundation.CGFloat?, moveActionTime: Foundation.TimeInterval?, rotateActionTime: Foundation.TimeInterval?, clockwise: Swift.Bool?, radius: CoreFoundation.CGFloat?, startAngle: CoreFoundation.CGFloat?, endAngle: CoreFoundation.CGFloat?, faceTranslating: Swift.Double?, faceIsReturn: Swift.Bool?, faceWaitTime: Foundation.TimeInterval?, faceRotateToMe: Swift.Bool?, delayTime: Foundation.TimeInterval?, curveScale: CoreFoundation.CGFloat?, impactFeedbackStyle: Swift.Int?, subID: Swift.Int?, gameType: Swift.Int?, uiInteractName: Swift.String?, target: Swift.Int?, offset: Swift.Float?, playCount: Swift.Int?, duration: CoreFoundation.CGFloat?, sceneId: Swift.String?, repositionToCamera: Swift.Bool?, promptId: Swift.Int?, recommendationId: Swift.Int?, auth: Swift.Bool?, requestMethod: Swift.String?, requestPayload: Swift.String?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -1065,6 +1068,10 @@ public struct Credential : Swift.Codable {
   override public func build(model: LiGPlayerKit.ActionValues)
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CallApiAction : LiGPlayerKit.LiGBaseAction {
+  override public func build(model: LiGPlayerKit.ActionValues)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class StopAnimationAction : LiGPlayerKit.LiGBaseAction {
   override public func build(model: LiGPlayerKit.ActionValues)
   @objc deinit
@@ -1109,6 +1116,7 @@ public struct ApiLocation : Swift.Codable {
   @_Concurrency.MainActor(unsafe) public var arObject: LiGPlayerKit.ArObject?
   @_Concurrency.MainActor(unsafe) public var actionPerformed: LiGPlayerKit.LiGBaseNode.CompletionBlock?
   @_Concurrency.MainActor(unsafe) public var changed: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var isActionEnable: Swift.Bool
   #if compiler(>=5.3) && $AsyncAwait
   nonisolated public func textureDidDownloaded(url: Foundation.URL) async throws
   #endif
@@ -1190,6 +1198,7 @@ public protocol SceneKitNavigationDelegate {
   #if compiler(>=5.3) && $AsyncAwait
   @_Concurrency.MainActor public func revealNode(node: LiGPlayerKit.LiGBaseNode) async
   #endif
+  @_Concurrency.MainActor public func revealAllNodes()
   #if compiler(>=5.3) && $AsyncAwait
   @available(*, deprecated, renamed: "loadCoordinateSystemFrom")
   public func loadScenes(lightId: Swift.Int, accessToken: Swift.String, session: Foundation.URLSession? = nil) async throws -> (scnObjc: [LiGPlayerKit.SceneObject], coorInfo: (map: Swift.String?, info: Swift.String?))?
