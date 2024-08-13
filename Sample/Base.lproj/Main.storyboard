@@ -13,7 +13,7 @@
         <!--ARScan-->
         <scene sceneID="KLC-wU-n1e">
             <objects>
-                <viewController id="VQ2-PJ-OmR" userLabel="ARScan" customClass="ThemeScanViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThemeScanViewController" id="VQ2-PJ-OmR" userLabel="ARScan" customClass="ThemeScanViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0ia-3l-E4B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

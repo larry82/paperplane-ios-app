@@ -12,9 +12,14 @@ class TabBarViewController: UITabBarController {
     
     func setupViewControllers() {
         // 創建三個視圖控制器
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
         let homeURL = URL(string: "https://flyingclub.io")!
         let homeVC = WebViewViewController(url: homeURL)
-        let arVC = ThemeScanViewController()
+        
+        
+        let arVC = storyboard.instantiateViewController(withIdentifier: "ThemeScanViewController") as! ThemeScanViewController
+        
         let profileVC = UserViewController()
         
         // 設置標題和圖標
