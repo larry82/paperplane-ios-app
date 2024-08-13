@@ -1,4 +1,5 @@
 {
+  "originHash" : "fb06e6d67550803e73ea9ad71b47f0cfd4df81a140fcb06aafcb58be043b2ca4",
   "pins" : [
     {
       "identity" : "gltfscenekit",
@@ -16,6 +17,15 @@
       "state" : {
         "revision" : "7cc127e0e418c783eef5c093f7e42cb2c99c1158",
         "version" : "4.0.1"
+      }
+    },
+    {
+      "identity" : "line-sdk-ios-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/line/line-sdk-ios-swift.git",
+      "state" : {
+        "revision" : "74b58bb22d895989842eb1077b315672df61afbc",
+        "version" : "5.11.1"
       }
     },
     {
@@ -37,5 +47,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

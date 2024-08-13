@@ -1,4 +1,5 @@
 import UIKit
+import LineSDK
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -6,8 +7,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        let window = UIWindow(windowScene: windowScene)
+        self.window = window
+        
+        // 检查 LINE 登录状态并设置初始视图控制器
+        if let _ = try? AccessTokenStore.shared.current {
+            window.rootViewController = TabBarViewController()
+        } else {
+            window.rootViewController = LoginViewController()
+        }
+        
+        window.makeKeyAndVisible()
+    }
+    
+    // SceneDelegate.swift
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        _ = LoginManager.shared.application(.shared, open: URLContexts.first?.url)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
