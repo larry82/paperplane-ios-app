@@ -33,7 +33,7 @@ class TabBarViewController: UITabBarController {
     
     private func customizeAppearance() {
         // 自定义 Tab Bar 外观
-        UITabBar.appearance().tintColor = .black // 选中时的颜色
+        UITabBar.appearance().tintColor = .gray // 选中时的颜色
         UITabBar.appearance().unselectedItemTintColor = .lightGray // 未选中时的颜色
     }
 }

@@ -11,7 +11,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .black
         setupLoginButton()
         loginButton.delegate = self
     }
@@ -21,12 +21,20 @@ class LoginViewController: UIViewController {
         NSLayoutConstraint.activate([
             loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             loginButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            loginButton.widthAnchor.constraint(equalToConstant: 200),
-            loginButton.heightAnchor.constraint(equalToConstant: 50)
+            loginButton.widthAnchor.constraint(equalToConstant: 280),
+            loginButton.heightAnchor.constraint(equalToConstant: 44)  // LINE 按鈕的標準高度
         ])
+        
+        // 確保按鈕的內容模式正確
+        loginButton.contentMode = .scaleToFill
+        
+        // 禁用按鈕的自動調整大小
+        loginButton.autoresizingMask = []
+        
+        // 設置按鈕的剪裁屬性
+        loginButton.clipsToBounds = true
     }
 }
-
 
 extension LoginViewController: LoginButtonDelegate {
     func loginButton(_ button: LoginButton, didSucceedLogin loginResult: LoginResult) {

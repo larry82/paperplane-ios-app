@@ -1,34 +1,48 @@
 import UIKit
 import LineSDK
+import WebKit
 
 class UserViewController: UIViewController {
+    
+    private var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        setupUI()
+        setupWebView()
+        setupLogoutButton()
     }
     
-    private func setupUI() {
-        let label = UILabel()
-        label.text = "Welcome! You are logged in."
-        label.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(label)
+    private func setupWebView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: view.bounds, configuration: webConfiguration)
+        webView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        view.addSubview(webView)
         
-        NSLayoutConstraint.activate([
-            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
-        
+        if let url = URL(string: "https://flyingclub.io/dashboard/show") {
+            let request = URLRequest(url: url)
+            webView.load(request)
+        }
+    }
+    
+    private func setupLogoutButton() {
         let logoutButton = UIButton(type: .system)
-        logoutButton.setTitle("Logout", for: .normal)
+        logoutButton.setImage(UIImage(systemName: "rectangle.portrait.and.arrow.right"), for: .normal)
+        logoutButton.tintColor = .white
+        logoutButton.layer.cornerRadius = 15
+        logoutButton.layer.shadowColor = UIColor.black.cgColor
+        logoutButton.layer.shadowOffset = CGSize(width: 0, height: 2)
+        logoutButton.layer.shadowRadius = 4
+        logoutButton.layer.shadowOpacity = 0.1
         logoutButton.addTarget(self, action: #selector(logoutTapped), for: .touchUpInside)
         logoutButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(logoutButton)
         
         NSLayoutConstraint.activate([
-            logoutButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            logoutButton.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 20)
+            logoutButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
+            logoutButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            logoutButton.widthAnchor.constraint(equalToConstant: 30),
+            logoutButton.heightAnchor.constraint(equalToConstant: 30)
         ])
     }
     
@@ -36,7 +50,6 @@ class UserViewController: UIViewController {
         LoginManager.shared.logout { result in
             switch result {
             case .success:
-                // 登出成功，切换回登录界面
                 let loginViewController = LoginViewController()
                 if let sceneDelegate = self.view.window?.windowScene?.delegate as? SceneDelegate {
                     sceneDelegate.window?.rootViewController = loginViewController

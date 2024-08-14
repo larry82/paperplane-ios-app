@@ -75,35 +75,83 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, WKScriptMes
     }
 
     private func injectLoginInfoAndRedirect() {
-            guard !hasInjectedLoginInfo,
-                  let accessToken = UserSession.shared.accessToken,
-                  let userID = UserSession.shared.userID else {
-                return
+        guard !hasInjectedLoginInfo,
+              let accessToken = UserSession.shared.accessToken,
+              let userID = UserSession.shared.userID else {
+            return
+        }
+
+        let script = """
+            window.localStorage.setItem('line_access_token', '\(accessToken)');
+            window.localStorage.setItem('line_user_id', '\(userID)');
+            window.location.href = 'https://flyingclub.io/webview/auth';
+        """
+
+        webView.evaluateJavaScript(script) { _, error in
+            if let error = error {
+                print("Error injecting LINE login info and redirecting: \(error.localizedDescription)")
+            } else {
+                print("Successfully injected LINE login info and redirected")
+                self.hasInjectedLoginInfo = true
             }
+        }
+    }
 
-            let script = """
-                window.localStorage.setItem('line_access_token', '\(accessToken)');
-                window.localStorage.setItem('line_user_id', '\(userID)');
-                window.location.href = 'https://flyingclub.io/webview/auth';
-            """
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        loadingIndicator.stopAnimating()
+        print("網頁載入完成")
+        if !hasInjectedLoginInfo && UserSession.shared.accessToken != nil {
+            injectLoginInfoAndRedirect()
+        }
+        
+        // 顯示 localStorage 內容
+        getLocalStorageContent()
+        
+        // 顯示 cookies
+        getCookies()
+    }
 
-            webView.evaluateJavaScript(script) { _, error in
-                if let error = error {
-                    print("Error injecting LINE login info and redirecting: \(error.localizedDescription)")
-                } else {
-                    print("Successfully injected LINE login info and redirected")
-                    self.hasInjectedLoginInfo = true
+    private func getLocalStorageContent() {
+        let script = """
+        (function() {
+            var storage = {};
+            for (var i = 0; i < localStorage.length; i++) {
+                var key = localStorage.key(i);
+                var value = localStorage.getItem(key);
+                storage[key] = value;
+            }
+            return JSON.stringify(storage);
+        })()
+        """
+        
+        webView.evaluateJavaScript(script) { (result, error) in
+            if let error = error {
+                print("Error fetching localStorage: \(error.localizedDescription)")
+            } else if let storageString = result as? String,
+                      let data = storageString.data(using: .utf8),
+                      let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: String] {
+                print("localStorage 內容:")
+                for (key, value) in json {
+                    print("Key: \(key), Value: \(value)")
+                }
+            } else {
+                print("localStorage 為空")
+            }
+        }
+    }
+
+    private func getCookies() {
+        webView.configuration.websiteDataStore.httpCookieStore.getAllCookies { cookies in
+            print("\nCookies:")
+            if cookies.isEmpty {
+                print("沒有找到 cookies")
+            } else {
+                for cookie in cookies {
+                    print("Name: \(cookie.name), Value: \(cookie.value), Domain: \(cookie.domain), Path: \(cookie.path)")
                 }
             }
         }
-
-        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            loadingIndicator.stopAnimating()
-            print("網頁載入完成")
-            if !hasInjectedLoginInfo && UserSession.shared.accessToken != nil {
-                injectLoginInfoAndRedirect()
-            }
-        }
+    }
 
     // MARK: - WKScriptMessageHandler 方法
 
