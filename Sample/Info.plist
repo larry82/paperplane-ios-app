@@ -34,5 +34,7 @@
 	<array>
 		<string>lineauth2</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>We need to access your camera to scan QR codes.</string>
 </dict>
 </plist>

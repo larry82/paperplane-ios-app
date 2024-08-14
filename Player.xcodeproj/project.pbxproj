@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652E49002C6D305D00EB0D12 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652E48FF2C6D305D00EB0D12 /* AVFoundation.framework */; };
 		65843CFA2C69BDBE0014B488 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65843CF92C69BDBE0014B488 /* TabBarViewController.swift */; };
 		65843CFE2C6A4F740014B488 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65843CFD2C6A4F740014B488 /* WebViewViewController.swift */; };
 		65843D012C6A57900014B488 /* LineSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 65843D002C6A57900014B488 /* LineSDK */; };
@@ -61,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		652E48FF2C6D305D00EB0D12 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		65843CF92C69BDBE0014B488 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		65843CFD2C6A4F740014B488 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		65843D042C6A5B830014B488 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				933A63EA2C2473C50073815A /* SocketIO in Frameworks */,
 				65843D032C6A57900014B488 /* LineSDKObjC in Frameworks */,
 				93E5E89E2A302728000C7223 /* LiGPlayerKit.xcframework in Frameworks */,
+				652E49002C6D305D00EB0D12 /* AVFoundation.framework in Frameworks */,
 				93B2FC4629E157D8007C9792 /* LiGScannerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +162,7 @@
 		B0B427D8292628DD00BDFB26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				652E48FF2C6D305D00EB0D12 /* AVFoundation.framework */,
 				93E5E89C2A302709000C7223 /* LiGPlayerKit.xcframework */,
 			);
 			name = Frameworks;

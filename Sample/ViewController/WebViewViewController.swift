@@ -1,13 +1,15 @@
 import UIKit
 import WebKit
+import AVFoundation
 
-class WebViewViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler {
-    // MARK: - 屬性
+class WebViewViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler, AVCaptureMetadataOutputObjectsDelegate {
+    // MARK: - Properties
 
     @IBOutlet var webView: WKWebView!
     
     private var uri: URL
     private var loadingIndicator: UIActivityIndicatorView!
+    private var qrScannerButton: UIButton!
 
     private var lineAccessToken: String?
     private var lineName: String?
@@ -15,7 +17,7 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, WKScriptMes
     
     private var hasInjectedLoginInfo = false
 
-    // MARK: - 初始化方法
+    // MARK: - Initialization
 
     init(url: URL, lineAccessToken: String? = nil, lineName: String? = nil, lineEmail: String? = nil, lineUserID: String? = nil) {
         self.uri = url
@@ -30,16 +32,17 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, WKScriptMes
         super.init(coder: coder)
     }
 
-    // MARK: - 生命週期方法
+    // MARK: - Lifecycle Methods
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupWebView()
         setupLoadingIndicator()
+        setupQRScannerButton()
         loadWebPage()
     }
 
-    // MARK: - 私有方法
+    // MARK: - Private Methods
 
     private func setupWebView() {
         let configuration = WKWebViewConfiguration()
@@ -66,6 +69,30 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, WKScriptMes
         loadingIndicator = UIActivityIndicatorView(style: .large)
         loadingIndicator.center = view.center
         view.addSubview(loadingIndicator)
+    }
+    
+    private func setupQRScannerButton() {
+        qrScannerButton = UIButton(type: .system)
+        qrScannerButton.setImage(UIImage(systemName: "qrcode.viewfinder")?.withTintColor(.white, renderingMode: .alwaysOriginal), for: .normal)
+        qrScannerButton.addTarget(self, action: #selector(openQRScanner), for: .touchUpInside)
+        
+        view.addSubview(qrScannerButton)
+        
+        qrScannerButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            qrScannerButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 12),
+            qrScannerButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            qrScannerButton.widthAnchor.constraint(equalToConstant: 44),
+            qrScannerButton.heightAnchor.constraint(equalToConstant: 44)
+        ])
+        
+        view.bringSubviewToFront(qrScannerButton)
+    }
+
+    @objc private func openQRScanner() {
+        let scannerVC = QRScannerViewController()
+        scannerVC.delegate = self
+        present(scannerVC, animated: true, completion: nil)
     }
 
     private func loadWebPage() {
@@ -160,5 +187,118 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, WKScriptMes
             print("Login completed")
             // TODO: 根據需要添加額外的處理邏輯
         }
+    }
+    
+    // MARK: - QR Scanner Delegate Method
+
+    func qrScannerDidScan(_ url: URL) {
+        dismiss(animated: true) {
+            self.loadURL(url)
+        }
+    }
+
+    private func loadURL(_ url: URL) {
+        uri = url
+        let request = URLRequest(url: uri)
+        webView.load(request)
+    }
+}
+
+class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+    var captureSession: AVCaptureSession!
+    var previewLayer: AVCaptureVideoPreviewLayer!
+    
+    weak var delegate: WebViewViewController?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        view.backgroundColor = UIColor.black
+        captureSession = AVCaptureSession()
+
+        guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else { return }
+        let videoInput: AVCaptureDeviceInput
+
+        do {
+            videoInput = try AVCaptureDeviceInput(device: videoCaptureDevice)
+        } catch {
+            return
+        }
+
+        if (captureSession.canAddInput(videoInput)) {
+            captureSession.addInput(videoInput)
+        } else {
+            failed()
+            return
+        }
+
+        let metadataOutput = AVCaptureMetadataOutput()
+
+        if (captureSession.canAddOutput(metadataOutput)) {
+            captureSession.addOutput(metadataOutput)
+
+            metadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
+            metadataOutput.metadataObjectTypes = [.qr]
+        } else {
+            failed()
+            return
+        }
+
+        previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+        previewLayer.frame = view.bounds
+        previewLayer.videoGravity = .resizeAspectFill
+        view.layer.addSublayer(previewLayer)
+
+        captureSession.startRunning()
+    }
+
+    func failed() {
+        let ac = UIAlertController(title: "Scanning not supported", message: "Your device does not support scanning a code from an item. Please use a device with a camera.", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
+        captureSession = nil
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        if (captureSession?.isRunning == false) {
+            captureSession.startRunning()
+        }
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        if (captureSession?.isRunning == true) {
+            captureSession.stopRunning()
+        }
+    }
+
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        captureSession.stopRunning()
+
+        if let metadataObject = metadataObjects.first {
+            guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
+            guard let stringValue = readableObject.stringValue else { return }
+            AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+            found(code: stringValue)
+        }
+
+        dismiss(animated: true)
+    }
+
+    func found(code: String) {
+        if let url = URL(string: code) {
+            delegate?.qrScannerDidScan(url)
+        }
+    }
+
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
     }
 }

@@ -1,6 +1,8 @@
 import UIKit
 import LineSDK
 import WebKit
+import AVFoundation
+
 
 class UserViewController: UIViewController {
     
@@ -39,8 +41,8 @@ class UserViewController: UIViewController {
         view.addSubview(logoutButton)
         
         NSLayoutConstraint.activate([
-            logoutButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
-            logoutButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            logoutButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 12),
+            logoutButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             logoutButton.widthAnchor.constraint(equalToConstant: 30),
             logoutButton.heightAnchor.constraint(equalToConstant: 30)
         ])
