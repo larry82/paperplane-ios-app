@@ -83,7 +83,7 @@
 		B090B2BE292E0A9B00AC7931 /* VideoRecorderButtonWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoRecorderButtonWindow.swift; sourceTree = "<group>"; };
 		B0B4254E292234D000BDFB26 /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
 		B0B42550292380E100BDFB26 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
-		B0B60B98291E319F005928CA /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B60B98291E319F005928CA /* PaperPlane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperPlane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B60B9B291E319F005928CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0B60B9D291E319F005928CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B0B60B9F291E319F005928CA /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 		B0B60B8F291E319F005928CA = {
 			isa = PBXGroup;
 			children = (
-				B0B60B9A291E319F005928CA /* Sample */,
+				B0B60B9A291E319F005928CA /* PaperPlane */,
 				B0B60B99291E319F005928CA /* Products */,
 				B0B427D8292628DD00BDFB26 /* Frameworks */,
 			);
@@ -180,12 +180,12 @@
 		B0B60B99291E319F005928CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B0B60B98291E319F005928CA /* Sample.app */,
+				B0B60B98291E319F005928CA /* PaperPlane.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0B60B9A291E319F005928CA /* Sample */ = {
+		B0B60B9A291E319F005928CA /* PaperPlane */ = {
 			isa = PBXGroup;
 			children = (
 				B0B60B9B291E319F005928CA /* AppDelegate.swift */,
@@ -200,7 +200,7 @@
 				930643D12AA072CD005A4851 /* Color.swift */,
 				65843D082C6B4C5B0014B488 /* UserSession.swift */,
 			);
-			path = Sample;
+			path = PaperPlane;
 			sourceTree = "<group>";
 		};
 		B0B60BB52921F01F005928CA /* View */ = {
@@ -231,9 +231,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B0B60B97291E319F005928CA /* Sample */ = {
+		B0B60B97291E319F005928CA /* PaperPlane */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0B60BAC291E31A0005928CA /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildConfigurationList = B0B60BAC291E31A0005928CA /* Build configuration list for PBXNativeTarget "PaperPlane" */;
 			buildPhases = (
 				B0B60B94291E319F005928CA /* Sources */,
 				B0B60B95291E319F005928CA /* Frameworks */,
@@ -244,7 +244,7 @@
 			);
 			dependencies = (
 			);
-			name = Sample;
+			name = PaperPlane;
 			packageProductDependencies = (
 				93B2FC4529E157D8007C9792 /* LiGScannerKit */,
 				93B2FC9329E2CB6F007C9792 /* GLTFSceneKit */,
@@ -253,7 +253,7 @@
 				65843D022C6A57900014B488 /* LineSDKObjC */,
 			);
 			productName = LiGPlayerKitSample;
-			productReference = B0B60B98291E319F005928CA /* Sample.app */;
+			productReference = B0B60B98291E319F005928CA /* PaperPlane.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -290,7 +290,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B0B60B97291E319F005928CA /* Sample */,
+				B0B60B97291E319F005928CA /* PaperPlane */,
 			);
 		};
 /* End PBXProject section */
@@ -493,7 +493,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_FILE = PaperPlane/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PaperPlane;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_NSCameraUsageDescription = "for light tag scan and AR presentation";
@@ -536,7 +536,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_FILE = PaperPlane/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PaperPlane;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_NSCameraUsageDescription = "for light tag scan and AR presentation";
@@ -577,7 +577,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0B60BAC291E31A0005928CA /* Build configuration list for PBXNativeTarget "Sample" */ = {
+		B0B60BAC291E31A0005928CA /* Build configuration list for PBXNativeTarget "PaperPlane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0B60BAD291E31A0005928CA /* Debug */,

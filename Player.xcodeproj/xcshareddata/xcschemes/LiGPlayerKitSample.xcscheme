@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B0B60B97291E319F005928CA"
-               BuildableName = "Sample.app"
-               BlueprintName = "Sample"
+               BuildableName = "PaperPlane.app"
+               BlueprintName = "PaperPlane"
                ReferencedContainer = "container:Player.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B0B60B97291E319F005928CA"
-            BuildableName = "Sample.app"
-            BlueprintName = "Sample"
+            BuildableName = "PaperPlane.app"
+            BlueprintName = "PaperPlane"
             ReferencedContainer = "container:Player.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B0B60B97291E319F005928CA"
-            BuildableName = "Sample.app"
-            BlueprintName = "Sample"
+            BuildableName = "PaperPlane.app"
+            BlueprintName = "PaperPlane"
             ReferencedContainer = "container:Player.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -73,6 +73,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "PaperPlane"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
