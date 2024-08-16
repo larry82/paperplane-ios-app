@@ -6,7 +6,7 @@ import LiGScannerKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let productkey = "1E0B0-C932E-E5DC8-45C09-67CA8"
+        let productkey = "D68E2-6ABFE-4AC12-95033-11102"
         LiGScanner.sharedInstance().initialize(productkey)
         
         // Initialize LINE SDK
